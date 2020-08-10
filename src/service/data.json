@@ -54,6 +54,11 @@
     "header": {
       "name": "Ane DIAZ DE TUESTA",
       "imageUrl": "./ane2.png",
+      "presentationSkills": [
+        "Développeuse Web",
+        "Facilitatrice Graphique",
+        "Oratrice"
+      ],
       "resume": {
         "url": "https://drive.google.com/uc?export=download&id=1_oSlcwpWCeBOz4VN9Nol8X8Oo5cbyU_O",
         "title": "Téléchargez mon CV"
@@ -323,6 +328,7 @@
     "header": {
       "name": "Ane DIAZ DE TUESTA",
       "imageUrl": "./ane2.png",
+      "presentationSkills": ["Web Developer", "Visual Facilitator", "Speaker"],
       "resume": {
         "url": "https://drive.google.com/uc?export=download&id=1HK4DjqSu_Jyb7slNzBcCOer_lI7nT31B",
         "title": "Download my Resume"
@@ -592,6 +598,11 @@
     "header": {
       "name": "Ane DIAZ DE TUESTA",
       "imageUrl": "./ane2.png",
+      "presentationSkills": [
+        "Desarrolladora Web",
+        "Facilitadora Gráfica",
+        "Oradora"
+      ],
       "resume": {
         "url": "https://drive.google.com/uc?export=download&id=1qwv8nXhNCNzKteVl8N-iBqlHKhnaPM9Y",
         "title": "Descargar mi currículo"
@@ -861,6 +872,11 @@
     "header": {
       "name": "Ane DIAZ DE TUESTA",
       "imageUrl": "./ane2.png",
+      "presentationSkills": [
+        "Web Garatzailea",
+        "Erraztaile Grafikoa",
+        "Hizlaria"
+      ],
       "resume": {
         "url": "https://drive.google.com/uc?export=download&id=1_5oi8vKvK65QRLGKDOM4qEGuTkYFozXd",
         "title": "Deskargatu nire curriculuma"

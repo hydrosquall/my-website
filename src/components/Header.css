@@ -10,12 +10,12 @@
   min-height: 10rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
 .Header .main-header .name {
-  width: 30%;
+  width: 45%;
   vertical-align: middle;
   display: flex;
   flex-direction: column;
@@ -25,55 +25,67 @@
 }
 
 .Header .main-header .name h2 {
+  text-align: center;
   margin: 0;
 }
 
-.Header .main-header .social {
+.Header .main-header .name .presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.5em;
+  margin-block-start: 3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.Header .main-header .name .presentation div {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.Header .main-header .infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header .main-header .infos .social {
   font-family: "Raleway", sans-serif;
   text-align: left;
   color: rgb(153, 153, 153);
   font-size: 1.2rem;
   min-width: 13rem;
+  margin-top: 0.5rem;
 }
 
-.Header .main-header .social .mail {
+.Header .main-header .infos .social .mail {
   width: 100%;
   line-height: 3rem;
 }
 
-.Header .illustrations {
-  font-family: "Raleway", sans-serif;
-  text-align: left;
-  color: rgb(153, 153, 153);
-  font-size: 1.2rem;
-  min-width: 13rem;
-  line-height: 7rem;
-}
-
-.Header .main-header .social .mail:hover,
-.Header .main-header .social .mail:hover a,
-.Header .main-header .social .social-icons i:hover,
-.Header .illustrations:hover,
-.Header .illustrations:hover a {
+.Header .main-header .infos .social .mail:hover,
+.Header .main-header .infos .social .mail:hover a,
+.Header .main-header .infos .social .social-icons i:hover {
   cursor: pointer;
   color: gray;
 }
 
-.Header .main-header .social .mail a,
-.Header .main-header .social-icons a,
-.Header .illustrations a {
+.Header .main-header .infos .social .mail a,
+.Header .main-header .infos .social-icons a {
   text-decoration: none;
   color: rgb(153, 153, 153);
   font-family: "Raleway", sans-serif;
 }
 
-.Header .main-header .social .social-icons {
+.Header .main-header .infos .social .social-icons {
   display: flex;
   justify-content: space-between;
   width: 12.5rem;
 }
 
-.Header .main-header .pic {
+.Header .main-header .infos .pic {
   width: 25rem;
   height: 25rem;
   border-radius: 12.5rem;
@@ -94,31 +106,26 @@
     height: auto;
   }
 
-  .Header .main-header .pic {
+  .Header .main-header .infos .pic {
     width: 8rem;
     height: 8rem;
     border-radius: 4rem;
   }
 
-  .Header .main-header .social,
-  .Header .illustrations {
+  .Header .main-header .infos .social {
     font-size: 0.8rem;
     min-width: 0;
   }
 
-  .Header .illustrations {
-    line-height: 4rem;
-  }
-
-  .Header .main-header .social .social-icons {
+  .Header .main-header .infos .social .social-icons {
     width: 8.2rem;
   }
 
-  .Header .main-header .social .mail {
+  .Header .main-header .infos .social .mail {
     line-height: 0;
     margin: 1.5rem 0 1rem 0;
   }
-  .Header .main-header .social .mail a {
+  .Header .main-header .infos .social .mail a {
     margin-left: 0.9rem;
   }
 }
@@ -134,25 +141,25 @@
     height: auto;
   }
 
-  .Header .main-header .pic {
+  .Header .main-header .infos .pic {
     width: 15rem;
     height: 15rem;
     border-radius: 7.5rem;
   }
 
-  .Header .main-header .social {
+  .Header .main-header .infos .social {
     font-size: 1.2rem;
   }
 
-  .Header .main-header .social .social-icons {
+  .Header .main-header .infos .social .social-icons {
     width: 12.5rem;
   }
 
-  .Header .main-header .social .mail {
+  .Header .main-header .infos .social .mail {
     line-height: 0;
     margin: 2rem 0 1.5rem 0;
   }
-  .Header .main-header .social .mail a {
+  .Header .main-header .infos .social .mail a {
     margin-left: 1.3rem;
   }
 }

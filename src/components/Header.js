@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import "./Header.css";
 
 const propTypes = {
@@ -27,7 +26,15 @@ const defaultProps = {
 
 const pathToMedia = require.context("../assets", true);
 
-const Header = ({ id, resume, name, imageUrl, mail, social }) => {
+const Header = ({
+  id,
+  resume,
+  name,
+  imageUrl,
+  presentationSkills,
+  mail,
+  social,
+}) => {
   const getSocial = () => {
     let socialContent = social.map((item, index) => {
       return (
@@ -76,15 +83,16 @@ const Header = ({ id, resume, name, imageUrl, mail, social }) => {
       <div className="main-header">
         <div className="name">
           <h2>{name}</h2>
+          <div className="presentation">
+            {presentationSkills.map((skill) => (
+              <div>{`- ${skill} -`}</div>
+            ))}
+          </div>
+        </div>
+        <div className="infos">
+          {getImage()}
           {getSocial()}
         </div>
-        {getImage()}
-      </div>
-      <div className="illustrations">
-        <Link to="/illustrations" target="_blank">
-          <i className={"fa fa-eye"}>&nbsp;</i>
-          My illustrations
-        </Link>
       </div>
     </div>
   );
