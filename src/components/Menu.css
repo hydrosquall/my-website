@@ -1,0 +1,95 @@
+.Menu {
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+  width: 15%;
+  background-color: #ececeb;
+  position: fixed;
+  align-items: center;
+}
+
+.Menu .LanguageSelector:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 50px;
+  background-color: #ccc;
+  position: absolute;
+  right: 3rem;
+  top: 5rem;
+}
+
+.Menu .LanguageSelector {
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.Menu .item {
+  line-height: 3rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 3rem;
+}
+
+.Menu .item .fa-eye {
+  margin-top: 2rem;
+}
+
+.Menu .item div,
+.Menu .item a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+.Menu .item div:hover,
+.Menu .item a:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.Menu .item.active div,
+.Menu .item.active a {
+  color: #2a363b;
+}
+
+/* smartphone en portrait */
+@media screen and (max-width: 479px) {
+  .Menu .LanguageSelector {
+    margin: 2rem 0 4rem 0;
+  }
+
+  .Menu .LanguageSelector:after {
+    display: none;
+  }
+
+  .Menu .item {
+    display: none;
+  }
+}
+
+/* smartphone in landscape, tablet in portrait and small tablet in landscape */
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  .Menu .LanguageSelector {
+    margin: 2rem 0 5rem 0;
+  }
+
+  .Menu .LanguageSelector:after {
+    display: none;
+  }
+
+  .Menu .item {
+    display: none;
+  }
+}
+
+/*  tablet in landscape, small and medium laptop screen */
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+}
+
+/*  big laptop screen (21″ and + in full screen ) */
+@media screen and (min-width: 1281px) {
+}

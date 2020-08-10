@@ -1,0 +1,89 @@
+body {
+  background-color: #09101b;
+}
+
+.Illustrations {
+  height: 100%;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+.Illustrations .title {
+  background-image: url("../assets/title-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 13rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.Illustrations .HamburgerMenu {
+  display: none;
+}
+
+.Illustrations .albums {
+  display: flex;
+  justify-content: space-around;
+  height: 5rem;
+  line-height: 5rem;
+  width: 80%;
+  margin: 0 auto 2rem;
+  font-size: 1.5rem;
+}
+
+.Illustrations .albums .albumName {
+  opacity: 0.4;
+}
+
+.Illustrations .albums .albumName:hover {
+  cursor: pointer;
+}
+.Illustrations .albums .albumName.active {
+  opacity: 1;
+  font-weight: 900;
+}
+
+.Illustrations .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* smartphone en portrait */
+@media screen and (max-width: 479px) {
+  .Illustrations .title {
+    height: 3rem;
+    width: 85%;
+  }
+  .Illustrations .albums {
+    display: flex;
+    flex-direction: column;
+    line-height: 1rem;
+    margin: 0 auto 1rem;
+    font-size: 1rem;
+    display: none;
+  }
+
+  .Illustrations .HamburgerMenu {
+    display: block;
+  }
+}
+
+/* smartphone in landscape, tablet in portrait and small tablet in landscape */
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  .Illustrations .title {
+    height: 4.5rem;
+    width: 90%;
+  }
+
+  .Illustrations .albums {
+    display: flex;
+    flex-direction: column;
+    line-height: 1rem;
+    margin: 0 auto 1rem;
+    font-size: 1rem;
+    display: none;
+  }
+  .Illustrations .HamburgerMenu {
+    display: block;
+  }
+}

@@ -1,0 +1,166 @@
+.Header {
+  color: #2a363b;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  text-align: left;
+}
+
+.Header .main-header {
+  min-height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Header .main-header .name {
+  width: 30%;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 6rem 0rem 0;
+  height: 23rem;
+}
+
+.Header .main-header .name h2 {
+  margin: 0;
+}
+
+.Header .main-header .social {
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  color: rgb(153, 153, 153);
+  font-size: 1.2rem;
+  min-width: 13rem;
+}
+
+.Header .main-header .social .mail {
+  width: 100%;
+  line-height: 3rem;
+}
+
+.Header .illustrations {
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  color: rgb(153, 153, 153);
+  font-size: 1.2rem;
+  min-width: 13rem;
+  line-height: 7rem;
+}
+
+.Header .main-header .social .mail:hover,
+.Header .main-header .social .mail:hover a,
+.Header .main-header .social .social-icons i:hover,
+.Header .illustrations:hover,
+.Header .illustrations:hover a {
+  cursor: pointer;
+  color: gray;
+}
+
+.Header .main-header .social .mail a,
+.Header .main-header .social-icons a,
+.Header .illustrations a {
+  text-decoration: none;
+  color: rgb(153, 153, 153);
+  font-family: "Raleway", sans-serif;
+}
+
+.Header .main-header .social .social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 12.5rem;
+}
+
+.Header .main-header .pic {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 12.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* smartphone en portrait */
+@media screen and (max-width: 479px) {
+  .Header {
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .Header .main-header .name {
+    width: 20%;
+    height: auto;
+  }
+
+  .Header .main-header .pic {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4rem;
+  }
+
+  .Header .main-header .social,
+  .Header .illustrations {
+    font-size: 0.8rem;
+    min-width: 0;
+  }
+
+  .Header .illustrations {
+    line-height: 4rem;
+  }
+
+  .Header .main-header .social .social-icons {
+    width: 8.2rem;
+  }
+
+  .Header .main-header .social .mail {
+    line-height: 0;
+    margin: 1.5rem 0 1rem 0;
+  }
+  .Header .main-header .social .mail a {
+    margin-left: 0.9rem;
+  }
+}
+
+/* smartphone in landscape, tablet in portrait and small tablet in landscape */
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  .Header {
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+  }
+
+  .Header .main-header .name {
+    height: auto;
+  }
+
+  .Header .main-header .pic {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 7.5rem;
+  }
+
+  .Header .main-header .social {
+    font-size: 1.2rem;
+  }
+
+  .Header .main-header .social .social-icons {
+    width: 12.5rem;
+  }
+
+  .Header .main-header .social .mail {
+    line-height: 0;
+    margin: 2rem 0 1.5rem 0;
+  }
+  .Header .main-header .social .mail a {
+    margin-left: 1.3rem;
+  }
+}
+
+/*  tablet in landscape, small and medium laptop screen */
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+}
+
+/*  big laptop screen (21″ and + in full screen ) */
+@media screen and (min-width: 1281px) {
+}

@@ -1,0 +1,94 @@
+.LanguageSelector{
+    margin: 0 auto;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    margin-top: 4rem;
+}
+
+.LanguageSelector .language{
+      opacity: 0.5;
+}
+.LanguageSelector .language:hover{
+        cursor: pointer;
+}
+.LanguageSelector .active{
+      opacity: 1;
+      font-weight: 600;
+}
+.LanguageSelector ul{
+      margin: 0;
+      padding: 0;
+      text-align: right;
+}
+.LanguageSelector ul li{
+        list-style-type: none;
+        display: inline;
+}
+.LanguageSelector ul li:not(:first-child):before {
+    content: " | ";
+}
+.LanguageSelector ul li:last-child:after{
+    content: "\00a0\00a0";
+}
+
+
+@media screen and (max-width:768px) {
+    .LanguageSelector{
+        font-size: 1.1rem;
+        width: 90%;
+        height: 1rem;
+    }
+
+    .LanguageSelector ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .LanguageSelector ul li{
+        text-align: center;
+        height: 1.7rem;
+    }
+
+    .LanguageSelector ul li:not(:first-child):before {
+        content: "";
+    }
+    .LanguageSelector ul li:last-child:after{
+        content: "";
+    }
+    
+}
+
+/* smartphone in landscape, tablet in portrait and small tablet in landscape */
+@media screen and (min-width: 480px) and (max-width: 959px) {
+    .LanguageSelector{
+        font-size: 1.1rem;
+        height: 1rem;
+    }
+
+    .LanguageSelector ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .LanguageSelector ul li{
+        text-align: center;
+        height: 2rem;
+    }
+
+    .LanguageSelector ul li:not(:first-child):before {
+        content: "";
+    }
+    .LanguageSelector ul li:last-child:after{
+        content: "";
+    }
+}
+
+/*  tablet in landscape, small and medium laptop screen */
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+
+}
+
+/*  big laptop screen (21″ and + in full screen ) */
+@media screen and (min-width: 1281px) {
+
+}
