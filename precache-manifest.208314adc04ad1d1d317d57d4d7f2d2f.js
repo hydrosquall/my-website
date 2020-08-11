@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0725f13fe99fa161a14db90140015841",
+    "revision": "de5e945f851ef1a7964b37fffea68820",
     "url": "https://anediaz.github.io/my-website/index.html"
   },
   {
-    "revision": "856868da3873ccfd7603",
-    "url": "https://anediaz.github.io/my-website/static/css/main.20048ca3.chunk.css"
+    "revision": "e73e6f2fecf81e855efc",
+    "url": "https://anediaz.github.io/my-website/static/css/main.e85f85ab.chunk.css"
   },
   {
-    "revision": "4c7db9aafd501615e13f",
-    "url": "https://anediaz.github.io/my-website/static/js/2.753a8431.chunk.js"
+    "revision": "3156e65bbc6b412f8337",
+    "url": "https://anediaz.github.io/my-website/static/js/2.320d3a10.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "https://anediaz.github.io/my-website/static/js/2.753a8431.chunk.js.LICENSE.txt"
+    "url": "https://anediaz.github.io/my-website/static/js/2.320d3a10.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "856868da3873ccfd7603",
-    "url": "https://anediaz.github.io/my-website/static/js/main.d4ca0d79.chunk.js"
+    "revision": "e73e6f2fecf81e855efc",
+    "url": "https://anediaz.github.io/my-website/static/js/main.273b699a.chunk.js"
   },
   {
     "revision": "000a2ff45c8badf2c4c0",
