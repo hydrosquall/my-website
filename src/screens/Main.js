@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import VisibilitySensor from "react-visibility-sensor";
 import Menu from "../components/Menu";
-import Section from "../components/Section";
 import Header from "../components/Header";
+import About from "./About";
+import Skills from "./Skills";
+import Works from "./Works";
+import More from "./More";
 import jsonData from "../service/data.json";
 import "./Main.css";
 
@@ -14,30 +16,29 @@ const Main = () => {
   const [visibleSection, setVisibleSection] = useState(defaultSection);
   const data = jsonData[selectedLanguage];
 
-  const languageClickHandler = language => {
+  const languageClickHandler = (language) => {
     if (jsonData[language]) {
       setSelectedLanguage(language);
     }
-  }
+  };
 
-  const changeScroll = section => {
-     const selectedSection = document.getElementById(section);
-     if (selectedSection) {
-       if(data.menu.findIndex(item => item.id === section) === 0){
-          window.scrollTo(0, 0);
-       }
-       else {
+  const changeScroll = (section) => {
+    const selectedSection = document.getElementById(section);
+    if (selectedSection) {
+      if (data.menu.findIndex((item) => item.id === section) === 0) {
+        window.scrollTo(0, 0);
+      } else {
         selectedSection.scrollIntoView();
-       }
-     }
-  }
+      }
+    }
+  };
 
-  const selectSectionHandler = section => {
+  const selectSectionHandler = (section) => {
     if (section !== visibleSection) {
       setVisibleSection(section);
       changeScroll(section);
     }
-  }
+  };
 
   const onChangeVisibility = (isVisible, id) => {
     if (isVisible) {
@@ -45,18 +46,6 @@ const Main = () => {
     }
   };
 
-  const sections = data && data.sections && data.sections.map((item, index) => {
-    return (
-      <VisibilitySensor
-        scrollCheck={true}
-        partialVisibility={true}
-        onChange={(isVisible) => onChangeVisibility(isVisible, item.id)}
-        key={index}
-      >
-        <Section {...item} />
-      </VisibilitySensor>
-    );
-  });
   return (
     <div className="Main">
       {data && (
@@ -70,8 +59,23 @@ const Main = () => {
             selectItemHandler={selectSectionHandler}
           />
           <div className="page">
-            <Header {...data.header} id={defaultSection}/>
-            {sections}
+            <Header {...data.header} id={defaultSection} />
+            <About
+              data={data.sections[0]}
+              onChangeVisibility={onChangeVisibility}
+            />
+            <Skills
+              data={data.sections[1]}
+              onChangeVisibility={onChangeVisibility}
+            />
+            <Works
+              data={data.sections[2]}
+              onChangeVisibility={onChangeVisibility}
+            />
+            <More
+              data={data.sections[3]}
+              onChangeVisibility={onChangeVisibility}
+            />
           </div>
         </>
       )}

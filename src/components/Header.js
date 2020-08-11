@@ -84,8 +84,8 @@ const Header = ({
         <div className="name">
           <h2>{name}</h2>
           <div className="presentation">
-            {presentationSkills.map((skill) => (
-              <div>{`- ${skill} -`}</div>
+            {presentationSkills.map((skill, index) => (
+              <div key={index}>{skill}</div>
             ))}
           </div>
         </div>

@@ -24,31 +24,16 @@
         "text": "àpropos"
       },
       {
-        "id": "work",
-        "text": "travail"
+        "id": "skills",
+        "text": "compétences"
       },
       {
-        "id": "talks",
-        "text": "talks"
-      },
-      {
-        "id": "studies",
-        "text": "études"
+        "id": "works",
+        "text": "travaux"
       },
       {
         "id": "more",
         "text": "plus"
-      },
-      {
-        "id": "sketchnoting",
-        "text": "sketchnoting",
-        "imgClassName": "fa-paint-brush"
-      },
-      {
-        "id": "illustrations",
-        "text": "illustrations",
-        "imgClassName": "fa-eye",
-        "target": "_blank"
       }
     ],
     "header": {
@@ -90,171 +75,49 @@
     "sections": [
       {
         "id": "about",
+        "content": "Je suis une personne dynamique, curieuse et sociable. Je travaille en tant que développeuse depuis 2012. Je suis passionnée par mon travail qui me rend heureuse."
+      },
+      {
+        "id": "skills",
+        "title": "Compétences",
         "sectionItems": [
-          {
-            "content": "Je suis une personne dynamique, curieuse et sociable. Je travaille en tant que développeuse depuis 2012. Je suis passionnée par mon travail qui me rend heureuse.",
-            "contentClassName": "big"
-          }
+          "Avec plus de 10 ans d'expérience professionnelle dans le Développement Web. Je tiens à créer des applications qualitatives et intuitives qui répondent aux besoins des utilisateurs en utilisant des technologies les plus récentes.",
+          "Je suis convaincue des bénefices de la Facilitation Graphique. Je l'ai apprise et améliorée grâce à sa pratique depuis des années. Je le mets en place dans ma vie personnelle et professionnelle dès que j'ai l'occasion.",
+          "Je suis adepte aux conférences, notamment celles liées à l'informatique et au développement. Les échanges, la transmission des connaissances, l'atmosphère qui s'y crée ... me paraissent fabuleux. C'est pour tout cela que, quand j'ai la possibilité, j'y participe en tant qu'Oratrice."
         ]
       },
       {
-        "id": "work",
-        "title": "Travail",
+        "id": "works",
+        "title": "Travaux",
         "sectionItems": [
           {
-            "mainTitle": "Front End Developer chez Fieldbox.ai",
-            "subTitle": "Développement Web Front End",
-            "date": "mars 2020 - aujourd'hui",
-            "content": "Développement des applications web qui font partie de l'offre de l'entreprise.\nCollaboration avec les équipes Back End, DataScientists, UX.. afin de répondre au mieux aux besoins.",
-            "additionalContent": "JavaScript, CSS, HTML, notamment avec le framework ReactJS, Tests unitaires avec Jest, Méthodes Agiles, SCRUM, Facilitation Graphique"
+            "content": "Mes projets / sites web effectués"
           },
           {
-            "mainTitle": "Lead Front End Developer chez Chandago®",
-            "subTitle": "Développement Web Front End",
-            "date": "août 2019 - février 2020",
-            "content": "Accompagnement des équipes de Chandago® dans le développement technique de ses activités",
-            "additionalContent": "ReactJS, VueJs, NodeJS, Webpack, JS, HTML, CSS/SASS, REST API, npm, GIT, Architectures Microservices "
+            "content": "Mes travaux en tant que facilitatrice"
           },
           {
-            "mainTitle": "Component Owner chez Lectra",
-            "subTitle": "Garant des composants techniques et mutualisables Cloud",
-            "date": "octobre 2018 - août 2019",
-            "content": "Garant des composants techniques et mutualisables pour les différentes offres Cloud au sein de Lectra.\nTout en assurant leur bon fonctionnement et mise sur le marché. \nMon travail est très similaire à celui d'un Product Owner (d'un point de vue Agile), mais j'ai un rôle plutôt technique.",
-            "additionalContent": "Ce poste demande de l'aisance communicationnelle ainsi que des aptitudes pour travailler en collaboration avec des différents services : R&D, CX/UX, DSI ..."
-          },
-          {
-            "mainTitle": "Ingénieur d'Études chez Lectra",
-            "subTitle": "Développement Web et conception",
-            "date": "octobre 2015 - octobre 2018",
-            "content": "Développement Front-End des applications PLM (Product Lifecycle Management) du département R&D de Lectra. Utilisation de la méthode agile SCRUM.",
-            "additionalContent": "ReactJS, Redux, Webpack, JS, HTML, CSS/SASS, Jest, Jasmine/Karma, Selenium, Java, REST API, TDD, Mockito, Kotlin, npm, GIT, Architectures Microservices "
-          },
-          {
-            "mainTitle": "Mission à Pôle Emploi Multicanal",
-            "subTitle": "Développement Java J2EE et conception",
-            "date": "février 2013 - octobre 2015",
-            "content": "Développement des applications web du site de Pôle Emploi, en utilisant la méthode agile SCRUM. Je travaille avec la technique de développement TDD (Test Driven Development)",
-            "additionalContent": "SCRUM, Java/J2EE, Tapestry, Maven, Eclipse, Acropole, Jenkins, Weblogic, Sonar, Oracle"
-          },
-          {
-            "mainTitle": "Concepteur Développeur chez Sogeti",
-            "subTitle": "Réalisation d'un Système d'Information pour les Sapeurs-Pompiers de la Gironde (SDIS33)",
-            "date": "février 2012 - février 2013",
-            "content": "Développement et Réalisation des tests de fonctionnement d'une application destinée aux Sapeurs-Pompiers de la Gironde",
-            "additionalContent": "Java/J2EE (Hibernate, Spring, JSP), Tomcat, PostgreSQL, MAVEN, Continum, UML, Eclipse, Windows"
-          }
-        ]
-      },
-      {
-        "id": "talks",
-        "title": "Talks",
-        "type": "media",
-        "media": [
-          {
-            "title": "BDX/IO 2019",
-            "youtubeId": "Ig5_nm5fpEY",
-            "date": "2019/11/15"
-          },
-          {
-            "title": "DevFest Toulouse 2018",
-            "youtubeId": "NInM_wndk2U",
-            "date": "2018/11/08"
-          },
-          {
-            "title": "Devoxx France 2018",
-            "youtubeId": "sxyHF5pptgY",
-            "date": "2018/04/19"
-          },
-          {
-            "title": "Live Scribbing",
-            "youtubeId": "lFkDUWcKPyU",
-            "date": "2018/04/20"
-          },
-          {
-            "title": "Voxxed Days Luxembourg 2018",
-            "youtubeId": "dYAGTPDRcD4",
-            "date": "2018/06/22"
-          },
-          {
-            "title": "Jug Summer Camp 2017",
-            "youtubeId": "EGSwp_bC3kA",
-            "date": "2017/09/15"
-          }
-        ]
-      },
-      {
-        "id": "studies",
-        "title": "Études",
-        "sectionItems": [
-          {
-            "mainTitle": "Diplôme d’ingénieur",
-            "subTitle": "École Ingénieur ENSEIRB-MATMECA",
-            "date": "septembre 2012",
-            "content": "Filière Informatique, option Génie Logiciel",
-            "additionalContent": "Bordeaux, France"
-          },
-          {
-            "mainTitle": "Diplôme d’ingénieur",
-            "subTitle": "Mondragón Unibertsitatea",
-            "date": "septembre 2010",
-            "content": "Expertise Informatique",
-            "additionalContent": "Mondragón, Espagne"
-          },
-          {
-            "mainTitle": "Baccalauréat",
-            "subTitle": "Almen Ikastola - Arizmendi S.Coop.",
-            "date": "juin 2005",
-            "content": "Série scientifique-technique"
+            "content": "Les différentes conférences informatiques dans lasquelles j'ai participé en tant qu'oratrice"
           }
         ]
       },
       {
         "id": "more",
-        "title": "Langues",
+        "title": "Plus",
         "sectionItems": [
           {
-            "mainTitle": "Français",
-            "content": "Lu, écrit, parlé",
-            "additionalContent": "TFI 810"
+            "content": "Course à pied principalement, du vélo et de la randonnée"
           },
           {
-            "mainTitle": "Anglais",
-            "content": "Lu, écrit, parlé",
-            "additionalContent": "IELTS 6.5 - TOEIC 895"
-          },
-          {
-            "mainTitle": "Espagnol",
-            "content": "Maternelle"
-          },
-          {
-            "mainTitle": "Basque",
-            "content": "Maternelle",
-            "additionalContent": "EGA"
-          }
-        ]
-      },
-      {
-        "id": "more",
-        "title": "Hobbies",
-        "sectionItems": [
-          {
-            "mainTitle": "Pratique sportive",
-            "content": "Course à pied principalement, du vélo et de la randonnée",
-            "additionalContent": "Marathon de Paris 2018, Marathon de Saint-Sébastien 2017, Sémi marathon de Bordeaux en 2015, 2016 et 2017"
-          },
-          {
-            "mainTitle": "Dessiner",
             "content": "Dessins au crayon, feutres, de la peinture à l'huile et du sketchnoting"
           },
           {
-            "mainTitle": "Voyager",
             "content": "Découvrir des nouveaux endroits, cultures, langues, coûtumes ..."
           }
         ]
       },
       {
-        "id": "sketchnoting",
-        "title": "Sketchnoting",
+        "id": "more",
         "type": "images",
         "media": [
           {
@@ -298,31 +161,16 @@
         "text": "about"
       },
       {
-        "id": "work",
-        "text": "work"
+        "id": "skills",
+        "text": "skills"
       },
       {
-        "id": "talks",
-        "text": "talks"
-      },
-      {
-        "id": "studies",
-        "text": "education"
+        "id": "works",
+        "text": "works"
       },
       {
         "id": "more",
         "text": "more"
-      },
-      {
-        "id": "sketchnoting",
-        "text": "sketchnoting",
-        "imgClassName": "fa-paint-brush"
-      },
-      {
-        "id": "illustrations",
-        "text": "illustrations",
-        "imgClassName": "fa-eye",
-        "target": "_blank"
       }
     ],
     "header": {
@@ -360,146 +208,29 @@
     "sections": [
       {
         "id": "about",
+        "content": "I am a dynamic, curious and sociable person. I work as a developer since 2012. I am passionated by my work, which makes me happy."
+      },
+      {
+        "id": "skills",
+        "title": "Skills",
         "sectionItems": [
-          {
-            "content": "I am a dynamic, curious and sociable person. I work as a developer since 2012. I am passionated by my work, which makes me happy.",
-            "contentClassName": "big"
-          }
+          "With more than 10 years of professional experience in Web Development. My aim is to create qualitative and intuitif applications which respond to users' needs by using the most recent technologies.",
+          "I'm convinced of Graphic Facilitation's benefits. I've learnt and improved it by using it since some years. I use it in my personal and professional life each time I have the opportunity to.",
+          "I'm a conference enthusiast, specially conferences related with computing and development. I find the interactions, the knowledge transmissions, the atmosphere ... absolutely "
         ]
       },
       {
-        "id": "work",
-        "title": "Work",
+        "id": "works",
+        "title": "Works",
         "sectionItems": [
           {
-            "mainTitle": "Front End Developer - Fieldbox.ai",
-            "subTitle": "Web Front End Development",
-            "date": "march 2020 - present",
-            "content": "Development of web applications that are part of the corporation's offer.\nCollaboration with Back End, DataScientists, UX, ... teams in order to better respond to the needs.",
-            "additionalContent": "JavaScript, CSS, HTML, in particular with ReactJS framework, Unit tests with Jest, Agile Methods, SCRUM, Visual Facilitation"
+            "content": "Projects / Websites I've created "
           },
           {
-            "mainTitle": "Lead Front End Developer - Chandago®",
-            "subTitle": "Web Front End Development",
-            "date": "august 2019 - february 2020",
-            "content": "Support of Chandago®'s teams on technical development",
-            "additionalContent": "ReactJS, VueJs, NodeJS, Webpack, JS, HTML, CSS/SASS, REST API, npm, GIT, Microservices Architectures"
+            "content": "My work as Graphic Facilitator"
           },
           {
-            "mainTitle": "Component Owner - Lectra corporation",
-            "subTitle": "Owner of technical and shareable Cloud components",
-            "date": "october 2018 - august 2019",
-            "content": "Owner of technical and shareable Cloud components for the different Cloud offers within Lectra.\nWhile ensuring their effective functioning and placing on the market. \nMy work is very similar to a Product Owner's (from an Agile point of view), but I have a quite technical function.",
-            "additionalContent": "This position requires ease with communications as well as aptitudes for working in collaboration with different departments: R&D, CX/UX, ISD ..."
-          },
-          {
-            "mainTitle": "Research Engineer - Lectra corporation",
-            "subTitle": "Web Development and report design",
-            "date": "october 2015 - october 2018",
-            "content": "Front-End Development of Lectra's R&D deparment's PLM applications (Product Lifecycle Management). Use of the SCRUM agile methodology.",
-            "additionalContent": "ReactJS, Redux, Webpack, JS, HTML, CSS/SASS, Jest, Jasmine/Karma, Selenium, Java, REST API, TDD, Mockito, Kotlin, npm, GIT, Microservices Architectures"
-          },
-          {
-            "mainTitle": "French employment organisation’s I. T. Department (Pôle Emploi)",
-            "subTitle": "Java J2EE Development and report design",
-            "date": "february 2013 - october 2015",
-            "content": "Development of the Pôle Emploi's website's applications, using the SCRUM agile methodology and the TDD development technique (Test Driven Development)",
-            "additionalContent": "SCRUM, Java/J2EE, Tapestry, Maven, Eclipse, Acropole, Jenkins, Weblogic, Sonar, Oracle"
-          },
-          {
-            "mainTitle": "Developer and report designer - Sogeti corporation",
-            "subTitle": "Accomplishment of an Information System for the firefighters of the department Gironde (SDIS33)",
-            "date": "february 2012 - february 2013",
-            "content": "Development and functioning tests' making of an application destined for the firefighters of Gironde",
-            "additionalContent": "Java/J2EE (Hibernate, Spring, JSP), Tomcat, PostgreSQL, MAVEN, Continum, UML, Eclipse, Windows"
-          }
-        ]
-      },
-      {
-        "id": "talks",
-        "title": "Talks",
-        "type": "media",
-        "media": [
-          {
-            "title": "BDX/IO 2019",
-            "youtubeId": "Ig5_nm5fpEY",
-            "date": "2019/11/15"
-          },
-          {
-            "title": "DevFest Toulouse 2018",
-            "youtubeId": "NInM_wndk2U",
-            "date": "2018/11/08"
-          },
-          {
-            "title": "Devoxx France 2018",
-            "youtubeId": "sxyHF5pptgY",
-            "date": "2018/04/19"
-          },
-          {
-            "title": "Live Scribbing",
-            "youtubeId": "lFkDUWcKPyU",
-            "date": "2018/04/20"
-          },
-          {
-            "title": "Voxxed Days Luxembourg 2018",
-            "youtubeId": "dYAGTPDRcD4",
-            "date": "2018/06/22"
-          },
-          {
-            "title": "Jug Summer Camp 2017",
-            "youtubeId": "EGSwp_bC3kA",
-            "date": "2017/09/15"
-          }
-        ]
-      },
-      {
-        "id": "studies",
-        "title": "Education",
-        "sectionItems": [
-          {
-            "mainTitle": "Engineer Diploma (Master degree level)",
-            "subTitle": "ENSEIRB-MATMECA Engineering School",
-            "date": "september 2012",
-            "content": "Computing Science branch",
-            "additionalContent": "Bordeaux, France"
-          },
-          {
-            "mainTitle": "Engineer Diploma (Fourth-year university level)",
-            "subTitle": "University of Mondragón",
-            "date": "september 2010",
-            "content": "Computing Science branch",
-            "additionalContent": "Mondragon, Espagne"
-          },
-          {
-            "mainTitle": "High school graduate",
-            "subTitle": "Almen Ikastola - Arizmendi S.Coop.",
-            "date": "june 2005",
-            "content": "Scientific-technology baccalaureate"
-          }
-        ]
-      },
-      {
-        "id": "more",
-        "title": "Languages",
-        "sectionItems": [
-          {
-            "mainTitle": "English",
-            "content": "Fluent in speech, writing and reading",
-            "additionalContent": "IELTS 6.5 - TOEIC 895"
-          },
-          {
-            "mainTitle": "French",
-            "content": "Bilingual in speech, writing and reading",
-            "additionalContent": "TFI 810"
-          },
-          {
-            "mainTitle": "Spanish",
-            "content": "Mother tongue"
-          },
-          {
-            "mainTitle": "Basque",
-            "content": "Mother tongue",
-            "additionalContent": "EGA"
+            "content": "The conferences where I've participated as speaker"
           }
         ]
       },
@@ -508,22 +239,18 @@
         "title": "Hobbies",
         "sectionItems": [
           {
-            "mainTitle": "Sports practice",
-            "content": "Mainly running, cycling and hiking",
-            "additionalContent": "Paris International Marathon 2018, San Sebastián Marathon 2017, Bordeaux Half Marathon in 2015, 2016 et 2017"
+            "content": "Mainly running, cycling and hiking"
           },
           {
-            "mainTitle": "Drawing",
             "content": "Drawing with pencils, pens, oil painting and sketchnoting"
           },
           {
-            "mainTitle": "Travelling",
             "content": "Discovering new places, cultures, languages, habits ..."
           }
         ]
       },
       {
-        "id": "sketchnoting",
+        "id": "more",
         "title": "Sketchnoting",
         "type": "images",
         "media": [
@@ -568,31 +295,16 @@
         "text": "sobre mí"
       },
       {
-        "id": "work",
-        "text": "experiencia"
+        "id": "skills",
+        "text": "competencias"
       },
       {
-        "id": "talks",
-        "text": "charlas"
-      },
-      {
-        "id": "studies",
-        "text": "estudios"
+        "id": "works",
+        "text": "trabajos"
       },
       {
         "id": "more",
         "text": "más"
-      },
-      {
-        "id": "sketchnoting",
-        "text": "sketchnoting",
-        "imgClassName": "fa-paint-brush"
-      },
-      {
-        "id": "illustrations",
-        "text": "illustrations",
-        "imgClassName": "fa-eye",
-        "target": "_blank"
       }
     ],
     "header": {
@@ -634,164 +346,43 @@
     "sections": [
       {
         "id": "about",
+        "content": "Soy una persona dinámica, curiosa y sociable. Trabajo como programadora desde 2012. Mi trabajo mi pasiona y me hace feliz."
+      },
+      {
+        "id": "skills",
+        "title": "Competencias",
         "sectionItems": [
-          {
-            "content": "Soy una persona dinámica, curiosa y sociable. Trabajo como programadora desde 2012. Mi trabajo mi pasiona y me hace feliz.",
-            "contentClassName": "big"
-          }
+          "Desarrollo de las aplicaciones web que forman parte del producto de la empresa.\nColaboración con los equipos Back End, DataScientists, UX ... con el propósito de reponder lo mejor posible a las distintas necesidades.",
+          "Acompañamiento de los equipos de Chandago® en el desarrollo técnico y de sus actividades",
+          "Garante de los componentes técnicos y mutualizables para las diferentes ofertas Cloud de Lectra.\nGarantizar su buen funcionamiento y comercialización. \nMi trabajo es muy similar al de un Product Owner (desde un punto de vista A Ágil), pero mi función es mas bien técnica."
         ]
       },
       {
-        "id": "work",
-        "title": "Experiencia",
+        "id": "works",
+        "title": "Trabajos",
         "sectionItems": [
           {
-            "mainTitle": "Desarrolladora Front End en la empresa Fieldbox.ai",
-            "subTitle": "Desarrollo Web Front End",
-            "date": "marzo 2020 - hoy",
-            "content": "Desarrollo de las aplicaciones web que forman parte del producto de la empresa.\nColaboración con los equipos Back End, DataScientists, UX ... con el propósito de reponder lo mejor posible a las distintas necesidades.",
-            "additionalContent": "JavaScript, CSS, HTML, en particular con el framework ReactJS, Tests Unitarios con Jest, Métodos Ágiles, SCRUM, Facilitación Gráfica"
+            "content": "Projects / Websites I've created "
           },
           {
-            "mainTitle": "Desarrolladora Líder Front End en la empresa Chandago®",
-            "subTitle": "Desarrollo Web Front End",
-            "date": "agosto 2019 - febrero 2020",
-            "content": "Acompañamiento de los equipos de Chandago® en el desarrollo técnico y de sus actividades",
-            "additionalContent": "ReactJS, VueJs, NodeJS, Webpack, JS, HTML, CSS/SASS, REST API, npm, GIT, Architectures Microservices "
+            "content": "My work as Graphic Facilitator"
           },
           {
-            "mainTitle": "Component Owner en la empresa Lectra",
-            "subTitle": "Garante de los componentes técnicos y mutualizables Cloud",
-            "date": "octubre 2018 - agosto 2019",
-            "content": "Garante de los componentes técnicos y mutualizables para las diferentes ofertas Cloud de Lectra.\nGarantizar su buen funcionamiento y comercialización. \nMi trabajo es muy similar al de un Product Owner (desde un punto de vista A Ágil), pero mi función es mas bien técnica.",
-            "additionalContent": "Este puesto requiere mucha desenvoltura para la comunicación así como capacidades para trabajar en colaboración con diferentes departamentos: I+D, CX/UX, DSI (Departamento de Servicios Informáticos) ..."
-          },
-          {
-            "mainTitle": "Ingeniero de Estudios en la empresa Lectra",
-            "subTitle": "Desarrollo Web y Concepción",
-            "date": "octubre 2015 - octubre 2018",
-            "content": "Desarrollo Front-End de aplicaciones PLM (Product Lifecycle Management) del departamento I+D de Lectra. Uso del método ágil SCRUM.",
-            "additionalContent": "ReactJS, Redux, Webpack, JS, HTML, CSS/SASS, Jest, Jasmine/Karma, Selenium, Java, REST API, TDD, Mockito, Kotlin, npm, GIT, Architecturas de Microservicios"
-          },
-          {
-            "mainTitle": "Departamento de Servicios Informáticos de la oficina de empleo de Francia (Pôle Emploi)",
-            "subTitle": "Desarrollo en Java J2EE y Concepción",
-            "date": "febrero 2013 - octubre 2015",
-            "content": "Desarrollo de aplicaciones de la página web de Pôle Emploi, utilizando el método ágil SCRUM y la técnica de desarrollo TDD (Test Driven Development)",
-            "additionalContent": "SCRUM, Java/J2EE, Tapestry, Maven, Eclipse, Acropole, Jenkins, Weblogic, Sonar, Oracle"
-          },
-          {
-            "mainTitle": "Desarrolladora Diseñadora en la empresa Sogeti",
-            "subTitle": "Realización de un Sistema de Información para los bomberos del departamento de la Gironde (SDIS33)",
-            "date": "febrero 2012 - febrero 2013",
-            "content": "Desarrollo y realización de tests de funcionamiento de una aplicación destinada a los bomberos de la Gironde",
-            "additionalContent": "Java/J2EE (Hibernate, Spring, JSP), Tomcat, PostgreSQL, MAVEN, Continum, UML, Eclipse, Windows"
-          }
-        ]
-      },
-      {
-        "id": "talks",
-        "title": "Charlas",
-        "type": "media",
-        "media": [
-          {
-            "title": "BDX/IO 2019",
-            "youtubeId": "Ig5_nm5fpEY",
-            "date": "2019/11/15"
-          },
-          {
-            "title": "DevFest Toulouse 2018",
-            "youtubeId": "NInM_wndk2U",
-            "date": "2018/11/08"
-          },
-          {
-            "title": "Devoxx France 2018",
-            "youtubeId": "sxyHF5pptgY",
-            "date": "2018/04/19"
-          },
-          {
-            "title": "Live Scribbing",
-            "youtubeId": "lFkDUWcKPyU",
-            "date": "2018/04/20"
-          },
-          {
-            "title": "Voxxed Days Luxembourg 2018",
-            "youtubeId": "dYAGTPDRcD4",
-            "date": "2018/06/22"
-          },
-          {
-            "title": "Jug Summer Camp 2017",
-            "youtubeId": "EGSwp_bC3kA",
-            "date": "2017/09/15"
-          }
-        ]
-      },
-      {
-        "id": "studies",
-        "title": "Estudios",
-        "sectionItems": [
-          {
-            "mainTitle": "Diplomatura de Ingeniería",
-            "subTitle": "Escuela de Ingenieros ENSEIRB-MATMECA",
-            "date": "septiembre 2012",
-            "content": "Rama de Informática, especialidad en Ingeniería del Software",
-            "additionalContent": "Burdeos, Francia"
-          },
-          {
-            "mainTitle": "Licenciatura de Ingeniería",
-            "subTitle": "Universidad de Mondragón",
-            "date": "septiembre 2010",
-            "content": "Especialidad en Informatáica de Sistemas",
-            "additionalContent": "Mondragón, España"
-          },
-          {
-            "mainTitle": "Bachillerato",
-            "subTitle": "Almen Ikastola - Arizmendi S.Coop.",
-            "date": "junio 2005",
-            "content": "Bachiller Científico-Técnico"
+            "content": "The conferences where I've participated as speaker"
           }
         ]
       },
       {
         "id": "more",
-        "title": "Idiomas",
+        "title": "Más",
         "sectionItems": [
           {
-            "mainTitle": "Español",
-            "content": "Materno"
+            "content": "Principalmente correr, ciclismo y senderismo"
           },
           {
-            "mainTitle": "Inglés",
-            "content": "Nivel alto leído, escrito y hablado",
-            "additionalContent": "IELTS 6.5 - TOEIC 895"
-          },
-          {
-            "mainTitle": "Francés",
-            "content": "Nivel bilingüe leído, escrito y hablado",
-            "additionalContent": "TFI 810"
-          },
-          {
-            "mainTitle": "Vasco",
-            "content": "Materno",
-            "additionalContent": "EGA"
-          }
-        ]
-      },
-      {
-        "id": "more",
-        "title": "Hobbies",
-        "sectionItems": [
-          {
-            "mainTitle": "Deportes",
-            "content": "Principalmente correr, ciclismo y senderismo",
-            "additionalContent": "Maratón de Paris 2018, Maratón de San Sebastián 2017, Media Maratón de Burdeos en 2015, 2016 et 2017"
-          },
-          {
-            "mainTitle": "Dibujar",
             "content": "Dibujos con lápices, rotuladores, pintura al óleo y sketchnoting"
           },
           {
-            "mainTitle": "Viajar",
             "content": "Descubrir nuevos lugares, culturas, lenguas, costumbres ..."
           }
         ]
@@ -842,31 +433,16 @@
         "text": "niri buruz"
       },
       {
-        "id": "work",
-        "text": "lana"
+        "id": "skills",
+        "text": "Ezagutzak"
       },
       {
-        "id": "talks",
-        "text": "hitzaldiak"
-      },
-      {
-        "id": "studies",
-        "text": "ikasketak"
+        "id": "works",
+        "text": "lanak"
       },
       {
         "id": "more",
         "text": "gehiago"
-      },
-      {
-        "id": "sketchnoting",
-        "text": "sketchnoting",
-        "imgClassName": "fa-paint-brush"
-      },
-      {
-        "id": "illustrations",
-        "text": "illustrations",
-        "imgClassName": "fa-eye",
-        "target": "_blank"
       }
     ],
     "header": {
@@ -908,170 +484,49 @@
     "sections": [
       {
         "id": "about",
+        "content": "Pertsona dinamikoa, jakinguratsua eta lagunartekoa naiz. Programatzaile lanbidea daukat 2012tik. Nire lanaren zale naiz eta honek zoriontsu egiten nau."
+      },
+      {
+        "id": "skills",
+        "title": "Ezagutzak",
         "sectionItems": [
-          {
-            "content": "Pertsona dinamikoa, jakinguratsua eta lagunartekoa naiz. Programatzaile lanbidea daukat 2012tik. Nire lanaren zale naiz eta honek zoriontsu egiten nau.",
-            "contentClassName": "big"
-          }
+          "Enpresaren produktuaren parte diren web aplikazioen garapena.\nBack End, DataScientists, UX... taldeekin elkarlana, behar ezberdinei hobeto erantzuteko helburuarekin.",
+          "Chandago®-ko taldeak gidatu beren garapen teknikoan",
+          "Lectrako eskaintza ezberdinen osagai tekniko eta amankomunen arduraduna.\nBerauen funtzionamentu eta komertzializazio egokia bermatzea. \nNire lana Product Owner-aren oso antzerakoa da (Agil ikuspuntutik), baina nire funtzioa aldiz teknikoa da."
         ]
       },
       {
-        "id": "work",
-        "title": "Lana",
+        "id": "works",
+        "title": "Lanak",
         "sectionItems": [
           {
-            "mainTitle": "Front End Programatzailea Fieldbox.ai enpresan",
-            "subTitle": "Web Front End garapena",
-            "date": "2020 martxoa - gaur egun",
-            "content": "Enpresaren produktuaren parte diren web aplikazioen garapena.\nBack End, DataScientists, UX... taldeekin elkarlana, behar ezberdinei hobeto erantzuteko helburuarekin.",
-            "additionalContent": "JavaScript, CSS, HTML, ReactJS framework-arekin bereziki, Test Unitarioak Jest-ekin, Agile Metodologiak, SCRUM, Errazte Grafikoa"
+            "content": "Projects / Websites I've created "
           },
           {
-            "mainTitle": "Front End Programatzaile Burua Chandago® enpresan",
-            "subTitle": "Web Front End garapena",
-            "date": "2019 abuztua - 2020 otsaila",
-            "content": "Chandago®-ko taldeak gidatu beren garapen teknikoan",
-            "additionalContent": "ReactJS, VueJs, NodeJS, Webpack, JS, HTML, CSS/SASS, REST API, npm, GIT, Mikrozerbitzu Arkitekturak"
+            "content": "My work as Graphic Facilitator"
           },
           {
-            "mainTitle": "Component Owner Lectra enpresan",
-            "subTitle": "Cloud osagai tekniko eta amankomunen arduraduna",
-            "date": "2018 urria - 2019 abuztua",
-            "content": "Lectrako eskaintza ezberdinen osagai tekniko eta amankomunen arduraduna.\nBerauen funtzionamentu eta komertzializazio egokia bermatzea. \nNire lana Product Owner-aren oso antzerakoa da (Agil ikuspuntutik), baina nire funtzioa aldiz teknikoa da.",
-            "additionalContent": "Lanpostu honek komunikaziorako aisetasuna eskatzen du eta baita departamentu ezberdinekin kolaborazioan lan egiteko gaitasunak ere: I+G, CX/UX, Zerbitzu Informatikoen Departamentua ..."
-          },
-          {
-            "mainTitle": "Ingeniaria Lectra enpresan",
-            "subTitle": "Web garapena eta diseinua",
-            "date": "2015 urria - 2018 urria",
-            "content": "Lectrako I+G departamentuko PLM aplikazioen garapena (Product Lifecycle Management), SCRUM metodologia erabiliaz.",
-            "additionalContent": "ReactJS, Redux, Webpack, JS, HTML, CSS/SASS, Jest, Jasmine/Karma, Selenium, Java, REST API, TDD, Mockito, Kotlin, npm, GIT, Mikrozerbitzu Arkitekturak"
-          },
-          {
-            "mainTitle": "Frantziako enplegu-bulegoko Zerbitzu Informatikoen Departamentua (Pôle Emploi)",
-            "subTitle": "Java J2EE-n garapena eta diseinua",
-            "date": "2013 otsaila - 2015 urria",
-            "content": "Pôle Emploi-ko webguneko aplikazioen garapena, SCRUM metodologia eta TDD (Test Driven Development) izeneko teknologia erabiliaz",
-            "additionalContent": "SCRUM, Java/J2EE, Tapestry, Maven, Eclipse, Acropole, Jenkins, Weblogic, Sonar, Oracle"
-          },
-          {
-            "mainTitle": "Programatzailea eta diseinatzailea Sogeti enpresan",
-            "subTitle": "Gironde departamentuko Suhiltzaileentzako Informazio Sistema baten burutzea (SDIS33)",
-            "date": "2012 otsaila - 2013 otsaila",
-            "content": "Girondeko Suhiltzaileen aplikazio baten garapena eta funtzionamendu test-en gauzatzea",
-            "additionalContent": "Java/J2EE (Hibernate, Spring, JSP), Tomcat, PostgreSQL, MAVEN, Continum, UML, Eclipse, Windows"
-          }
-        ]
-      },
-      {
-        "id": "talks",
-        "title": "Hitzaldiak",
-        "type": "media",
-        "media": [
-          {
-            "title": "BDX/IO 2019",
-            "youtubeId": "Ig5_nm5fpEY",
-            "date": "2019/11/15"
-          },
-          {
-            "title": "DevFest Toulouse 2018",
-            "youtubeId": "NInM_wndk2U",
-            "date": "2018/11/08"
-          },
-          {
-            "title": "Devoxx France 2018",
-            "youtubeId": "sxyHF5pptgY",
-            "date": "2018/04/19"
-          },
-          {
-            "title": "Live Scribbing",
-            "youtubeId": "lFkDUWcKPyU",
-            "date": "2018/04/20"
-          },
-          {
-            "title": "Voxxed Days Luxembourg 2018",
-            "youtubeId": "dYAGTPDRcD4",
-            "date": "2018/06/22"
-          },
-          {
-            "title": "Jug Summer Camp 2017",
-            "youtubeId": "EGSwp_bC3kA",
-            "date": "2017/09/15"
-          }
-        ]
-      },
-      {
-        "id": "studies",
-        "title": "Ikasketak",
-        "sectionItems": [
-          {
-            "mainTitle": "Ingeniari Diploma",
-            "subTitle": "ENSEIRB-MATMECA Ingeniari Eskola",
-            "date": "2012 iraila",
-            "content": "Informatika adarra, Software Ingeniaritza espezialitatea",
-            "additionalContent": "Bordele, Frantzia"
-          },
-          {
-            "mainTitle": "Ingeniari Lizentziatura",
-            "subTitle": "Mondragón Unibertsitatea",
-            "date": "2010 uztaila",
-            "content": "Sistemen Informatika espezialitatea",
-            "additionalContent": "Arrasate"
-          },
-          {
-            "mainTitle": "Batxilergoa",
-            "subTitle": "Almen Ikastola - Arizmendi S.Coop.",
-            "date": "2005 ekaina",
-            "content": "Batxilergo zientifiko-teknikoa"
+            "content": "The conferences where I've participated as speaker"
           }
         ]
       },
       {
         "id": "more",
-        "title": "Hizkuntzak",
+        "title": "Gehiago",
         "sectionItems": [
           {
-            "mainTitle": "Euskara",
-            "content": "Ama hizkuntza",
-            "additionalContent": "EGA"
+            "content": "Nagusiki korrika egitea, bizikletan ibiltzea eta mendi irteerak egitea"
           },
           {
-            "mainTitle": "Ingelesa",
-            "content": "Maila altua: irakurmena, mintzamena eta idazmena",
-            "additionalContent": "IELTS 6.5 - TOEIC 895"
-          },
-          {
-            "mainTitle": "Frantsesa",
-            "content": "Elebiduna",
-            "additionalContent": "TFI 810"
-          },
-          {
-            "mainTitle": "Gaztelania",
-            "content": "Ama hizkuntza"
-          }
-        ]
-      },
-      {
-        "id": "more",
-        "title": "Zaletasunak",
-        "sectionItems": [
-          {
-            "mainTitle": "Kirolak",
-            "content": "Nagusiki korrika egitea, bizikletan ibiltzea eta mendi irteerak egitea",
-            "additionalContent": "Parisko Maratoia 2018, Donostiako Maratoia 2017, Bordeleko Maratoi Erdia 2015, 2016 et 2017an"
-          },
-          {
-            "mainTitle": "Marraztea",
             "content": "Arkatzez eta errotulatzailez egindako marrazkiak, olio pinturak eta sketchnoting-a"
           },
           {
-            "mainTitle": "Bidaiatzea",
             "content": "Leku, kultura, hizkuntza, ohitura ... berriak ezagutzea"
           }
         ]
       },
       {
-        "id": "sketchnoting",
+        "id": "more",
         "title": "Sketchnoting",
         "type": "images",
         "media": [
