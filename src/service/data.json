@@ -82,8 +82,8 @@
         "title": "Compétences",
         "sectionItems": [
           "Avec plus de 10 ans d'expérience professionnelle dans le Développement Web. Je tiens à créer des applications qualitatives et intuitives qui répondent aux besoins des utilisateurs en utilisant des technologies les plus récentes.",
-          "Je suis convaincue des bénefices de la Facilitation Graphique. Je l'ai apprise et améliorée grâce à sa pratique depuis des années. Je le mets en place dans ma vie personnelle et professionnelle dès que j'ai l'occasion.",
-          "Je suis adepte aux conférences, notamment celles liées à l'informatique et au développement. Les échanges, la transmission des connaissances, l'atmosphère qui s'y crée ... me paraissent fabuleux. C'est pour tout cela que, quand j'ai la possibilité, j'y participe en tant qu'Oratrice."
+          "Je suis convaincue des bénéfices de la Facilitation Graphique. Depuis que je l'ai découverte il y quelques années, je n'arrête pas d'en apprendre et de l'améliorer. Je la mets en place dans ma vie personnelle et professionnelle dès que j'ai l'occasion.",
+          "Je suis adepte aux conférences, notamment celles liées à l'informatique et au développement. Les échanges, la transmission des connaissances, l'atmosphère... me paraissent fabuleux. C'est pour tout cela que, quand j'ai la possibilité, j'y participe en tant qu'Oratrice."
         ]
       },
       {
@@ -91,10 +91,10 @@
         "title": "Travaux",
         "sectionItems": [
           {
-            "content": "Mes projets / sites web effectués"
+            "content": "Mes projets et sites web effectués"
           },
           {
-            "content": "Mes travaux en tant que facilitatrice"
+            "content": "Dernier travail de facilitation graphique effectué pour Microsoft"
           },
           {
             "content": "Les différentes conférences informatiques dans lasquelles j'ai participé en tant qu'oratrice"
@@ -215,8 +215,8 @@
         "title": "Skills",
         "sectionItems": [
           "With more than 10 years of professional experience in Web Development. My aim is to create qualitative and intuitif applications which respond to users' needs by using the most recent technologies.",
-          "I'm convinced of Graphic Facilitation's benefits. I've learnt and improved it by using it since some years. I use it in my personal and professional life each time I have the opportunity to.",
-          "I'm a conference enthusiast, specially conferences related with computing and development. I find the interactions, the knowledge transmissions, the atmosphere ... absolutely "
+          "I'm convinced of Graphic Facilitation's benefits. Since I discovered it some years ago,  I keep learning and improving it. I use it in my personal and professional life each time I have the opportunity to.",
+          "I'm a conference enthusiast, specially conferences related with computing and development. I find the interactions, the knowledge transmissions, the atmosphere ... absolutely fabulus. This is why I participate as Speaker when I have the possibility."
         ]
       },
       {
@@ -352,9 +352,9 @@
         "id": "skills",
         "title": "Competencias",
         "sectionItems": [
-          "Desarrollo de las aplicaciones web que forman parte del producto de la empresa.\nColaboración con los equipos Back End, DataScientists, UX ... con el propósito de reponder lo mejor posible a las distintas necesidades.",
-          "Acompañamiento de los equipos de Chandago® en el desarrollo técnico y de sus actividades",
-          "Garante de los componentes técnicos y mutualizables para las diferentes ofertas Cloud de Lectra.\nGarantizar su buen funcionamiento y comercialización. \nMi trabajo es muy similar al de un Product Owner (desde un punto de vista A Ágil), pero mi función es mas bien técnica."
+          "Con más de 10 años de esperiencia en el Desarrollo Web. Doy importancia a crear aplicaciones cualitativas e intuitivas que respondan a las necesidades de los usuarios, con las tecnologías más recientes",
+          "Estoy convencida de los beneficios de la Facilitación Gráfica. Desde que la descubrí hace algunos años, no dejo de aprender y de mejorar. Lo utilizo en mi vida personal y profesional siempre que tengo la oportunidad.",
+          "Soy adepta a las conferencias, sobre todo las que tratan sobre informática y el desarrollo. Las interacciones, la transmisión de conocimientos, el ambiente... me parecen fabulosos. Es por todo esto que, cuando tengo la posibilidad, participo como Oradora."
         ]
       },
       {
@@ -490,9 +490,9 @@
         "id": "skills",
         "title": "Ezagutzak",
         "sectionItems": [
-          "Enpresaren produktuaren parte diren web aplikazioen garapena.\nBack End, DataScientists, UX... taldeekin elkarlana, behar ezberdinei hobeto erantzuteko helburuarekin.",
-          "Chandago®-ko taldeak gidatu beren garapen teknikoan",
-          "Lectrako eskaintza ezberdinen osagai tekniko eta amankomunen arduraduna.\nBerauen funtzionamentu eta komertzializazio egokia bermatzea. \nNire lana Product Owner-aren oso antzerakoa da (Agil ikuspuntutik), baina nire funtzioa aldiz teknikoa da."
+          "Web Garapenean 10 urte baino gehiagoko esperientzia dut. Garrantzi handia ematen diot erabiltzaileen beharrei erantzuten dieten aplikazio kualitatibo eta intuitiboak sortzeari, teknologia berrienak erabiliaz.",
+          "Errazte Grafikoak dituen onurez konbentzituta nago. Orain dela urte batzuk teknika hau ezagutu nuenetik, ez diot ikasteari eta hobetzeari uzten. Aukera dudan oro, nire bizitza pertsonalean eta profesionalean erabiltzen dut.",
+          "Konferentziak gustuko ditut, batez ere informatika eta garapenari buruzkoak. Interakzioak, ezagutzen zabalpena, giroa... sekulakoak dirudizkit. Guzti honegatik, aukera dudan bakoitzean, konferentzietan Hizlari gisa parte hartzen dut."
         ]
       },
       {
