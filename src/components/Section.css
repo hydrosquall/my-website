@@ -1,6 +1,7 @@
 .Section {
   margin-top: 3rem;
   text-align: left;
+  padding: 0 12rem 0 9rem;
 }
 
 .Section .title {
@@ -35,7 +36,9 @@
   font-family: "Raleway", sans-serif;
   text-align: left;
   color: rgb(153, 153, 153);
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  font-weight: 300;
 }
 .Section .content .item {
   margin-bottom: 5rem;

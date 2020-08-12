@@ -4,25 +4,13 @@
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   height: 100%;
-  width: 15%;
+  width: 18%;
   background-color: #ececeb;
   position: fixed;
-  align-items: center;
-}
-
-.Menu .LanguageSelector:after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 50px;
-  background-color: #ccc;
-  position: absolute;
-  right: 3rem;
-  top: 5rem;
 }
 
 .Menu .LanguageSelector {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   margin-right: 3rem;
   margin-left: 3rem;
 }
