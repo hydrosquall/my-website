@@ -2,6 +2,8 @@ import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import Section from "../components/Section";
 
+import "./About.css";
+
 const About = ({ data, onChangeVisibility }) => {
   return (
     <VisibilitySensor
@@ -11,7 +13,7 @@ const About = ({ data, onChangeVisibility }) => {
     >
       <Section title={data.title} id={data.id} className="About">
         <div className="item">
-          <div className="item-content">{data.content}</div>
+          <p>{data.content}</p>
         </div>
       </Section>
     </VisibilitySensor>
