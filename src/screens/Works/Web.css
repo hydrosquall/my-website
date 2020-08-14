@@ -1,0 +1,36 @@
+.web {
+  display: flex;
+}
+.web a {
+  display: contents;
+}
+.web img {
+  width: 50%;
+}
+.web .description {
+  padding: 1rem 3rem 0 3rem;
+}
+.web .description .project {
+  color: #2a363b;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding-bottom: 7rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.web .description .project::after {
+  content: "";
+  width: 1px;
+  display: block;
+  height: 93px;
+  background-color: #ccc;
+  position: absolute;
+  left: 5px;
+  top: 42px;
+}
+
+.web .description .infos div {
+  font-size: 1rem;
+}

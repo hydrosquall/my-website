@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Menu from "../components/Menu";
 import Header from "../components/Header";
-import About from "./About";
-import Skills from "./Skills";
-import Works from "./Works";
-import More from "./More";
+import About from "./About/About";
+import Skills from "./Skills/Skills";
+import Works from "./Works/Works";
+import More from "./More/More";
 import jsonData from "../service/data.json";
 import "./Main.css";
 

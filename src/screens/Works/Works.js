@@ -1,7 +1,10 @@
 import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
-import Section from "../components/Section";
+import Section from "../../components/Section";
 import "./Works.css";
+
+import Web from "./Web";
+import Graphic from "./Graphic";
 
 const Works = ({ data, onChangeVisibility }) => {
   return (
@@ -11,11 +14,11 @@ const Works = ({ data, onChangeVisibility }) => {
       onChange={(isVisible) => onChangeVisibility(isVisible, data.id)}
     >
       <Section title={data.title} id={data.id} className="Works">
-        {data.sectionItems.map((work, index) => (
-          <div className="work" key={index}>
-            {work.content}
-          </div>
-        ))}
+        <Web data={data.webDevelopment} className="work" />
+        <Graphic data={data.graphic} className="work" />
+        <div className="work" key={3}>
+          {data.conferences}
+        </div>
       </Section>
     </VisibilitySensor>
   );

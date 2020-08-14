@@ -98,17 +98,25 @@
       {
         "id": "works",
         "title": "Travaux",
-        "sectionItems": [
-          {
-            "content": "Mes projets et sites web effectués"
+        "webDevelopment": {
+          "content": "Dernier projet web",
+          "image": {
+            "alt": "Araotz",
+            "url": "https://anediaz.github.io/araotz/#/"
           },
-          {
-            "content": "Dernier travail de facilitation graphique effectué pour Microsoft"
-          },
-          {
-            "content": "Les différentes conférences informatiques dans lasquelles j'ai participé en tant qu'oratrice"
+          "infos": [
+            "Site web photographique",
+            "Role: Développement Web et design"
+          ]
+        },
+        "graphic": {
+          "content": "Dernier travail de facilitation graphique effectué pour Microsoft",
+          "image": {
+            "alt": "Graphic",
+            "url": ""
           }
-        ]
+        },
+        "conferences": "Les différentes conférences informatiques dans lasquelles j'ai participé en tant qu'oratrice"
       },
       {
         "id": "more",
@@ -240,17 +248,22 @@
       {
         "id": "works",
         "title": "Works",
-        "sectionItems": [
-          {
-            "content": "Projects / Websites I've created "
+        "webDevelopment": {
+          "content": "Latest web project",
+          "image": {
+            "alt": "Araotz",
+            "url": "https://anediaz.github.io/araotz/#/"
           },
-          {
-            "content": "My work as Graphic Facilitator"
-          },
-          {
-            "content": "The conferences where I've participated as speaker"
+          "infos": ["A photography website", "Role: Web development and design"]
+        },
+        "graphic": {
+          "content": "My work as Graphic Facilitator",
+          "image": {
+            "alt": "Graphic",
+            "url": ""
           }
-        ]
+        },
+        "conferences": "The conferences where I've participated as speaker"
       },
       {
         "id": "more",
@@ -387,17 +400,22 @@
       {
         "id": "works",
         "title": "Trabajos",
-        "sectionItems": [
-          {
-            "content": "Projects / Websites I've created "
+        "webDevelopment": {
+          "content": "Último proyecto web",
+          "image": {
+            "alt": "Araotz",
+            "url": "https://anediaz.github.io/araotz/#/"
           },
-          {
-            "content": "My work as Graphic Facilitator"
-          },
-          {
-            "content": "The conferences where I've participated as speaker"
+          "infos": ["Página web fotográfica", "Rol: Desarrollo web y diseño"]
+        },
+        "graphic": {
+          "content": "My work as Graphic Facilitator",
+          "image": {
+            "alt": "Graphic",
+            "url": ""
           }
-        ]
+        },
+        "conferences": "The conferences where I've participated as speaker"
       },
       {
         "id": "more",
@@ -534,17 +552,22 @@
       {
         "id": "works",
         "title": "Lanak",
-        "sectionItems": [
-          {
-            "content": "Projects / Websites I've created "
+        "webDevelopment": {
+          "content": "Azken web proiektua",
+          "image": {
+            "alt": "Araotz",
+            "url": "https://anediaz.github.io/araotz/#/"
           },
-          {
-            "content": "My work as Graphic Facilitator"
-          },
-          {
-            "content": "The conferences where I've participated as speaker"
+          "infos": ["Argazki webgunea", "Rola: Web garapena eta diseinua"]
+        },
+        "graphic": {
+          "content": "My work as Graphic Facilitator",
+          "image": {
+            "alt": "Graphic",
+            "url": ""
           }
-        ]
+        },
+        "conferences": "The conferences where I've participated as speaker"
       },
       {
         "id": "more",
