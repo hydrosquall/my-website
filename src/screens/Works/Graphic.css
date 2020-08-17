@@ -1,5 +1,6 @@
 .graphic {
   display: flex;
+  margin: 8rem 0;
 }
 
 .graphic a {
@@ -13,4 +14,10 @@
 .graphic .description {
   padding: 1rem 3rem 0 3rem;
   font-size: 1.2rem;
+}
+
+.graphic .illustrations a {
+  text-decoration: none;
+  color: rgb(153, 153, 153);
+  font-family: "Raleway", sans-serif;
 }

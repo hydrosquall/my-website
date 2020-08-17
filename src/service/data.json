@@ -110,11 +110,12 @@
           ]
         },
         "graphic": {
-          "content": "Dernier travail de facilitation graphique effectué pour Microsoft",
+          "content": "Récemment, j'ai eu le plaisir de travailler en tant que Facilitatrice Graphique pour ",
           "image": {
             "alt": "Graphic",
             "url": ""
-          }
+          },
+          "otherContent": "Autres réalisations graphiques"
         },
         "conferences": "Les différentes conférences informatiques dans lasquelles j'ai participé en tant qu'oratrice"
       },
@@ -130,42 +131,6 @@
           },
           {
             "content": "Découvrir des nouveaux endroits, cultures, langues, coûtumes ..."
-          }
-        ]
-      },
-      {
-        "id": "more",
-        "type": "images",
-        "media": [
-          {
-            "src": "./content/me.jpg",
-            "title": "This is me",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/devoxx.jpg",
-            "title": "Devoxx France 2018",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/2018year.jpg",
-            "title": "2018 year",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/myWork.jpg",
-            "title": "My Job",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/2017year.jpg",
-            "title": "2017 year",
-            "width": 4,
-            "height": 3
           }
         ]
       }
@@ -257,11 +222,12 @@
           "infos": ["A photography website", "Role: Web development and design"]
         },
         "graphic": {
-          "content": "My work as Graphic Facilitator",
+          "content": "Recently I've had the pleasure of working as Graphic Faciliator for",
           "image": {
             "alt": "Graphic",
             "url": ""
-          }
+          },
+          "otherContent": "Other graphic realizations"
         },
         "conferences": "The conferences where I've participated as speaker"
       },
@@ -277,43 +243,6 @@
           },
           {
             "content": "Discovering new places, cultures, languages, habits ..."
-          }
-        ]
-      },
-      {
-        "id": "more",
-        "title": "Sketchnoting",
-        "type": "images",
-        "media": [
-          {
-            "src": "./content/me.jpg",
-            "width": 4,
-            "height": 3,
-            "title": "This is me"
-          },
-          {
-            "src": "./content/devoxx.jpg",
-            "width": 4,
-            "height": 3,
-            "title": "Devoxx France 2018"
-          },
-          {
-            "src": "./content/2018year.jpg",
-            "width": 4,
-            "height": 3,
-            "title": "2018 year"
-          },
-          {
-            "src": "./content/myWork.jpg",
-            "width": 4,
-            "height": 3,
-            "title": "My Job"
-          },
-          {
-            "src": "./content/2017year.jpg",
-            "width": 4,
-            "height": 3,
-            "title": "2017 year"
           }
         ]
       }
@@ -409,13 +338,14 @@
           "infos": ["Página web fotográfica", "Rol: Desarrollo web y diseño"]
         },
         "graphic": {
-          "content": "My work as Graphic Facilitator",
+          "content": "Recientemente he tenido el placer de trabajar como Facilitadora Gráfica para",
           "image": {
             "alt": "Graphic",
             "url": ""
-          }
+          },
+          "otherContent": "Otras realizaciones gráficas"
         },
-        "conferences": "The conferences where I've participated as speaker"
+        "conferences": "Conferencias en las que he participado como Oradora"
       },
       {
         "id": "more",
@@ -429,43 +359,6 @@
           },
           {
             "content": "Descubrir nuevos lugares, culturas, lenguas, costumbres ..."
-          }
-        ]
-      },
-      {
-        "id": "sketchnoting",
-        "title": "Sketchnoting",
-        "type": "images",
-        "media": [
-          {
-            "src": "./content/me.jpg",
-            "title": "This is me",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/devoxx.jpg",
-            "title": "Devoxx France 2018",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/2018year.jpg",
-            "title": "2018 year",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/myWork.jpg",
-            "title": "My Job",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/2017year.jpg",
-            "title": "2017 year",
-            "width": 4,
-            "height": 3
           }
         ]
       }
@@ -561,13 +454,14 @@
           "infos": ["Argazki webgunea", "Rola: Web garapena eta diseinua"]
         },
         "graphic": {
-          "content": "My work as Graphic Facilitator",
+          "content": "Duela gutxi Erraztaile Grafiko gisa xxxx-entzat lan egiteko plazerra eduki dut",
           "image": {
             "alt": "Graphic",
             "url": ""
-          }
+          },
+          "otherContent": "Beste burutze grafikoak"
         },
-        "conferences": "The conferences where I've participated as speaker"
+        "conferences": "Hizlari gisa parte hartutako konferentziak"
       },
       {
         "id": "more",
@@ -583,46 +477,42 @@
             "content": "Leku, kultura, hizkuntza, ohitura ... berriak ezagutzea"
           }
         ]
-      },
-      {
-        "id": "more",
-        "title": "Sketchnoting",
-        "type": "images",
-        "media": [
-          {
-            "src": "./content/me.jpg",
-            "title": "This is me",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/devoxx.jpg",
-            "title": "Devoxx France 2018",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/2018year.jpg",
-            "title": "2018 year",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/myWork.jpg",
-            "title": "My Job",
-            "width": 4,
-            "height": 3
-          },
-          {
-            "src": "./content/2017year.jpg",
-            "title": "2017 year",
-            "width": 4,
-            "height": 3
-          }
-        ]
       }
     ]
   },
+  "talks":
+     [
+      {
+        "title": "BDX/IO 2019",
+        "youtubeId": "Ig5_nm5fpEY",
+        "date": "2019/11/15"
+      },
+      {
+        "title": "DevFest Toulouse 2018",
+        "youtubeId": "NInM_wndk2U",
+        "date": "2018/11/08"
+      },
+      {
+        "title": "Devoxx France 2018",
+        "youtubeId": "sxyHF5pptgY",
+        "date": "2018/04/19"
+      },
+      {
+        "title": "Live Scribbing",
+        "youtubeId": "lFkDUWcKPyU",
+        "date": "2018/04/20"
+      },
+      {
+        "title": "Voxxed Days Luxembourg 2018",
+        "youtubeId": "dYAGTPDRcD4",
+        "date": "2018/06/22"
+      },
+      {
+        "title": "Jug Summer Camp 2017",
+        "youtubeId": "EGSwp_bC3kA",
+        "date": "2017/09/15"
+      }
+    ],
   "illustrations": {
     "albums": [
       { "name": "Technical conferences", "id": "72157713855312227" },

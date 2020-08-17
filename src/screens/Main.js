@@ -70,6 +70,7 @@ const Main = () => {
             />
             <Works
               data={data.sections[2]}
+              media={jsonData.talks}
               onChangeVisibility={onChangeVisibility}
             />
             <More

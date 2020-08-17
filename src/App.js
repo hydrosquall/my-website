@@ -10,11 +10,9 @@ const App = () => {
       <Route path="/illustrations" exact component={Illustrations} />
       <Route path="/" exact component={Main} />
       <Route path="/about" component={Main} />
-      <Route path="/studies" component={Main} />
-      <Route path="/work" component={Main} />
-      <Route path="/talks" component={Main} />
+      <Route path="/skills" component={Main} />
+      <Route path="/works" component={Main} />
       <Route path="/more" component={Main} />
-      <Route path="/sketchnoting" component={Main} />
     </HashRouter>
   );
 };
