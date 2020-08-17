@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "https://anediaz.github.io/my-website/static/css/main.80b4611b.chunk.css",
-    "main.js": "https://anediaz.github.io/my-website/static/js/main.52d4fddf.chunk.js",
-    "main.js.map": "https://anediaz.github.io/my-website/static/js/main.52d4fddf.chunk.js.map",
+    "main.css": "https://anediaz.github.io/my-website/static/css/main.92570e7d.chunk.css",
+    "main.js": "https://anediaz.github.io/my-website/static/js/main.65088d38.chunk.js",
+    "main.js.map": "https://anediaz.github.io/my-website/static/js/main.65088d38.chunk.js.map",
     "runtime-main.js": "https://anediaz.github.io/my-website/static/js/runtime-main.8e3163f1.js",
     "runtime-main.js.map": "https://anediaz.github.io/my-website/static/js/runtime-main.8e3163f1.js.map",
-    "static/js/2.62d72b4d.chunk.js": "https://anediaz.github.io/my-website/static/js/2.62d72b4d.chunk.js",
-    "static/js/2.62d72b4d.chunk.js.map": "https://anediaz.github.io/my-website/static/js/2.62d72b4d.chunk.js.map",
+    "static/js/2.bb287225.chunk.js": "https://anediaz.github.io/my-website/static/js/2.bb287225.chunk.js",
+    "static/js/2.bb287225.chunk.js.map": "https://anediaz.github.io/my-website/static/js/2.bb287225.chunk.js.map",
     "index.html": "https://anediaz.github.io/my-website/index.html",
-    "precache-manifest.cf82feca1ba98de82b0225ac7c6d167b.js": "https://anediaz.github.io/my-website/precache-manifest.cf82feca1ba98de82b0225ac7c6d167b.js",
+    "precache-manifest.95a1e4dd67144fb5e1708e2df1b94adf.js": "https://anediaz.github.io/my-website/precache-manifest.95a1e4dd67144fb5e1708e2df1b94adf.js",
     "service-worker.js": "https://anediaz.github.io/my-website/service-worker.js",
-    "static/css/main.80b4611b.chunk.css.map": "https://anediaz.github.io/my-website/static/css/main.80b4611b.chunk.css.map",
-    "static/js/2.62d72b4d.chunk.js.LICENSE.txt": "https://anediaz.github.io/my-website/static/js/2.62d72b4d.chunk.js.LICENSE.txt",
+    "static/css/main.92570e7d.chunk.css.map": "https://anediaz.github.io/my-website/static/css/main.92570e7d.chunk.css.map",
+    "static/js/2.bb287225.chunk.js.LICENSE.txt": "https://anediaz.github.io/my-website/static/js/2.bb287225.chunk.js.LICENSE.txt",
     "static/media/ane.png": "https://anediaz.github.io/my-website/static/media/ane.7c8c5893.png",
     "static/media/ane2.png": "https://anediaz.github.io/my-website/static/media/ane2.db31f34a.png",
     "static/media/latestProject.png": "https://anediaz.github.io/my-website/static/media/latestProject.6592d1a6.png",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8e3163f1.js",
-    "static/js/2.62d72b4d.chunk.js",
-    "static/css/main.80b4611b.chunk.css",
-    "static/js/main.52d4fddf.chunk.js"
+    "static/js/2.bb287225.chunk.js",
+    "static/css/main.92570e7d.chunk.css",
+    "static/js/main.65088d38.chunk.js"
   ]
 }
