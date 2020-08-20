@@ -2,7 +2,7 @@
   margin: 0 auto;
   height: 1.5rem;
   font-size: 0.8rem;
-  margin-top: 4rem;
+  
 }
 
 .LanguageSelector .language {
@@ -39,34 +39,27 @@
   top: 5.5rem;
 }
 
-@media screen and (max-width: 768px) {
+
+/* MacBook 13"*/
+ @media screen and (max-width: 1920px) {
   .LanguageSelector {
-    font-size: 1.1rem;
-    width: 90%;
-    height: 1rem;
+    margin-top: 4rem;
+  }
+  }
+  /*iPadPro Horizontal*/
+  @media screen and (max-width: 1382px) {
+    .LanguageSelector ul li:last-child:after {
+      display: none;
+    }
+  }
+  /*iPadPro Vertical / iPad HorizontaL*/
+  @media screen and (max-width: 1024px) {
+    
   }
 
-  .LanguageSelector ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .LanguageSelector ul li {
-    text-align: center;
-    height: 1.7rem;
-  }
-
-  .LanguageSelector ul li:not(:first-child):before {
-    content: "";
-  }
-  .LanguageSelector ul li:last-child:after {
-    content: "";
-  }
-}
-
-/* smartphone in landscape, tablet in portrait and small tablet in landscape */
-@media screen and (min-width: 480px) and (max-width: 959px) {
-  .LanguageSelector {
+  /*iPhoneX horizontal*/
+  @media screen and (max-width: 900px) {
+    .LanguageSelector {
     font-size: 1.1rem;
     height: 1rem;
   }
@@ -87,12 +80,38 @@
   .LanguageSelector ul li:last-child:after {
     content: "";
   }
-}
+  }
 
-/*  tablet in landscape, small and medium laptop screen */
-@media screen and (min-width: 960px) and (max-width: 1280px) {
-}
+  /*iPad Vertical iPhone6/7/8 Horizontal*/
+  @media screen and (max-width: 768px) {
+    .LanguageSelector {
+      font-size: 1.1rem;
+      width: 90%;
+      height: 1rem;
+    }
 
-/*  big laptop screen (21″ and + in full screen ) */
-@media screen and (min-width: 1281px) {
-}
+    .LanguageSelector ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .LanguageSelector ul li {
+      text-align: center;
+      height: 1.7rem;
+    }
+
+    .LanguageSelector ul li:not(:first-child):before {
+      content: "";
+    }
+    .LanguageSelector ul li:last-child:after {
+      content: "";
+    }
+  }
+
+  /*iPhoneX/iPhone6/7/8 vertical*/
+  @media screen and (max-width: 480px) {
+    .LanguageSelector ul li {
+      height: 2.5rem;
+    }
+  }
+
