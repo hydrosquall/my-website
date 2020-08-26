@@ -4,14 +4,15 @@
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   background-color: #ececeb;
+  position: relative;
 }
 
 .Menu .item {
-  line-height: 3rem;
+  line-height: 5rem;
   text-align: right;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
-  margin: 0 3rem;
+  margin: 0 4rem;
 }
 
 .Menu .item div{
@@ -27,16 +28,52 @@
 .Menu .item.active div{
   color: #2a363b;
 }
+.Menu .LanguageSelector {
+  margin-bottom: 10rem;
+  margin-right: 4rem;
+  margin-left: 3rem;
+}
+
+.LanguageSelector ul li:last-child:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 8rem;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  right: 4rem;
+  top: 6rem;
+}
+
+
 /*MacBook 13"*/
 @media screen and (max-width: 1920px) {
   .Menu .LanguageSelector {
-    margin-bottom: 5rem;
     margin-right: 3rem;
-    margin-left: 3rem;
+    margin-bottom: 7rem;
+  }
+
+  .Menu .item {
+    margin: 0 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+  }
+  .LanguageSelector ul li:last-child:after {
+    right: 3rem;
+    top: 5.5rem;
+    height: 5rem;
   }
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
+  .LanguageSelector ul li:last-child:after {
+    display: none;
+  }
+
+  .Menu .item {
+    display: none;
+  }
 }
 /*iPadPro Vertical / iPad HorizontaL*/
 @media screen and (max-width: 1024px) {
@@ -57,13 +94,5 @@
 @media screen and (max-width: 480px) {
   .Menu .LanguageSelector {
     margin: 2rem 0;
-  }
-
-  .Menu .LanguageSelector:after {
-    display: none;
-  }
-
-  .Menu .item {
-    display: none;
   }
 }

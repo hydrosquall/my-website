@@ -1,8 +1,7 @@
 .LanguageSelector {
   margin: 0 auto;
-  height: 1.5rem;
-  font-size: 0.8rem;
-  
+  font-size: 1.2rem;
+  margin-top: 4rem;
 }
 
 .LanguageSelector .language {
@@ -27,51 +26,25 @@
 .LanguageSelector ul li:not(:first-child):before {
   content: " | ";
 }
-.LanguageSelector ul li:last-child:after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 4rem;
-  background-color: black;
-  opacity: 0.5;
-  position: absolute;
-  right: 3rem;
-  top: 5.5rem;
-}
-
 
 /* MacBook 13"*/
- @media screen and (max-width: 1920px) {
+@media screen and (max-width: 1920px) {
   .LanguageSelector {
-    margin-top: 4rem;
+    font-size: 0.8rem;
   }
-  }
-  /*iPadPro Horizontal*/
-  @media screen and (max-width: 1382px) {
-    .LanguageSelector ul li:last-child:after {
-      display: none;
-    }
-  }
-  /*iPadPro Vertical / iPad HorizontaL*/
-  @media screen and (max-width: 1024px) {
-    
-  }
-
-  /*iPhoneX horizontal*/
-  @media screen and (max-width: 900px) {
-    .LanguageSelector {
-    font-size: 1.1rem;
-    height: 1rem;
-  }
-
+}
+/*iPadPro Horizontal*/
+@media screen and (max-width: 1382px) {
   .LanguageSelector ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    font-size: 1.5rem;
   }
+
   .LanguageSelector ul li {
     text-align: center;
-    height: 2rem;
+    height: 4rem;
   }
 
   .LanguageSelector ul li:not(:first-child):before {
@@ -80,38 +53,40 @@
   .LanguageSelector ul li:last-child:after {
     content: "";
   }
+}
+/*iPadPro Vertical / iPad HorizontaL*/
+@media screen and (max-width: 1024px) {
+  
+}
+
+/*iPhoneX horizontal*/
+@media screen and (max-width: 900px) {
+  .LanguageSelector {
+    font-size: 0.9rem;
   }
 
-  /*iPad Vertical iPhone6/7/8 Horizontal*/
-  @media screen and (max-width: 768px) {
-    .LanguageSelector {
-      font-size: 1.1rem;
-      width: 90%;
-      height: 1rem;
-    }
-
-    .LanguageSelector ul {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-    .LanguageSelector ul li {
-      text-align: center;
-      height: 1.7rem;
-    }
-
-    .LanguageSelector ul li:not(:first-child):before {
-      content: "";
-    }
-    .LanguageSelector ul li:last-child:after {
-      content: "";
-    }
+  .LanguageSelector ul li {
+    height: 2.5rem;
   }
+}
 
-  /*iPhoneX/iPhone6/7/8 vertical*/
-  @media screen and (max-width: 480px) {
-    .LanguageSelector ul li {
-      height: 2.5rem;
-    }
+/*iPad Vertical iPhone6/7/8 Horizontal*/
+@media screen and (max-width: 768px) {
+  .LanguageSelector {
+    font-size: 1.1rem;
   }
+  .LanguageSelector ul li {
+    height: 3.5rem;
+  }
+}
+
+/*iPhoneX/iPhone6/7/8 vertical*/
+@media screen and (max-width: 480px) {
+  .LanguageSelector {
+    font-size: 0.9rem;
+  }
+  .LanguageSelector ul li {
+    height: 2.5rem;
+  }
+}
 
