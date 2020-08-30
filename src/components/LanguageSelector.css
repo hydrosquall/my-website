@@ -35,11 +35,13 @@
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
+  .LanguageSelector {
+    font-size: 1.5rem;
+  }
   .LanguageSelector ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 1.5rem;
   }
 
   .LanguageSelector ul li {
@@ -83,10 +85,10 @@
 /*iPhoneX/iPhone6/7/8 vertical*/
 @media screen and (max-width: 480px) {
   .LanguageSelector {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .LanguageSelector ul li {
-    height: 2.5rem;
+    height: 2rem;
   }
 }
 

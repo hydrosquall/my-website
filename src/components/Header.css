@@ -1,96 +1,82 @@
 .Header {
   color: #2a363b;
   display: flex;
-  flex-direction: column;
   font-size: 3rem;
-  text-align: left;
-  margin: 7rem 9rem 0 9rem;
-}
-
-.Header .main-header {
-  min-height: 10rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin: 15rem 9rem 0 9rem;
   align-items: center;
+  justify-content: space-around;
 }
 
-.Header .main-header .name {
-  width: 45%;
-  vertical-align: middle;
+.Header .name {
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 2rem 5rem 0rem 0;
-  height: 23rem;
 }
 
-.Header .main-header .name h2 {
+.Header .name h2 {
   text-align: center;
   margin: 0;
+  font-size: 2.5em;
 }
 
-.Header .main-header .name .presentation {
+.Header .name .presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.5em;
-  margin-block-start: 3em;
+  font-size: 0.7em;
+  margin-block-start: 4em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
 }
 
-.Header .main-header .name .presentation div {
+.Header .name .presentation div {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
 
-.Header .main-header .name .presentation div::first-letter {
+.Header .name .presentation div::first-letter {
   opacity: 0.7;
 }
 
-.Header .main-header .infos {
+.Header .infos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Header .main-header .infos .social {
+.Header .infos .social {
   font-family: "Raleway", sans-serif;
-  text-align: left;
   color: rgb(153, 153, 153);
-  font-size: 1.2rem;
-  min-width: 13rem;
+  font-size: 1.7rem;
   margin-top: 0.5rem;
 }
 
-.Header .main-header .infos .social .mail {
-  width: 100%;
+.Header .infos .social .mail {
   line-height: 3rem;
 }
 
-.Header .main-header .infos .social .mail:hover,
-.Header .main-header .infos .social .mail:hover a,
-.Header .main-header .infos .social .social-icons i:hover {
+.Header .infos .social .mail:hover,
+.Header .infos .social .mail:hover a,
+.Header .infos .social .social-icons i:hover {
   cursor: pointer;
   color: gray;
 }
 
-.Header .main-header .infos .social .mail a,
-.Header .main-header .infos .social-icons a {
+.Header .infos .social .mail a,
+.Header .infos .social-icons a {
   text-decoration: none;
   color: rgb(153, 153, 153);
   font-family: "Raleway", sans-serif;
 }
 
-.Header .main-header .infos .social .social-icons {
+.Header .infos .social .social-icons {
   display: flex;
   justify-content: space-between;
-  width: 12.5rem;
 }
 
-.Header .main-header .infos .pic {
+.Header .infos .pic {
   width: 25rem;
   height: 25rem;
   border-radius: 12.5rem;
@@ -99,80 +85,179 @@
   background-position: center top;
 }
 
-/* smartphone en portrait */
-@media screen and (max-width: 479px) {
-  .Header {
-    font-size: 1.5rem;
-    flex-wrap: wrap;
+
+
+/*MacBook 13"*/
+@media screen and (max-width: 1920px) {
+  .Header .name h2 {
+    font-size: 2em;
   }
 
-  .Header .main-header .name {
-    width: 20%;
-    height: auto;
+  .Header .name .presentation {
+    font-size: 0.6em;
   }
 
-  .Header .main-header .infos .pic {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 4rem;
+  .Header .infos .pic {
+    width: 23rem;
+    height: 23rem;
+    border-radius: 11.5rem;
   }
 
-  .Header .main-header .infos .social {
-    font-size: 0.8rem;
-    min-width: 0;
-  }
-
-  .Header .main-header .infos .social .social-icons {
-    width: 8.2rem;
-  }
-
-  .Header .main-header .infos .social .mail {
-    line-height: 0;
-    margin: 1.5rem 0 1rem 0;
-  }
-  .Header .main-header .infos .social .mail a {
-    margin-left: 0.9rem;
+  .Header .infos .social {
+    font-size: 1.4rem;
   }
 }
+/*iPadPro Horizontal*/
+@media screen and (max-width: 1382px) {
 
-/* smartphone in landscape, tablet in portrait and small tablet in landscape */
-@media screen and (min-width: 480px) and (max-width: 959px) {
   .Header {
-    flex-wrap: wrap;
-    font-size: 2.5rem;
+    margin: 7rem 7rem 0 9rem;
+  }
+  .Header .name {
+    width: 50%;
   }
 
-  .Header .main-header .name {
-    height: auto;
-  }
-
-  .Header .main-header .infos .pic {
+  .Header .infos .pic {
     width: 15rem;
     height: 15rem;
     border-radius: 7.5rem;
   }
+}
+/*iPadPro Vertical / iPad HorizontaL*/
+@media screen and (max-width: 1024px) {
+  .Header {
+    margin: 9rem 3rem 1.5rem 3rem;
+    align-items: center;
+    font-size: 3rem;
+  }
 
-  .Header .main-header .infos .social {
+  .Header .name h2 {
+    text-align: left;
+  }
+
+  .Header .name .presentation {
+    align-items: flex-start;
+  }
+
+  .Header .infos .social {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Header .infos .pic {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 7.5rem;
+  }
+}
+
+/*iPhoneX horizontal*/
+@media screen and (max-width: 900px) {
+  .Header {
+    margin: 7rem 2.5rem 1.5rem 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+  }
+  .Header .name {
+    width: 100%;
+  }
+
+  .Header .name h2 {
+    font-size: 3.8rem;
+    text-align: center;
+  }
+
+  .Header .name .presentation {
+    align-items: center;
+    font-size: 0.6em;
+  }
+
+  .Header .infos {
+    width: 100%;
+  }
+
+  .Header .infos .pic {
+    display: none;
+  }
+
+  .Header .infos .social {
+    margin-top: 6rem;
     font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
   }
 
-  .Header .main-header .infos .social .social-icons {
-    width: 12.5rem;
-  }
-
-  .Header .main-header .infos .social .mail {
+  .Header .infos .social .mail {
+    margin: 2rem 0 1.8rem 0;
+    font-size: 1.2rem;
     line-height: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Header .infos .social .social-icons {
+     width: 41%
+  }
+
+  .Header .infos .social .mail a {
+    margin-left: 0.1rem;
+  }
+}
+
+/*iPad Vertical iPhone6/7/8 Horizontal*/
+@media screen and (max-width: 768px) {
+  .Header {
+    margin: 7rem 2rem 1.5rem 2rem;
+    font-size: 2rem;
+  }
+
+  .Header .name h2 {
+    font-size: 3rem;
+  }
+
+  .Header .infos .social {
+    margin-top: 3.5rem;
+  }
+
+  .Header .infos .social .mail {
     margin: 2rem 0 1.5rem 0;
+    font-size: 1rem;
   }
-  .Header .main-header .infos .social .mail a {
-    margin-left: 1.3rem;
+
+  .Header .infos .social .social-icons {
+    width: 43%
+  }
+
+  .Header .infos .social .mail a {
+    margin-left: 0.1rem;
   }
 }
 
-/*  tablet in landscape, small and medium laptop screen */
-@media screen and (min-width: 960px) and (max-width: 1280px) {
-}
+/*iPhoneX/iPhone6/7/8 vertical*/
+@media screen and (max-width: 480px) {
+  .Header {
+    font-size: 1.2rem;
+    margin: 5rem 1.5rem 1.5rem 2rem;
+  }
 
-/*  big laptop screen (21″ and + in full screen ) */
-@media screen and (min-width: 1281px) {
+  .Header .name h2 {
+    font-size: 2rem;
+  }
+
+  .Header .infos .social {
+    font-size: 0.8rem;
+    margin-top: 2.5rem;
+  }
+
+  .Header .infos .social .social-icons {
+    width: 51%
+  }
+
+  .Header .infos .social .mail {
+    margin:1.5rem 0 1rem 0;
+    font-size: 0.7rem;
+  }
 }

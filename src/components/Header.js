@@ -80,7 +80,6 @@ const Header = ({
 
   return (
     <div className="Header" id={id}>
-      <div className="main-header">
         <div className="name">
           <h2>{name}</h2>
           <div className="presentation">
@@ -93,7 +92,6 @@ const Header = ({
           {getImage()}
           {getSocial()}
         </div>
-      </div>
     </div>
   );
 };
