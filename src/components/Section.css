@@ -48,10 +48,25 @@
 @media screen and (max-width: 1920px) {
   .Section {
     padding: 0 12rem 0 12rem;
+    margin-top: 10rem;
+  }
+  .Section .content {
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
+  .Section {
+    padding: 0 8rem 0 8rem;
+  }
+  .Section .title {
+    font-size: 2.2rem;
+  }
+  .Section .content {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
 }
 /*iPadPro Vertical / iPad HorizontaL*/
 @media screen and (max-width: 1024px) {
@@ -71,6 +86,10 @@
 
 /*iPad Vertical iPhone6/7/8 Horizontal*/
 @media screen and (max-width: 768px) {
+  .Section {
+    margin: 0 2.4rem 2rem 2.4rem;
+    padding: 0;
+  }
 }
 
 /*iPhoneX/iPhone6/7/8 vertical*/
@@ -84,7 +103,7 @@
   }
 
   .Section .title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .Section .item-content.big,
