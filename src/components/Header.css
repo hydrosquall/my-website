@@ -85,10 +85,12 @@
   background-position: center top;
 }
 
-
-
 /*MacBook 13"*/
 @media screen and (max-width: 1920px) {
+  .Header {
+    margin: 15rem 7rem 0 7rem;
+    justify-content: space-between;
+  }
   .Header .name h2 {
     font-size: 2em;
   }
@@ -98,9 +100,9 @@
   }
 
   .Header .infos .pic {
-    width: 23rem;
-    height: 23rem;
-    border-radius: 11.5rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
   }
 
   .Header .infos .social {
@@ -109,7 +111,6 @@
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
-
   .Header {
     margin: 7rem 7rem 0 9rem;
   }
@@ -199,7 +200,7 @@
   }
 
   .Header .infos .social .social-icons {
-     width: 41%
+    width: 41%;
   }
 
   .Header .infos .social .mail a {
@@ -228,7 +229,7 @@
   }
 
   .Header .infos .social .social-icons {
-    width: 43%
+    width: 43%;
   }
 
   .Header .infos .social .mail a {
@@ -253,11 +254,11 @@
   }
 
   .Header .infos .social .social-icons {
-    width: 51%
+    width: 51%;
   }
 
   .Header .infos .social .mail {
-    margin:1.5rem 0 1rem 0;
+    margin: 1.5rem 0 1rem 0;
     font-size: 0.7rem;
   }
 }

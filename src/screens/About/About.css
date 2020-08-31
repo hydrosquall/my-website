@@ -1,4 +1,25 @@
-.About .content {
-  font-size: 1.3rem;
-  line-height: 1.9rem;
+/*MacBook 13"*/
+@media screen and (max-width: 1920px) {
+  .About .content {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
+}
+/*iPadPro Horizontal*/
+@media screen and (max-width: 1382px) {
+}
+/*iPadPro Vertical / iPad HorizontaL*/
+@media screen and (max-width: 1024px) {
+}
+
+/*iPhoneX horizontal*/
+@media screen and (max-width: 900px) {
+}
+
+/*iPad Vertical iPhone6/7/8 Horizontal*/
+@media screen and (max-width: 768px) {
+}
+
+/*iPhoneX/iPhone6/7/8 vertical*/
+@media screen and (max-width: 480px) {
 }

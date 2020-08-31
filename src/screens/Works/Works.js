@@ -15,13 +15,13 @@ const Works = ({ data, media, onChangeVisibility }) => {
       onChange={(isVisible) => onChangeVisibility(isVisible, data.id)}
     >
       <Section title={data.title} id={data.id} className="Works">
-        <Web data={data.webDevelopment} className="work" key={1} />
-        <Graphic data={data.graphic} className="work" key={2} />
+        <Web data={data.webDevelopment} className="work" id={1} />
+        <Graphic data={data.graphic} className="work" id={2} />
         <Conferences
           data={data.conferences}
           media={media}
           className="work"
-          key={3}
+          id={3}
         />
       </Section>
     </VisibilitySensor>

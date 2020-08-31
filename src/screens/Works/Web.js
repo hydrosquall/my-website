@@ -3,8 +3,8 @@ import React from "react";
 import "./Web.css";
 const image = require("./latestProject.png");
 
-const Web = ({ data, className, key }) => (
-  <div className={`web ${className}`} key={key}>
+const Web = ({ data, className, id }) => (
+  <div className={`web ${className}`} key={id}>
     <a href={data.image.url} target="_blank" rel="noopener noreferrer">
       <img src={image} alt={data.image.alt} />
     </a>

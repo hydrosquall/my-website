@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import "./Graphic.css";
 import image from "./graphic.png";
 
-const Graphic = ({ data, className, key }) => (
-  <div className={`graphic ${className}`} key={key}>
+const Graphic = ({ data, className, id }) => (
+  <div className={`graphic ${className}`} key={id}>
     <a href={data.image.url} target="_blank" rel="noopener noreferrer">
       <img src={image} alt={data.image.alt} />
     </a>

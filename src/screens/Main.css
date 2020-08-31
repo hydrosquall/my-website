@@ -7,7 +7,6 @@
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
   display: flex;
-  height: 100vh;
   width: 100%;
 }
 
@@ -21,50 +20,50 @@
 }
 
 /* MacBook 13"*/
- @media screen and (max-width: 1920px) {
-    .Main .page {
-      width: 87%;
-    }
-    .Main .Menu {
-      width: 13%;
-    }
+@media screen and (max-width: 1920px) {
+  .Main .page {
+    width: 85%;
   }
-  /*iPadPro Horizontal*/
-  @media screen and (max-width: 1382px) {
-    .Main .page {
-      width: 84%;
-    }
-    .Main .Menu {
-      width: 16%;
-    }
+  .Main .Menu {
+    width: 15%;
   }
-  /*iPadPro Vertical / iPad HorizontaL*/
-  @media screen and (max-width: 1024px) {
-    .Main .page {
-      width: 79%;
-    }
-    .Main .Menu {
-      width: 21%;
-    }
+}
+/*iPadPro Horizontal*/
+@media screen and (max-width: 1382px) {
+  .Main .page {
+    width: 84%;
   }
+  .Main .Menu {
+    width: 16%;
+  }
+}
+/*iPadPro Vertical / iPad HorizontaL*/
+@media screen and (max-width: 1024px) {
+  .Main .page {
+    width: 79%;
+  }
+  .Main .Menu {
+    width: 21%;
+  }
+}
 
-  /*iPhoneX horizontal*/
-  @media screen and (max-width: 900px) {
-    .Main {
-      height: 100%;
-    }
-    .Main .page {
-      width: 85%;
-    }
-    .Main .Menu {
-      width: 15%;
-    }
+/*iPhoneX horizontal*/
+@media screen and (max-width: 900px) {
+  .Main {
+    height: 100%;
   }
+  .Main .page {
+    width: 85%;
+  }
+  .Main .Menu {
+    width: 15%;
+  }
+}
 
-  /*iPad Vertical iPhone6/7/8 Horizontal*/
-  @media screen and (max-width: 768px) {
-  }
+/*iPad Vertical iPhone6/7/8 Horizontal*/
+@media screen and (max-width: 768px) {
+}
 
-  /*iPhoneX/iPhone6/7/8 vertical*/
-  @media screen and (max-width: 480px) {
-  }
+/*iPhoneX/iPhone6/7/8 vertical*/
+@media screen and (max-width: 480px) {
+}

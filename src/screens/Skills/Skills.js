@@ -6,8 +6,16 @@ import "./Skills.css";
 const Skills = ({ data, onChangeVisibility }) => {
   const getFormattedContent = ({ content, highlight }) => {
     const [phrase1, phrase2] = content.split(highlight);
-    const toHighlight = <span className="highlight-marker">{highlight}</span>;
-    return [phrase1, toHighlight, phrase2];
+    const toHighlight = (
+      <span className="highlight-marker" key={2}>
+        {highlight}
+      </span>
+    );
+    return [
+      <div key={1}>{phrase1}</div>,
+      toHighlight,
+      <div key={3}>{phrase2}</div>,
+    ];
   };
   return (
     <VisibilitySensor
