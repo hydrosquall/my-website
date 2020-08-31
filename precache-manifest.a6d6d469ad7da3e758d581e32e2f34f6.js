@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a480b06de1ef3b4c2e630a49642e93e5",
+    "revision": "0bb0684a929756b57fd1eb0c1ed25a0e",
     "url": "https://anediaz.github.io/my-website/index.html"
   },
   {
-    "revision": "53e90f6f29861d77ae9a",
-    "url": "https://anediaz.github.io/my-website/static/css/main.a0359932.chunk.css"
+    "revision": "52ee59b1b1367843ada2",
+    "url": "https://anediaz.github.io/my-website/static/css/main.c7ff7414.chunk.css"
   },
   {
     "revision": "9c9e0b9c8a7cd3027471",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://anediaz.github.io/my-website/static/js/2.bb287225.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "53e90f6f29861d77ae9a",
-    "url": "https://anediaz.github.io/my-website/static/js/main.313e9bc2.chunk.js"
+    "revision": "52ee59b1b1367843ada2",
+    "url": "https://anediaz.github.io/my-website/static/js/main.6ca5eb94.chunk.js"
   },
   {
     "revision": "000a2ff45c8badf2c4c0",
