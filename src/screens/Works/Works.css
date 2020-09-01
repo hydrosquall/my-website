@@ -20,6 +20,10 @@
 
 /*iPhoneX horizontal*/
 @media screen and (max-width: 900px) {
+  .work {
+    margin-bottom: 2.5rem;
+    flex-direction: column-reverse;
+  }
 }
 
 /*iPad Vertical iPhone6/7/8 Horizontal*/

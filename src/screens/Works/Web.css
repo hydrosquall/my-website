@@ -31,10 +31,6 @@
   top: 42px;
 }
 
-.web .description .infos div {
-  font-size: 1rem;
-}
-
 .web .description .infos div::first-letter {
   opacity: 0.6;
   color: palevioletred;
@@ -43,9 +39,6 @@
 
 /*MacBook 13"*/
 @media screen and (max-width: 1920px) {
-  .web .description .infos div {
-    font-size: 1.3rem;
-}
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
@@ -56,6 +49,24 @@
 
 /*iPhoneX horizontal*/
 @media screen and (max-width: 900px) {
+  .web .description .project {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .web .description .project::after {
+    display: none;  
+  }
+
+  .web .description .infos {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .web img {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 /*iPad Vertical iPhone6/7/8 Horizontal*/
@@ -64,4 +75,19 @@
 
 /*iPhoneX/iPhone6/7/8 vertical*/
 @media screen and (max-width: 480px) {
+  .web .description {
+    padding: 0;
+  }
+
+  .web .description .project {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .web .description .infos {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
 }

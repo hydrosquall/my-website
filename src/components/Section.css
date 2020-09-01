@@ -75,27 +75,24 @@
 /*iPhoneX horizontal*/
 @media screen and (max-width: 900px) {
   .Section {
-    margin-top: 0;
+    margin: 0 2.4rem 2rem 2.4rem;
+    padding: 0;
   }
 
-  .Section .item-content.big {
-    font-size: 1.3rem;
+  .Section .content {
+    font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
 /*iPad Vertical iPhone6/7/8 Horizontal*/
 @media screen and (max-width: 768px) {
-  .Section {
-    margin: 0 2.4rem 2rem 2.4rem;
-    padding: 0;
-  }
 }
 
 /*iPhoneX/iPhone6/7/8 vertical*/
 @media screen and (max-width: 480px) {
   .Section {
-    margin: 0 1.5rem 1.5rem 2rem;
+    margin: 0 2rem 1.5rem 2rem;
     padding: 0;
   }
   .Section .content {
