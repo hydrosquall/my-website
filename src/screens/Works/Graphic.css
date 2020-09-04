@@ -1,23 +1,57 @@
-.graphic {
+.graphic .illustrations {
   display: flex;
-  margin: 8rem 0;
+  margin-top: 1rem;
 }
 
-.graphic a {
-  display: contents;
-}
-
-.graphic img {
-  width: 40%;
-}
-
-.graphic .description {
-  padding: 1rem 3rem 0 3rem;
-  font-size: 1.2rem;
+.graphic .illustrations .empty {
+  width: 50%;
 }
 
 .graphic .illustrations a {
   text-decoration: none;
   color: rgb(153, 153, 153);
   font-family: "Raleway", sans-serif;
+  margin-top: -3rem;
+}
+
+.graphic .illustrations a:hover {
+  color: palevioletred;
+}
+
+/*MacBook 13"*/
+@media screen and (max-width: 1920px) {
+  .graphic .illustrations a {
+    margin-top: -2rem;
+  }
+
+}
+/*iPadPro Horizontal*/
+@media screen and (max-width: 1382px) {
+  
+}
+/*iPadPro Vertical / iPad HorizontaL*/
+@media screen and (max-width: 1024px) {
+}
+
+/*iPhoneX horizontal*/
+@media screen and (max-width: 900px) {
+  .graphic .illustrations {
+    justify-content: center;
+  }
+  .graphic .illustrations a {
+    margin-top: 0;
+  }
+
+  .graphic .illustrations .empty {
+    display: none;
+  }
+}
+
+/*iPad Vertical iPhone6/7/8 Horizontal*/
+@media screen and (max-width: 768px) {
+}
+
+/*iPhoneX/iPhone6/7/8 vertical*/
+@media screen and (max-width: 480px) {
+
 }

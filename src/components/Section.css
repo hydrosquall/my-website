@@ -1,12 +1,12 @@
 .Section {
-  margin-top: 3rem;
+  margin-top: 17rem;
   text-align: left;
   padding: 0 12rem 0 9rem;
 }
 
 .Section .title {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 
 .Section .title h3 {
@@ -36,8 +36,8 @@
   font-family: "Raleway", sans-serif;
   text-align: left;
   color: rgb(153, 153, 153);
-  font-size: 1.2rem;
-  line-height: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
   font-weight: 300;
 }
 .Section .content .item {
@@ -49,6 +49,9 @@
   .Section {
     padding: 0 12rem 0 12rem;
     margin-top: 10rem;
+  }
+  .Section .title {
+    font-size: 1.8rem;
   }
   .Section .content {
     font-size: 1.3rem;

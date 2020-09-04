@@ -99,7 +99,7 @@
         "id": "works",
         "title": "Travaux",
         "webDevelopment": {
-          "content": "Dernier projet web",
+          "project": "Dernier projet web",
           "image": {
             "alt": "Araotz",
             "url": "https://anediaz.github.io/araotz/#/"
@@ -110,6 +110,7 @@
           ]
         },
         "graphic": {
+          "project": "Dernier travail visuel",
           "content": "Récemment, j'ai eu le plaisir de travailler en tant que Facilitatrice Graphique pour ",
           "image": {
             "alt": "Graphic",
@@ -117,7 +118,10 @@
           },
           "otherContent": "Autres réalisations graphiques"
         },
-        "conferences": "Les différentes conférences informatiques dans lasquelles j'ai participé en tant qu'oratrice"
+        "conferences": {
+          "project": "Conférences",
+          "content": "Les différentes conférences informatiques dans lasquelles j'ai participé en tant qu'oratrice"
+        }
       },
       {
         "id": "more",
@@ -214,7 +218,7 @@
         "id": "works",
         "title": "Works",
         "webDevelopment": {
-          "content": "Latest web project",
+          "project": "Latest web project",
           "image": {
             "alt": "Araotz",
             "url": "https://anediaz.github.io/araotz/#/"
@@ -222,6 +226,7 @@
           "infos": ["A photography website", "Role: Web development and design"]
         },
         "graphic": {
+          "project": "Latest visual work",
           "content": "Recently I've had the pleasure of working as Graphic Faciliator for",
           "image": {
             "alt": "Graphic",
@@ -229,7 +234,10 @@
           },
           "otherContent": "Other graphic realizations"
         },
-        "conferences": "The conferences where I've participated as speaker"
+        "conferences": {
+          "project": "Conferences",
+          "content": "The conferences where I've participated as Speaker"
+        }
       },
       {
         "id": "more",
@@ -330,7 +338,7 @@
         "id": "works",
         "title": "Trabajos",
         "webDevelopment": {
-          "content": "Último proyecto web",
+          "project": "Último proyecto web",
           "image": {
             "alt": "Araotz",
             "url": "https://anediaz.github.io/araotz/#/"
@@ -338,6 +346,7 @@
           "infos": ["Página web fotográfica", "Rol: Desarrollo web y diseño"]
         },
         "graphic": {
+          "project": "Último trabajo visual",
           "content": "Recientemente he tenido el placer de trabajar como Facilitadora Gráfica para",
           "image": {
             "alt": "Graphic",
@@ -345,7 +354,10 @@
           },
           "otherContent": "Otras realizaciones gráficas"
         },
-        "conferences": "Conferencias en las que he participado como Oradora"
+        "conferences": {
+          "project": "Conferencias",
+          "content": "Conferencias en las que he participado como Oradora"
+        }
       },
       {
         "id": "more",
@@ -446,7 +458,7 @@
         "id": "works",
         "title": "Lanak",
         "webDevelopment": {
-          "content": "Azken web proiektua",
+          "project": "Azken web proiektua",
           "image": {
             "alt": "Araotz",
             "url": "https://anediaz.github.io/araotz/#/"
@@ -454,6 +466,7 @@
           "infos": ["Argazki webgunea", "Rola: Web garapena eta diseinua"]
         },
         "graphic": {
+          "project": "Azken lan bisuala",
           "content": "Duela gutxi Erraztaile Grafiko gisa xxxx-entzat lan egiteko plazerra eduki dut",
           "image": {
             "alt": "Graphic",
@@ -461,7 +474,10 @@
           },
           "otherContent": "Beste burutze grafikoak"
         },
-        "conferences": "Hizlari gisa parte hartutako konferentziak"
+        "conferences": {
+          "project": "Konferentziak",
+          "content": "Hizlari gisa parte hartutako konferentziak"
+        }
       },
       {
         "id": "more",

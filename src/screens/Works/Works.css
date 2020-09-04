@@ -1,14 +1,63 @@
 .work {
-  margin-bottom: 5rem;
+  margin-bottom: 15rem;
+  display: flex;
+  flex-direction: column;
 }
 
-/* smartphone en portrait */
-@media screen and (max-width: 479px) {
+.work .body {
+  display: flex;
+}
 
+.work .body a {
+  display: contents;
+}
+.work .body a img {
+  width: 50%;
+}
+.work .body .description {
+  padding: 1rem 3rem 0 3rem;
+}
+.work .body .description .project {
+  color: #2a363b;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  line-height: 3.3rem;
+  padding-bottom: 9rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.work .body .description .project::after {
+  content: "";
+  width: 1px;
+  display: block;
+  height: 120px;
+  background-color: #ccc;
+  position: absolute;
+  left: 5px;
+  top: 60px;
+}
+
+.work .body .description .infos div::first-letter {
+  opacity: 0.6;
+  color: palevioletred;
 }
 
 /*MacBook 13"*/
 @media screen and (max-width: 1920px) {
+  .work {
+    margin-bottom: 6rem;
+  }
+
+  .work .body .description .project {
+    padding-bottom: 7rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .work .body .description .project::after {
+    top: 42px;
+    height: 93px;
+  }
 
 }
 /*iPadPro Horizontal*/
@@ -21,8 +70,30 @@
 /*iPhoneX horizontal*/
 @media screen and (max-width: 900px) {
   .work {
-    margin-bottom: 2.5rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .work .body {
     flex-direction: column-reverse;
+  }
+
+  .work .body .description .project {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .work .body .description .project::after {
+    display: none;  
+  }
+
+  .work .body .description .infos {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .work .body a img {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 
@@ -34,6 +105,21 @@
 @media screen and (max-width: 480px) {
   .work {
     margin-bottom: 2.5rem;
+  }
+
+  .work .body .description {
+    padding: 0;
+  }
+
+  .work .body .description .project {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .work .body .description .infos {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 

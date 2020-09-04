@@ -27,17 +27,37 @@
   letter-spacing: 1px;
 }
 
-@media screen and (max-width: 479px) {
+/*MacBook 13"*/
+@media screen and (max-width: 1920px) {
+
+}
+/*iPadPro Horizontal*/
+@media screen and (max-width: 1382px) {
+}
+/*iPadPro Vertical / iPad HorizontaL*/
+@media screen and (max-width: 1024px) {
+}
+
+/*iPhoneX horizontal*/
+@media screen and (max-width: 900px) {
+  .MediaSection .media-item {
+    width: 45%;
+    font-size: 13px;
+  }
+}
+
+/*iPad Vertical iPhone6/7/8 Horizontal*/
+@media screen and (max-width: 768px) {
+}
+
+/*iPhoneX/iPhone6/7/8 vertical*/
+@media screen and (max-width: 480px) {
+  .MediaSection {
+    padding: 0;
+  }
   .MediaSection .media-item {
     width: 90%;
     font-size: 12px;
     margin: 4% 0;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 959px) {
-  .MediaSection .media-item {
-    width: 45%;
-    font-size: 13px;
   }
 }
