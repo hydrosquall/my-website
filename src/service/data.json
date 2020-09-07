@@ -128,13 +128,16 @@
         "title": "Plus",
         "sectionItems": [
           {
+            "title": "Pratique sportive",
             "content": "Course à pied principalement, du vélo et de la randonnée"
           },
           {
+            "title": "Dessiner",
             "content": "Dessins au crayon, feutres, de la peinture à l'huile et du sketchnoting"
           },
           {
-            "content": "Découvrir des nouveaux endroits, cultures, langues, coûtumes ..."
+            "title": "Langues",
+            "contentItems": ["Basque","Français", "Anglais", "Espagnol"]
           }
         ]
       }
@@ -241,16 +244,19 @@
       },
       {
         "id": "more",
-        "title": "Hobbies",
+        "title": "More",
         "sectionItems": [
           {
+            "title": "Languages",
+            "contentItems": ["Basque", "French", "English","Spanish"]
+          },
+          {
+            "title": "Sports practice",
             "content": "Mainly running, cycling and hiking"
           },
           {
+            "title" : "Drawing",
             "content": "Drawing with pencils, pens, oil painting and sketchnoting"
-          },
-          {
-            "content": "Discovering new places, cultures, languages, habits ..."
           }
         ]
       }
@@ -363,14 +369,17 @@
         "id": "more",
         "title": "Más",
         "sectionItems": [
+           {
+            "title": "Idiomas",
+            "contentItems": ["Vasco", "Franés", "Inglés", "Español"]
+          },
           {
+            "title": "Deportes",
             "content": "Principalmente correr, ciclismo y senderismo"
           },
           {
+            "title": "Dibujar",
             "content": "Dibujos con lápices, rotuladores, pintura al óleo y sketchnoting"
-          },
-          {
-            "content": "Descubrir nuevos lugares, culturas, lenguas, costumbres ..."
           }
         ]
       }
@@ -484,13 +493,16 @@
         "title": "Gehiago",
         "sectionItems": [
           {
+            "title": "Hizkuntzak",
+            "contentItems": ["Euskara", "Frantsesa", "Ingelesa", "Gaztelera"]
+          },
+          {
+            "title": "Kirolak",
             "content": "Nagusiki korrika egitea, bizikletan ibiltzea eta mendi irteerak egitea"
           },
           {
+            "title": "Marraztea",
             "content": "Arkatzez eta errotulatzailez egindako marrazkiak, olio pinturak eta sketchnoting-a"
-          },
-          {
-            "content": "Leku, kultura, hizkuntza, ohitura ... berriak ezagutzea"
           }
         ]
       }
