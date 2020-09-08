@@ -32,7 +32,7 @@ const ImageSection = () => {
   }, []);
 
   return (
-    <div className="content image">
+    <div className="image-section">
       {photos.length ? (
         <Gallery
           photos={sufflePhotos(photos)}

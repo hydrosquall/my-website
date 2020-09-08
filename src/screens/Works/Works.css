@@ -39,7 +39,7 @@
 }
 
 .work .body .description .infos div::first-letter {
-  opacity: 0.6;
+  opacity: 0.8;
   color: palevioletred;
 }
 

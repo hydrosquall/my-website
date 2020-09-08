@@ -40,6 +40,9 @@
 
 /*iPhoneX horizontal*/
 @media screen and (max-width: 900px) {
+  .MediaSection {
+    margin-bottom: 2rem;
+  }
   .MediaSection .media-item {
     width: 45%;
     font-size: 13px;

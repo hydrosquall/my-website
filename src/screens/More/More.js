@@ -3,6 +3,8 @@ import VisibilitySensor from "react-visibility-sensor";
 import Section from "../../components/Section";
 import ImageSection from "../../components/ImageSection"
 
+import './More.css'
+
 const More = ({ data, onChangeVisibility }) => {
   return (
     <VisibilitySensor
@@ -12,17 +14,20 @@ const More = ({ data, onChangeVisibility }) => {
     >
       <Section title={data.title} id={data.id} className="More">
         {data.sectionItems.map(
-          ({ title, content, contentItems = [] }, index) => (
+          ({ title, content, contentItems}, index) => (
             <div className="more" key={index}>
-              {title}
-              {content}
-              {contentItems.map((item) => (
-                <div>{item}</div>
-              ))}
+              <div className="more-title">{title}</div>
+              {content && <div className="more-content">{content}</div>}
+              {contentItems && <div className="more-content-items">
+                {contentItems.map((item) => (
+                  <div className="more-content-item">{item}</div>
+                ))}
+              </div>
+              }
             </div>
           )
         )}
-        <ImageSection/>
+        <ImageSection />
       </Section>
     </VisibilitySensor>
   );
