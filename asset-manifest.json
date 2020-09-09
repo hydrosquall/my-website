@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "https://anediaz.github.io/my-website/static/css/main.9e17ba63.chunk.css",
-    "main.js": "https://anediaz.github.io/my-website/static/js/main.34b1b0d8.chunk.js",
-    "main.js.map": "https://anediaz.github.io/my-website/static/js/main.34b1b0d8.chunk.js.map",
+    "main.css": "https://anediaz.github.io/my-website/static/css/main.848eab16.chunk.css",
+    "main.js": "https://anediaz.github.io/my-website/static/js/main.b5ceb25f.chunk.js",
+    "main.js.map": "https://anediaz.github.io/my-website/static/js/main.b5ceb25f.chunk.js.map",
     "runtime-main.js": "https://anediaz.github.io/my-website/static/js/runtime-main.8e3163f1.js",
     "runtime-main.js.map": "https://anediaz.github.io/my-website/static/js/runtime-main.8e3163f1.js.map",
     "static/js/2.19874440.chunk.js": "https://anediaz.github.io/my-website/static/js/2.19874440.chunk.js",
     "static/js/2.19874440.chunk.js.map": "https://anediaz.github.io/my-website/static/js/2.19874440.chunk.js.map",
     "index.html": "https://anediaz.github.io/my-website/index.html",
-    "precache-manifest.e332b492e461f9f22525a3fb30f2035e.js": "https://anediaz.github.io/my-website/precache-manifest.e332b492e461f9f22525a3fb30f2035e.js",
+    "precache-manifest.ad8ad8d156256fc28afd7a901a7819ce.js": "https://anediaz.github.io/my-website/precache-manifest.ad8ad8d156256fc28afd7a901a7819ce.js",
     "service-worker.js": "https://anediaz.github.io/my-website/service-worker.js",
-    "static/css/main.9e17ba63.chunk.css.map": "https://anediaz.github.io/my-website/static/css/main.9e17ba63.chunk.css.map",
+    "static/css/main.848eab16.chunk.css.map": "https://anediaz.github.io/my-website/static/css/main.848eab16.chunk.css.map",
     "static/js/2.19874440.chunk.js.LICENSE.txt": "https://anediaz.github.io/my-website/static/js/2.19874440.chunk.js.LICENSE.txt",
     "static/media/ane.png": "https://anediaz.github.io/my-website/static/media/ane.7c8c5893.png",
     "static/media/ane2.png": "https://anediaz.github.io/my-website/static/media/ane2.db31f34a.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.8e3163f1.js",
     "static/js/2.19874440.chunk.js",
-    "static/css/main.9e17ba63.chunk.css",
-    "static/js/main.34b1b0d8.chunk.js"
+    "static/css/main.848eab16.chunk.css",
+    "static/js/main.b5ceb25f.chunk.js"
   ]
 }
