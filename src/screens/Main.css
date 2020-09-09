@@ -7,13 +7,13 @@
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
   width: 100%;
+  background-color: #fcfcfc;
 }
 
 .Main .Menu {
   width: 20%;
 }
 .Main .page {
-  background-color: #fcfcfc;
   z-index: 8;
   width: 80%;
   padding-bottom: 7rem;

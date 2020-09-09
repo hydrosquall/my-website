@@ -141,7 +141,12 @@
           }
         ]
       }
-    ]
+    ],
+    "webSiteInfo": {
+      "author": "Ane Diaz de Tuesta",
+      "text": "Site web développé par $author",
+      "url": "http://www.anediaz.com"
+    }
   },
   "EN": {
     "menu": [
@@ -260,7 +265,12 @@
           }
         ]
       }
-    ]
+    ],
+    "webSiteInfo": {
+      "author": "Ane Diaz de Tuesta",
+      "text": "Website developed by $author",
+      "url": "http://www.anediaz.com"
+    }
   },
   "ES": {
     "menu": [
@@ -383,7 +393,12 @@
           }
         ]
       }
-    ]
+    ],
+    "webSiteInfo": {
+      "author": "Ane Diaz de Tuesta",
+      "text": "Página web desarrollada por $author",
+      "url": "http://www.anediaz.com"
+    }
   },
   "EU": {
     "menu": [
@@ -506,7 +521,12 @@
           }
         ]
       }
-    ]
+    ],
+    "webSiteInfo": {
+      "author": "Ane Diaz de Tuesta",
+      "text": "$authork egindako webgunea",
+      "url": "http://www.anediaz.com"
+    }
   },
   "talks":
      [

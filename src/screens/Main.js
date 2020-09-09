@@ -5,6 +5,7 @@ import About from "./About/About";
 import Skills from "./Skills/Skills";
 import Works from "./Works/Works";
 import More from "./More/More";
+import Footer from '../components/Footer';
 import jsonData from "../service/data.json";
 import "./Main.css";
 
@@ -78,6 +79,7 @@ const Main = () => {
               onChangeVisibility={onChangeVisibility}
             />
           </div>
+          <Footer data={data.webSiteInfo} />
         </>
       )}
     </div>
