@@ -4,7 +4,8 @@
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   background-color: #ececeb;
-  position: relative;
+  position: fixed;
+  height: 100%;
 }
 
 .Menu .item {
