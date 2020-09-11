@@ -62,9 +62,47 @@
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
+  .work .body .description {
+    padding: 1rem 0rem 0 3rem;
+  }
+  .work .body .description .project {
+    padding-bottom: 6rem;
+  }
+
+  .work .body .description .project::after {
+    height: 75px;
+  }
 }
 /*iPadPro Vertical / iPad HorizontaL*/
 @media screen and (max-width: 1024px) {
+  .work {
+    margin-bottom: 6rem;
+  }
+  
+  .work .body {
+    flex-direction: column-reverse;
+  }
+
+  .work .body .description {
+    padding: 0;
+  }
+
+  .work .body .description .project {
+    padding-bottom: 1em;
+    font-size: 2.2rem;
+  }
+  .work .body .description .project::after {
+    display: none;  
+  }
+
+  .work .body .description .infos {
+    margin-bottom: 2.5rem;
+  }
+
+  .work .body a img {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 /*iPhoneX horizontal*/
@@ -73,16 +111,13 @@
     margin-bottom: 4.5rem;
   }
 
-  .work .body {
-    flex-direction: column-reverse;
+  .work .body .description {
+    padding: 1rem 3rem 0 3rem;
   }
 
   .work .body .description .project {
     padding-bottom: 2rem;
     font-size: 2rem;
-  }
-  .work .body .description .project::after {
-    display: none;  
   }
 
   .work .body .description .infos {
@@ -90,11 +125,7 @@
     line-height: 2rem;
     margin-bottom: 2.5rem;
   }
-
-  .work .body a img {
-    width: 75%;
-    margin: 0 auto;
-  }
+  
 }
 
 /*iPad Vertical iPhone6/7/8 Horizontal*/

@@ -56,18 +56,52 @@
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
+     .More .image-section {
+        margin-top: 2rem;
+    }
+
+    .More .more .more-title {
+        font-size: 1.8rem;
+    }
+
+    .More .more .more-content-item,
+    .More .more .more-content{
+        font-size: 1.6rem;
+    }
+
+    .More .more .more-content,
+    .More .more .more-content-items {
+        margin-left: 1.2rem;
+    }
   
 }
 /*iPadPro Vertical / iPad HorizontaL*/
 @media screen and (max-width: 1024px) {
+    .More .more {
+        padding: 1.2rem 0;
+    }
+
+    .More .more .more-title {
+        font-size: 1.6rem;
+    }
+
+    .More .more .more-content-item,
+    .More .more .more-content{
+        font-size: 1.4rem;
+    }
+   
 }
 
 /*iPhoneX horizontal*/
 @media screen and (max-width: 900px) {
+    .More .more {
+        padding: 1.2rem;
+    }
     .More .more .more-title {
         font-size: 1.4rem;
     }
-    .More .more .more-content-item{
+    .More .more .more-content-item,
+    .More .more .more-content{
         font-size: 1.2rem;
     }
 

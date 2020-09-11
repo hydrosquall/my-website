@@ -34,6 +34,7 @@
 @media screen and (max-width: 1382px) {
   .Main .page {
     width: 84%;
+    padding-bottom: 4rem;
   }
   .Main .Menu {
     width: 16%;
@@ -43,6 +44,7 @@
 @media screen and (max-width: 1024px) {
   .Main .page {
     width: 79%;
+    padding-bottom: 2rem;
   }
   .Main .Menu {
     width: 21%;

@@ -27,24 +27,29 @@
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
+  .graphic .illustrations {
+    margin-top: 4.5rem;
+  }
+  .graphic .illustrations .empty {
+    width: 55%;
+  }
   
 }
 /*iPadPro Vertical / iPad HorizontaL*/
 @media screen and (max-width: 1024px) {
-}
-
-/*iPhoneX horizontal*/
-@media screen and (max-width: 900px) {
   .graphic .illustrations {
     justify-content: center;
   }
   .graphic .illustrations a {
     margin-top: 0;
   }
-
   .graphic .illustrations .empty {
     display: none;
   }
+}
+
+/*iPhoneX horizontal*/
+@media screen and (max-width: 900px) {
 }
 
 /*iPad Vertical iPhone6/7/8 Horizontal*/

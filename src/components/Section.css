@@ -73,6 +73,9 @@
 }
 /*iPadPro Vertical / iPad HorizontaL*/
 @media screen and (max-width: 1024px) {
+  .Section {
+    padding: 0 5rem 0 5rem;
+  }
 }
 
 /*iPhoneX horizontal*/

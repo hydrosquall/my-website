@@ -33,16 +33,28 @@
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
+  .MediaSection .media-item {
+    width: 45%;
+    font-size: 1.5rem;
+  }
 }
 /*iPadPro Vertical / iPad HorizontaL*/
 @media screen and (max-width: 1024px) {
+  .MediaSection {
+    margin-bottom: 2rem;
+  }
+
+  .MediaSection {
+    padding: 0;
+  }
+
+  .MediaSection .media-item {
+    font-size: 0.9rem;
+  }
 }
 
 /*iPhoneX horizontal*/
 @media screen and (max-width: 900px) {
-  .MediaSection {
-    margin-bottom: 2rem;
-  }
   .MediaSection .media-item {
     width: 45%;
     font-size: 13px;
@@ -55,9 +67,7 @@
 
 /*iPhoneX/iPhone6/7/8 vertical*/
 @media screen and (max-width: 480px) {
-  .MediaSection {
-    padding: 0;
-  }
+  
   .MediaSection .media-item {
     width: 90%;
     font-size: 12px;
