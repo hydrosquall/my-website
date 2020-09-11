@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://anediaz.github.io/my-website/static/css/main.848eab16.chunk.css",
+    "main.css": "https://anediaz.github.io/my-website/static/css/main.ff6285b0.chunk.css",
     "main.js": "https://anediaz.github.io/my-website/static/js/main.b5ceb25f.chunk.js",
     "main.js.map": "https://anediaz.github.io/my-website/static/js/main.b5ceb25f.chunk.js.map",
     "runtime-main.js": "https://anediaz.github.io/my-website/static/js/runtime-main.8e3163f1.js",
@@ -8,9 +8,9 @@
     "static/js/2.19874440.chunk.js": "https://anediaz.github.io/my-website/static/js/2.19874440.chunk.js",
     "static/js/2.19874440.chunk.js.map": "https://anediaz.github.io/my-website/static/js/2.19874440.chunk.js.map",
     "index.html": "https://anediaz.github.io/my-website/index.html",
-    "precache-manifest.ad8ad8d156256fc28afd7a901a7819ce.js": "https://anediaz.github.io/my-website/precache-manifest.ad8ad8d156256fc28afd7a901a7819ce.js",
+    "precache-manifest.447b46ba3649e6731da078e11a927e75.js": "https://anediaz.github.io/my-website/precache-manifest.447b46ba3649e6731da078e11a927e75.js",
     "service-worker.js": "https://anediaz.github.io/my-website/service-worker.js",
-    "static/css/main.848eab16.chunk.css.map": "https://anediaz.github.io/my-website/static/css/main.848eab16.chunk.css.map",
+    "static/css/main.ff6285b0.chunk.css.map": "https://anediaz.github.io/my-website/static/css/main.ff6285b0.chunk.css.map",
     "static/js/2.19874440.chunk.js.LICENSE.txt": "https://anediaz.github.io/my-website/static/js/2.19874440.chunk.js.LICENSE.txt",
     "static/media/ane.png": "https://anediaz.github.io/my-website/static/media/ane.7c8c5893.png",
     "static/media/ane2.png": "https://anediaz.github.io/my-website/static/media/ane2.db31f34a.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.8e3163f1.js",
     "static/js/2.19874440.chunk.js",
-    "static/css/main.848eab16.chunk.css",
+    "static/css/main.ff6285b0.chunk.css",
     "static/js/main.b5ceb25f.chunk.js"
   ]
 }
