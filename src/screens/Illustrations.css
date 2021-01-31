@@ -6,6 +6,7 @@ body {
   height: 100%;
   color: white;
   font-family: "Quicksand", sans-serif;
+  margin-bottom: 5rem;
 }
 
 .Illustrations .title {
@@ -26,9 +27,9 @@ body {
   justify-content: space-around;
   height: 5rem;
   line-height: 5rem;
-  width: 80%;
+  width: 95%;
   margin: 0 auto 2rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .Illustrations .albums .albumName {

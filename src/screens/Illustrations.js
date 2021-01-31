@@ -2,7 +2,7 @@ import React, { useReducer, useEffect } from "react";
 import Gallery from "react-ikusi";
 import { illustrations } from "../service/data.json";
 import FlickrAPI from "../service/FlickrAPI";
-import { transformResult, sufflePhotos } from "../service/utils";
+import { transformResult } from "../service/utils";
 import { SIZES, illustrationsConfigurations } from "../service/constants";
 import "./Illustrations.css";
 
@@ -117,7 +117,7 @@ const Illustrations = () => {
       <div className="container">
         {currentPhotos ? (
           <Gallery
-            photos={sufflePhotos(currentPhotos)}
+            photos={currentPhotos}
             configurations={illustrationsConfigurations}
           />
         ) : (
