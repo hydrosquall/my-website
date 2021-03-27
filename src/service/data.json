@@ -70,6 +70,9 @@
           "className": "fab fa-npm",
           "title": "Mon NPM"
         }
+      ],
+      "lastNews": [
+        {"text": "Réalisation de la traduction basque de"},{"text": "Node.js Best Practices", "link": true}
       ]
     },
     "sections": [
@@ -197,6 +200,9 @@
           "className": "fab fa-npm",
           "title": "My NPM"
         }
+      ],
+      "lastNews": [
+        {"text": "Realization of Basque translation of"},{"text": "Node.js Best Practices", "link": true}
       ]
     },
     "sections": [
@@ -325,6 +331,9 @@
           "className": "fab fa-npm",
           "title": "Mi NPM"
         }
+      ],
+      "lastNews": [
+        {"text": "Realización de la traducción vasca de"},{"text": "Node.js Best Practices", "link": true}
       ]
     },
     "sections": [
@@ -453,6 +462,9 @@
           "className": "fab fa-npm",
           "title": "Nire NPM"
         }
+      ],
+      "lastNews": [
+        {"text": "Node.js Best Practices gidaren", "link": true},{"text": "euskarazko itzulpenaren burutzea"}
       ]
     },
     "sections": [

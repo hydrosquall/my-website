@@ -8,6 +8,7 @@ import More from "./More/More";
 import Footer from '../components/Footer';
 import jsonData from "../service/data.json";
 import "./Main.css";
+import LastNews from "../components/LastNews";
 
 const defaultLanguage = "EN";
 const defaultSection = "about";
@@ -61,6 +62,7 @@ const Main = () => {
           />
           <div className="page">
             <Header {...data.header} id={defaultSection} />
+            <LastNews content={data.header.lastNews} id={defaultSection} />
             <About
               data={data.sections[0]}
               onChangeVisibility={onChangeVisibility}
