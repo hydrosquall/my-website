@@ -4,17 +4,21 @@ import { HashRouter, Route } from "react-router-dom";
 import Main from "./screens/Main";
 import Illustrations from "./screens/Illustrations";
 
-const App = () => {
-  return (
-    <HashRouter>
-      <Route path="/illustrations" exact component={Illustrations} />
-      <Route path="/" exact component={Main} />
-      <Route path="/about" component={Main} />
-      <Route path="/skills" component={Main} />
-      <Route path="/works" component={Main} />
-      <Route path="/more" component={Main} />
-    </HashRouter>
-  );
-};
+const paths = [
+  {path: '/illustrations', component: Illustrations, isExact: true},
+  {path: '/', isExact: true, component: Main},
+  {path: '/about', component: Main},
+  {path: '/skills', component: Main},
+  {path: '/works', component: Main},
+  {path: '/more', component: Main}
+]
+
+const App = () => (
+  <HashRouter>
+  {
+    paths.map(({path, component, isExact}) => <Route path={path} exact={isExact} component={component} />)
+  }
+  </HashRouter>
+);
 
 export default App;
