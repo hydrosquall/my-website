@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useParams, useHistory } from "react-router-dom";
 import Menu from "../components/Menu";
 import Header from "../components/Header";
 import About from "./About/About";
@@ -9,29 +10,30 @@ import Footer from '../components/Footer';
 import jsonData from "../service/data.json";
 import "./Main.css";
 import LastNews from "../components/LastNews";
+import {LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION} from '../service/constants';
 
-const defaultLanguage = "EN";
-const defaultSection = "about";
 
 const Main = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState(defaultLanguage);
-  const [visibleSection, setVisibleSection] = useState(defaultSection);
+  const [selectedLanguage, setSelectedLanguage] = useState(DEFAULT_LOCALE);
+  const [visibleSection, setVisibleSection] = useState(DEFAULT_SECTION);
   const data = jsonData[selectedLanguage];
+  const { locale } = useParams();
+  const history = useHistory();
+
+  useEffect(() => {
+    setSelectedLanguage(locale && LOCALES.includes(locale) ? locale : DEFAULT_LOCALE);
+  },[locale]);
 
   const languageClickHandler = (language) => {
     if (jsonData[language]) {
-      setSelectedLanguage(language);
+      history.replace(`/${language === DEFAULT_LOCALE ? '' : language.concat('/')}`)
     }
   };
 
   const changeScroll = (section) => {
     const selectedSection = document.getElementById(section);
     if (selectedSection) {
-      if (data.menu.findIndex((item) => item.id === section) === 0) {
-        window.scrollTo(0, 0);
-      } else {
-        selectedSection.scrollIntoView();
-      }
+      selectedSection.scrollIntoView({ behavior: 'smooth'});
     }
   };
 
@@ -61,8 +63,8 @@ const Main = () => {
             selectItemHandler={selectSectionHandler}
           />
           <div className="page">
-            <Header {...data.header} id={defaultSection} />
-            <LastNews content={data.header.lastNews} id={defaultSection} />
+            <Header {...data.header} id={DEFAULT_SECTION} />
+            <LastNews content={data.header.lastNews} id={DEFAULT_SECTION} />
             <About
               data={data.sections[0]}
               onChangeVisibility={onChangeVisibility}

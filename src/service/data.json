@@ -1,23 +1,23 @@
 {
   "languages": [
     {
-      "id": "EN",
+      "id": "en",
       "title": "english"
     },
     {
-      "id": "FR",
+      "id": "fr",
       "title": "français"
     },
     {
-      "id": "ES",
+      "id": "es",
       "title": "español"
     },
     {
-      "id": "EU",
+      "id": "eu",
       "title": "euskera"
     }
   ],
-  "FR": {
+  "fr": {
     "menu": [
       {
         "id": "about",
@@ -151,7 +151,7 @@
       "url": "http://www.anediaz.com"
     }
   },
-  "EN": {
+  "en": {
     "menu": [
       {
         "id": "about",
@@ -278,7 +278,7 @@
       "url": "http://www.anediaz.com"
     }
   },
-  "ES": {
+  "es": {
     "menu": [
       {
         "id": "about",
@@ -409,7 +409,7 @@
       "url": "http://www.anediaz.com"
     }
   },
-  "EU": {
+  "eu": {
     "menu": [
       {
         "id": "about",

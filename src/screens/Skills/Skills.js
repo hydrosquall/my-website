@@ -7,7 +7,7 @@ const Skills = ({ data, onChangeVisibility }) => {
   const getFormattedContent = ({ content, highlight }) => {
     const [phrase1, phrase2] = content.split(highlight);
     return [phrase1, highlight, phrase2].map((text, index) => (
-      <span key={index} className={index === 1 && "highlight-marker"}>
+      <span key={index} className={index === 1 ? "highlight-marker" : ""}>
         {text}
       </span>
     ));

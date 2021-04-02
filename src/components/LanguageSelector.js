@@ -1,13 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './LanguageSelector.css';
-
-const languages = {
-    EU: 'basque',
-    ES: 'spanish',
-    EN: 'english',
-    FR: 'french'
-};
+import {LANGUAGES} from '../service/constants';
 
 const propTypes = {
     languageItems: PropTypes.array.isRequired,
@@ -16,30 +10,22 @@ const propTypes = {
 };
 
 const LanguageSelector = ({language, languageItems, handleLanguageClick}) => {
-  const isActive = (lang) => {
-      let className = 'language ' + languages[lang] + ' ';
-      if(lang===language){
-          className += 'active';
-      }
-      return className;
-  };
+  const isActive = (lang) => `language ${LANGUAGES[lang]} ${lang===language ? 'active' : ''}`;
 
-  const buildLanguageItems = () => {
-    return languageItems.map((item, index) => {
-        return  <li className={isActive(item.id)}
-                    title={item.title}
-                    onClick={()=>handleLanguageClick(item.id)}
-                    key={item.id}>{item.id}</li>
-    })
-  };
-
-    return (
+  return (
       <div className="LanguageSelector">
-          <ul>
-            {buildLanguageItems()}
-          </ul>
-      </div>
-    )
+        <ul>
+          {languageItems.map(({id, title}) =>
+              (<li className={isActive(id)}
+              title={title}
+              onClick={()=>handleLanguageClick(id)}
+              key={id}>{id}</li>
+              )
+            )
+          }
+        </ul>
+    </div>
+  )
 };
 
 LanguageSelector.propTypes = propTypes;

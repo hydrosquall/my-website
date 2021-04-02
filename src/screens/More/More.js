@@ -19,8 +19,8 @@ const More = ({ data, onChangeVisibility }) => {
               <div className="more-title">{title}</div>
               {content && <div className="more-content">{content}</div>}
               {contentItems && <div className="more-content-items">
-                {contentItems.map((item) => (
-                  <div className="more-content-item">{item}</div>
+                {contentItems.map((item, index2) => (
+                  <div key={index2} className="more-content-item">{item}</div>
                 ))}
               </div>
               }

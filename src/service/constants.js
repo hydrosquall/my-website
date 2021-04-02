@@ -30,3 +30,16 @@ export const illustrationsConfigurations = [
   { maxWidth: 1024, cols: 4, margin: 2 },
   { minWidth: 1025, cols: 4, margin: 4 },
 ];
+
+export const LANGUAGES = {
+  eu: 'basque',
+  es: 'spanish',
+  en: 'english',
+  fr: 'french'
+};
+
+export const LOCALES = ["en", "fr", "es", "eu"];
+export const DEFAULT_LOCALE = "en";
+export const DEFAULT_SECTION = "about";
+
+
