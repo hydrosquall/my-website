@@ -6,6 +6,14 @@ import jsonData from "../service/data.json";
 import "./Main.css";
 import {LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION} from '../service/constants';
 
+const getCurrentPath = path => {
+  let currentPath = path;
+  LOCALES.forEach(l => {
+    currentPath = currentPath.replace(`/${l}`, '')
+  });
+  return currentPath
+};
+
 const Main = ({isArticle}) => {
   const [selectedLanguage, setSelectedLanguage] = useState(DEFAULT_LOCALE);
   const [visibleSection, setVisibleSection] = useState(DEFAULT_SECTION);
@@ -19,9 +27,8 @@ const Main = ({isArticle}) => {
 
   const languageClickHandler = (language) => {
     if (jsonData[language]) {
-      const newPath = history.location.path || history.location.pathname;
+      const newPath = getCurrentPath(history.location.pathname);
       history.replace({
-        path: newPath,
         pathname: `${language === DEFAULT_LOCALE ? newPath : '/'.concat(language.concat(newPath))}`
       })
     }
