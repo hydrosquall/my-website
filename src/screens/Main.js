@@ -72,7 +72,7 @@ const Main = ({isArticle}) => {
             languageItems={jsonData.languages}
             selectedItem={isArticle ? "" : visibleSection}
             selectItemHandler={isArticle ? goBackToSite : selectSectionHandler}
-            isClosable={isArticle && data.menuClosable}
+            closeData={isArticle && data.menuClosable}
           />
           <div className="page">
             { isArticle ?
