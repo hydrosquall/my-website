@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import * as propTypes from 'prop-types';
-import Menu from "../components/Menu";
-import Header from "../components/Header";
-import About from "./About/About";
-import Skills from "./Skills/Skills";
-import Works from "./Works/Works";
-import More from "./More/More";
-import Footer from '../components/Footer';
+import { Menu, Header, Footer, LastNews} from "../components";
+import { About, Skills, Works, More } from "./index";
 import jsonData from "../service/data.json";
 import "./Main.css";
-import LastNews from "../components/LastNews";
 import {LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION} from '../service/constants';
 
 const Main = ({isArticle}) => {
@@ -93,9 +86,5 @@ const Main = ({isArticle}) => {
     </div>
   );
 };
-
-Main.propTypes = propTypes.exact({
-  isArticle: propTypes.bool
-});
 
 export default Main;

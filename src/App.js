@@ -1,8 +1,7 @@
 import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
-import Main from "./screens/Main";
-import Illustrations from "./screens/Illustrations";
+import { Main, Illustrations } from "./screens";
 
 const paths = [
   {path: '/article', isExact: true, Component: Main, props: {isArticle: true}},

@@ -1,6 +1,6 @@
 import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
-import Section from "../../components/Section";
+import { Section } from "../../components";
 import "./Works.css";
 
 import Web from "./Web";
