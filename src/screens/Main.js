@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
+import * as propTypes from 'prop-types';
 import Menu from "../components/Menu";
 import Header from "../components/Header";
 import About from "./About/About";
@@ -12,8 +13,7 @@ import "./Main.css";
 import LastNews from "../components/LastNews";
 import {LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION} from '../service/constants';
 
-
-const Main = () => {
+const Main = ({isArticle}) => {
   const [selectedLanguage, setSelectedLanguage] = useState(DEFAULT_LOCALE);
   const [visibleSection, setVisibleSection] = useState(DEFAULT_SECTION);
   const data = jsonData[selectedLanguage];
@@ -26,7 +26,11 @@ const Main = () => {
 
   const languageClickHandler = (language) => {
     if (jsonData[language]) {
-      history.replace(`/${language === DEFAULT_LOCALE ? '' : language.concat('/')}`)
+      const newPath = history.location.path || history.location.pathname;
+      history.replace({
+        path: newPath,
+        pathname: `${language === DEFAULT_LOCALE ? newPath : '/'.concat(language.concat(newPath))}`
+      })
     }
   };
 
@@ -89,5 +93,9 @@ const Main = () => {
     </div>
   );
 };
+
+Main.propTypes = propTypes.exact({
+  isArticle: propTypes.bool
+});
 
 export default Main;

@@ -1,22 +1,25 @@
 import React from "react";
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import Main from "./screens/Main";
 import Illustrations from "./screens/Illustrations";
 
 const paths = [
-  {path: '/illustrations', component: Illustrations, isExact: true},
-  {path: '/', isExact: true, component: Main},
+  {path: '/article', isExact: true, Component: Main, props: {isArticle: true}},
+  {path: '/illustrations', Component: Illustrations, isExact: true},
+  {path: '/', isExact: true, Component: Main},
 ]
 
 const App = () => (
   <HashRouter>
+    <Switch>
     {
-      paths.map(({path, component, isExact}, index) => <Route key={index} path={path} exact={isExact} component={component} />)
+      paths.map(({path, Component, isExact, props}) => <Route key={path} path={path} exact={isExact} render={()=> <Component {...props}/>} />)
     }
     {
-      paths.map(({path, component, isExact}, index) => <Route key={index} path={`/:locale${path}`} exact={isExact} component={component} />)
+      paths.map(({path, Component, isExact, props}) => <Route key={path} path={`/:locale${path}`} exact={isExact} render={()=> <Component {...props}/>} />)
     }
+    </Switch>
   </HashRouter>
 );
 
