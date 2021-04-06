@@ -54,38 +54,51 @@ const Main = ({isArticle}) => {
     }
   };
 
+  const goBackToSite = () => {
+    const newPath = history.location.pathname.replace("/article", "/");
+    history.push({
+      pathname: newPath
+    })
+  }
+
   return (
     <div className="Main">
       {data && (
         <>
           <Menu
-            menuItems={data.menu}
+            menuItems={isArticle ? [] : data.menu}
             language={selectedLanguage}
             languageClickHandler={languageClickHandler}
             languageItems={jsonData.languages}
-            selectedItem={visibleSection}
-            selectItemHandler={selectSectionHandler}
+            selectedItem={isArticle ? "" : visibleSection}
+            selectItemHandler={isArticle ? goBackToSite : selectSectionHandler}
+            isClosable={isArticle && data.menuClosable}
           />
           <div className="page">
-            <Header {...data.header} id={DEFAULT_SECTION} />
-            <LastNews content={data.header.lastNews} id={DEFAULT_SECTION} />
-            <About
-              data={data.sections[0]}
-              onChangeVisibility={onChangeVisibility}
-            />
-            <Skills
-              data={data.sections[1]}
-              onChangeVisibility={onChangeVisibility}
-            />
-            <Works
-              data={data.sections[2]}
-              media={jsonData.talks}
-              onChangeVisibility={onChangeVisibility}
-            />
-            <More
-              data={data.sections[3]}
-              onChangeVisibility={onChangeVisibility}
-            />
+            { isArticle ?
+              <div className="article"> article </div> :
+              <div className="resume">
+                <Header {...data.header} id={DEFAULT_SECTION} />
+                <LastNews content={data.header.lastNews} id={DEFAULT_SECTION} />
+                <About
+                  data={data.sections[0]}
+                  onChangeVisibility={onChangeVisibility}
+                />
+                <Skills
+                  data={data.sections[1]}
+                  onChangeVisibility={onChangeVisibility}
+                />
+                <Works
+                  data={data.sections[2]}
+                  media={jsonData.talks}
+                  onChangeVisibility={onChangeVisibility}
+                />
+                <More
+                  data={data.sections[3]}
+                  onChangeVisibility={onChangeVisibility}
+                />
+              </div>
+            }
           </div>
           <Footer data={data.webSiteInfo} />
         </>

@@ -15,6 +15,7 @@ const propTypes = {
   languageItems: PropTypes.array.isRequired,
   selectedItem: PropTypes.string.isRequired,
   selectItemHandler: PropTypes.func.isRequired,
+  isClosable: PropTypes.string
 };
 
 const Menu = ({
@@ -24,6 +25,7 @@ const Menu = ({
   languageClickHandler,
   menuItems,
   selectItemHandler,
+  isClosable
 }) => {
   const getClass = (id) => {
     return selectedItem === id ? "item active" : "item";
@@ -68,7 +70,8 @@ const Menu = ({
           languageItems={languageItems}
         />
       }
-      {buildMenu()}
+      {menuItems && buildMenu()}
+      {isClosable && <button className="closeButton" onClick={selectItemHandler}><i className="fa fa-hand-o-left"/>{isClosable}</button>}
     </div>
   );
 };

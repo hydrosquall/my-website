@@ -36,6 +36,7 @@
         "text": "plus"
       }
     ],
+    "menuClosable": "retour",
     "header": {
       "name": "Ane DIAZ DE TUESTA",
       "imageUrl": "./profile.jpg",
@@ -170,6 +171,7 @@
         "text": "more"
       }
     ],
+    "menuClosable": "to site",
     "header": {
       "name": "Ane DIAZ DE TUESTA",
       "imageUrl": "./profile.jpg",
@@ -297,6 +299,7 @@
         "text": "más"
       }
     ],
+    "menuClosable": "volver",
     "header": {
       "name": "Ane DIAZ DE TUESTA",
       "imageUrl": "./profile.jpg",
@@ -428,6 +431,7 @@
         "text": "gehiago"
       }
     ],
+    "menuClosable": "itzuli",
     "header": {
       "name": "Ane DIAZ DE TUESTA",
       "imageUrl": "./profile.jpg",

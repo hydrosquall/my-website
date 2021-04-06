@@ -47,6 +47,26 @@
   top: 6rem;
 }
 
+.Menu .closeButton{
+  border: none;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.5;
+  overflow-wrap: break-word;
+}
+
+.Menu .closeButton i {
+  margin-right: 10px;
+}
+
+.Menu .closeButton:hover {
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 1;
+}
+
 
 /*MacBook 13"*/
 @media screen and (max-width: 1920px) {
