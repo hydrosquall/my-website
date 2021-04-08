@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Menu.css";
-import LanguageSelector from "./LanguageSelector";
+import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
 const propTypes = {
   menuItems: PropTypes.arrayOf(

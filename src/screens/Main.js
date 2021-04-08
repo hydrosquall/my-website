@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { Menu, Header, Footer, LastNews} from "../components";
+import { Menu, Header, Footer, LastNews, Article} from "../components";
 import { About, Skills, Works, More } from "./index";
 import jsonData from "../service/data.json";
+import articleData from "../service/articleData.json"
 import "./Main.css";
 import {LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION} from '../service/constants';
 
@@ -76,7 +77,7 @@ const Main = ({isArticle}) => {
           />
           <div className="page">
             { isArticle ?
-              <div className="article"> article </div> :
+              <div className="article"><Article data={articleData.eu}/></div> :
               <div className="resume">
                 <Header {...data.header} id={DEFAULT_SECTION} />
                 <LastNews content={data.header.lastNews} id={DEFAULT_SECTION} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './LanguageSelector.css';
-import {LANGUAGES} from '../service/constants';
+import {LANGUAGES} from '../../service/constants';
 
 const propTypes = {
     languageItems: PropTypes.array.isRequired,

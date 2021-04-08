@@ -24,7 +24,7 @@ const defaultProps = {
   social: [],
 };
 
-const pathToMedia = require.context("../assets", true);
+const pathToMedia = require.context("../../assets", true);
 
 const Header = ({
   id,
