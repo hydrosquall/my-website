@@ -58,13 +58,18 @@ const Main = ({isArticle}) => {
     }
   };
 
+  const goToArticle = () => {
+    history.push(`/${selectedLanguage}/article`);
+    scrollToTop();
+  };
+
   const goBackToSite = () => {
     const newPath = history.location.pathname.replace("/article", "/");
     history.push({
       pathname: newPath
     });
     scrollToTop();
-  }
+  };
 
   return (
     <div className="Main">
@@ -84,7 +89,7 @@ const Main = ({isArticle}) => {
               <Article data={articleData[selectedLanguage]}/> :
               <div className="resume">
                 <Header {...data.header} id={DEFAULT_SECTION} />
-                <LastNews content={data.header.lastNews} id={DEFAULT_SECTION} />
+                <LastNews content={data.header.lastNews} id={DEFAULT_SECTION} goToArticle={goToArticle} />
                 <About
                   data={data.sections[0]}
                   onChangeVisibility={onChangeVisibility}

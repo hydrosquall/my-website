@@ -1,5 +1,4 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom'
 import PropTypes from "prop-types";
 import './LastNews.css';
 
@@ -40,11 +39,7 @@ const transformContent = ([first, second, last], onReadClick) => {
     </>)
 }
 
-const LastNews = ({content, language}) => {
-  const history = useHistory();
-  const goToArticle = () => {
-    history.push(`/${language}/article`)
-  }
+const LastNews = ({content, goToArticle}) => {
   return (<div className="last-news">
     <div className="empty"></div>
     <div className="content">

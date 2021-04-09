@@ -31,7 +31,7 @@ Hasieran ingelesez argitaratu zen, baina gaur egun beste sei hizkuntzatan dago i
 
 ## Euskarazko bertsioaren abentura
 
-Gure abentura orain dela urtebete inguru hasi zen, SARS-CoV-2 birusak eragindako pandemiaren lehen konfinamenduarekin batera. 2020ko martxoaren 10ean zehatz-mehatz.
+"Gure abentura orain dela urtebete inguru hasi zen, SARS-CoV-2 birusak eragindako pandemiaren lehen konfinamenduarekin batera. 2020ko martxoaren 10ean zehatz-mehatz.
 
 Twitteren ikusi nuen mundu guztiko hainbat programatzailek laguntza eskaintzen zutela gida hau beste hizkuntza batzuetara itzultzeko. Egia esan, artean ez nuen gidaren berririk, eta atentzioa eman zidan. Antza denez, gai horren inguruan egindako gida garrantzitsu eta estimatuenetako bat da, kode irekian idatzitakoa eta edonorentzat eskuragarri.
 
@@ -49,6 +49,6 @@ Gida honen helburua da informazioa ezagutaraztea eta partekatzea. Gure ustez, ku
 
 [Hementxe](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.basque.md) duzue Node.jsren Praktika Onen Gida euskaraz.
 
-Erabili eta gozatu!`;
+Erabili eta gozatu!"`;
 
 export {article}
