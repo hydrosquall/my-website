@@ -1,0 +1,49 @@
+.lightbox {
+  position: fixed;
+  inset: 0px;
+  background-color: transparent;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightbox .lightbox-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black;
+  opacity: .8;
+
+
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 2rem;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lightbox .close i {
+  font-size: 3rem;
+  color: white;
+  opacity: .7;
+}
+
+.lightbox .close i:hover {
+  cursor: pointer;
+}
+
+.lightbox img {
+  height: 90vh;
+  width: auto;
+  margin-bottom: 2rem;;
+  position: relative;
+}

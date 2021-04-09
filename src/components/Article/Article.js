@@ -1,41 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import Lightbox from '../Lightbox/Lightbox'
 import './Article.css';
+
+const withLightbox = v => v === 'sketchnote'
+
+const ImageComponent = ({src,alt}) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = val => setIsOpen(val);
+  return (<>
+    {isOpen && <Lightbox onClick={() => handleClick(false)} src={src}/>}
+    <img alt={alt} src={src} onClick={() => withLightbox(alt) ? handleClick(true) : ''} />
+    </>
+  );
+};
 
 const Article = ({data}) => {
 
-  const renderTitle = titleItem => (
-    <div className={`title ${titleItem.size || ''}`}>{titleItem.text}</div>
-  )
-
-  const renderParagraph = paragraphItem => (
-    <div className="paragraph">{paragraphItem.text}</div>
-  )
-
-  const renderImage = imageItem => (
-    <img src={imageItem.src} alt={imageItem.alt} className={imageItem.className || ''}/>
-  )
-
-  const renderBlocItem = item => {
-    switch(item.type) {
-      case 'title':
-        return renderTitle(item);
-      case 'paragraph':
-        return renderParagraph(item);
-      case 'image':
-        return renderImage(item);
-      default :
-        return item;
-    }
-  }
+  const renderers = {
+    link: ({href, children}) => <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>,
+    image: ImageComponent
+  };
 
   return (
     <div className="article">
-      {data.map(bloc => (
-        <div className="bloc">
-          {bloc.map(renderBlocItem)}
-        </div>
-      ))}
-
+      <ReactMarkdown children={data} renderers={renderers}/>
     </div>
   )
 }
