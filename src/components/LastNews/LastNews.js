@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from 'react-router-dom'
 import PropTypes from "prop-types";
 import './LastNews.css';
 
@@ -23,27 +24,34 @@ const transformLink = (text, index) => {
 
 
 
-const transformContent = content => {
-  const url = "https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md"
-  return content.map(({text, link}, index) => link ? (
+const transformContent = ([first, second, last], onReadClick) => {
+  const url = "https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md";
+  return (<>
+  {[first, second].map(({text, link}, index) => link ? (
     <div key={index}>
       <a href={url} target="_blank" rel="noopener noreferrer">
         {transformLink(text, index)}
       </a>
     </div> ):
     (<div key={index}>
-      <i className="fa fa-heart-o" aria-hidden="true"/>
       {text}
-    </div>))
+    </div>))}
+    <div className="read-article" onClick={onReadClick}>{last.text}<i className="fa fa-heart" aria-hidden="true"/></div>
+    </>)
 }
 
-const LastNews = ({content}) =>
-  (<div className="last-news">
+const LastNews = ({content, language}) => {
+  const history = useHistory();
+  const goToArticle = () => {
+    history.push(`/${language}/article`)
+  }
+  return (<div className="last-news">
     <div className="empty"></div>
     <div className="content">
-      {transformContent(content)}
+      {transformContent(content, goToArticle)}
     </div>
-  </div>);
+  </div>)
+  };
 
 LastNews.propTypes = propTypes;
 export default LastNews;

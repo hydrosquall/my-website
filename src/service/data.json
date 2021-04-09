@@ -73,7 +73,8 @@
         }
       ],
       "lastNews": [
-        {"text": "Réalisation de la traduction basque de"},{"text": "Node.js Best Practices", "link": true}
+        {"text": "Réalisation de la traduction basque de"},{"text": "Node.js Best Practices", "link": true},
+        {"text": "Lire l'article"}
       ]
     },
     "sections": [
@@ -204,7 +205,7 @@
         }
       ],
       "lastNews": [
-        {"text": "Realization of Basque translation of"},{"text": "Node.js Best Practices", "link": true}
+        {"text": "Realization of Basque translation of"},{"text": "Node.js Best Practices", "link": true},{"text": "Read the post"}
       ]
     },
     "sections": [
@@ -336,7 +337,7 @@
         }
       ],
       "lastNews": [
-        {"text": "Realización de la traducción vasca de"},{"text": "Node.js Best Practices", "link": true}
+        {"text": "Realización de la traducción vasca de"},{"text": "Node.js Best Practices", "link": true}, {"text": "Leer el artículo"}
       ]
     },
     "sections": [
@@ -468,7 +469,7 @@
         }
       ],
       "lastNews": [
-        {"text": "Node.js Best Practices gidaren", "link": true},{"text": "euskarazko itzulpenaren burutzea"}
+        {"text": "Node.js Best Practices gidaren", "link": true},{"text": "euskarazko itzulpenaren burutzea"}, {"text": "Artikulua irakurri"}
       ]
     },
     "sections": [

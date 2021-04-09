@@ -3,9 +3,9 @@ import { useParams, useHistory } from "react-router-dom";
 import { Menu, Header, Footer, LastNews, Article} from "../components";
 import { About, Skills, Works, More } from "./index";
 import jsonData from "../service/data.json";
-import * as articleData from "../service/articles/article.eu"
 import "./Main.css";
 import {LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION} from '../service/constants';
+import * as articleData from '../service/articles'
 
 const getCurrentPath = path => {
   let currentPath = path;
@@ -26,6 +26,15 @@ const Main = ({isArticle}) => {
     setSelectedLanguage(locale && LOCALES.includes(locale) ? locale : DEFAULT_LOCALE);
   },[locale]);
 
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  const scrollToSection = (section) => {
+    const selectedSection = document.getElementById(section);
+    if (selectedSection) {
+      selectedSection.scrollIntoView({ behavior: 'smooth'});
+    }
+  };
+
   const languageClickHandler = (language) => {
     if (jsonData[language]) {
       const newPath = getCurrentPath(history.location.pathname);
@@ -33,19 +42,13 @@ const Main = ({isArticle}) => {
         pathname: `${language === DEFAULT_LOCALE ? newPath : '/'.concat(language.concat(newPath))}`
       })
     }
-  };
-
-  const changeScroll = (section) => {
-    const selectedSection = document.getElementById(section);
-    if (selectedSection) {
-      selectedSection.scrollIntoView({ behavior: 'smooth'});
-    }
+    scrollToTop();
   };
 
   const selectSectionHandler = (section) => {
     if (section !== visibleSection) {
       setVisibleSection(section);
-      changeScroll(section);
+      scrollToSection(section);
     }
   };
 
@@ -59,7 +62,8 @@ const Main = ({isArticle}) => {
     const newPath = history.location.pathname.replace("/article", "/");
     history.push({
       pathname: newPath
-    })
+    });
+    scrollToTop();
   }
 
   return (
@@ -77,7 +81,7 @@ const Main = ({isArticle}) => {
           />
           <div className="page">
             { isArticle ?
-              <Article data={articleData.default}/> :
+              <Article data={articleData[selectedLanguage]}/> :
               <div className="resume">
                 <Header {...data.header} id={DEFAULT_SECTION} />
                 <LastNews content={data.header.lastNews} id={DEFAULT_SECTION} />

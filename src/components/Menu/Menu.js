@@ -27,9 +27,8 @@ const Menu = ({
   selectItemHandler,
   closeData
 }) => {
-  const getClass = (id) => {
-    return selectedItem === id ? "item active" : "item";
-  };
+
+  const getClass = (id) => `item ${selectedItem === id ? 'active' : ''}`
 
   const buildMenu = () => {
     return menuItems.map((item) => {
