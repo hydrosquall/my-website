@@ -19,20 +19,18 @@
   min-width: 100vw;
   background-color: black;
   opacity: .8;
-
-
 }
 
 .lightbox .close {
   position: absolute;
-  top: 2rem;
-  width: 80%;
+  top: 4rem;
+  width: 95%;
   display: flex;
   justify-content: flex-end;
 }
 
 .lightbox .close i {
-  font-size: 3rem;
+  font-size: 8rem;
   color: white;
   opacity: .7;
 }
@@ -44,6 +42,75 @@
 .lightbox img {
   height: 90vh;
   width: auto;
-  margin-bottom: 2rem;;
   position: relative;
+}
+
+/*MacBook 13"*/
+@media screen and (max-width: 1920px) {
+  .lightbox .close {
+    top: 2rem;
+    width: 80%;
+  }
+  .lightbox .close i {
+    font-size: 3rem;
+  }
+}
+
+/*iPadPro Horizontal*/
+@media screen and (max-width: 1382px) {
+  .lightbox .close {
+    width: 96%;
+  }
+}
+
+/*iPadPro Vertical / iPad HorizontaL*/
+@media screen and (max-width: 1024px) {
+  .lightbox img {
+    width: 90vw;
+    height: auto;
+  }
+  .lightbox .close {
+    width: 90%;
+    top: 4rem;
+  }
+}
+
+/*iPhoneX horizontal*/
+@media screen and (max-width: 900px) {
+  .lightbox img {
+    height: 90vh;
+    width: auto;
+  }
+  .lightbox .close {
+    width: 90%;
+    top: 1rem;
+  }
+  .lightbox .close i {
+    font-size: 2rem;
+  }
+}
+
+/*iPad Vertical iPhone6/7/8 Horizontal*/
+@media screen and (max-width: 768px) {
+  .lightbox img {
+    height: 85vh;
+    width: auto;
+  }
+  .lightbox .close {
+    width: 80%;
+    top: 1rem;
+  }
+}
+
+/*iPhoneX/iPhone6/7/8 vertical*/
+@media screen and (max-width: 480px) {
+  .lightbox img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .lightbox .close {
+    width: 80%;
+    top: 2rem;
+  }
 }
