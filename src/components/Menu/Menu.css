@@ -47,14 +47,19 @@
   top: 6rem;
 }
 
-.Menu .closeButton{
+.Menu .closeButton {
   border: none;
   outline: none;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
   font-weight: 500;
   opacity: 0.5;
   overflow-wrap: break-word;
+  margin-bottom: 10rem;
+  margin-right: 4rem;
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 0;
 }
 
 .Menu .closeButton i {
@@ -65,12 +70,13 @@
   cursor: pointer;
   font-weight: 600;
   opacity: 1;
+  background-color: inherit;
 }
 
 
 /*MacBook 13"*/
 @media screen and (max-width: 1920px) {
-  .Menu .LanguageSelector {
+  .Menu .LanguageSelector, .Menu .closeButton {
     margin-right: 3rem;
     margin-bottom: 7rem;
   }
@@ -85,11 +91,20 @@
     top: 5.5rem;
     height: 5rem;
   }
+
+  .Menu .closeButton {
+    font-size: 1rem;
+  }
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
   .LanguageSelector ul li:last-child:after {
     display: none;
+  }
+
+  .Menu .closeButton {
+    text-align: center;
+    font-size: 1.5rem;
   }
 
   .Menu .item {
@@ -102,8 +117,9 @@
 
 /*iPhoneX horizontal*/
 @media screen and (max-width: 900px) {
-  .Menu .LanguageSelector {
+  .Menu .LanguageSelector, .Menu .closeButton {
     margin: 2rem 0 5rem 0;
+    font-size: 0.9rem;
   }
 }
 
@@ -113,7 +129,15 @@
 
 /*iPhoneX/iPhone6/7/8 vertical*/
 @media screen and (max-width: 480px) {
-  .Menu .LanguageSelector {
+  .Menu .LanguageSelector, .Menu .closeButton {
     margin: 2rem 0;
   }
+
+  .Menu .closeButton {
+    font-size: 0.7rem;
+  }
+
+  .Menu .closeButton i {
+    margin-right: 5px;
+}
 }
