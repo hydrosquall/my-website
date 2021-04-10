@@ -32,7 +32,7 @@ Aunque inicialmente fue publicada en inglés, actualmente está disponible para 
 
 ## La aventura de la versión vasca
 
-Nuestra aventura comenzó hace un año aproximadamente, en las mismas fechas en que comenzó el primer confinamiento de la pandemia originada por el virus SARS-CoV-2 en Marzo del año pasado.
+"Nuestra aventura comenzó hace un año aproximadamente, en las mismas fechas en que comenzó el primer confinamiento de la pandemia originada por el virus SARS-CoV-2 en Marzo del año pasado.
 
 Me di cuenta que en Twitter algunos desarrolladores web de todo el mundo ofrecían su ayuda para traducir la guía a otras lenguas. A decir verdad, todavía no conocía la guía y me llamó la atención. Entonces supe que era la guía más importante y mejor valorada por los profesionales de este ámbito.
 
@@ -46,6 +46,6 @@ El fin de esta guía es dar a conocer y compartir información, y, en nuestra op
 
 [Aquí](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.basque.md) tienes la versión en euskera de la Guía de Buenas Prácticas de Node.js en.
 
-¡Utilizala y disfruta!`;
+¡Utilizala y disfruta!"`;
 
 export {article}
