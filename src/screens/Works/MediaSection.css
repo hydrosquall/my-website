@@ -12,6 +12,9 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   margin: 2% 0;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .MediaSection .media-item img {
@@ -67,7 +70,7 @@
 
 /*iPhoneX/iPhone6/7/8 vertical*/
 @media screen and (max-width: 480px) {
-  
+
   .MediaSection .media-item {
     width: 90%;
     font-size: 12px;
