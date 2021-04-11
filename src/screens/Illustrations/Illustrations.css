@@ -54,6 +54,10 @@ body {
   margin: 0 auto;
 }
 
+.Illustrations .container div {
+  outline: none;
+}
+
 /* smartphone en portrait */
 @media screen and (max-width: 479px) {
   .Illustrations .title {
