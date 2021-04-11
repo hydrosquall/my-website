@@ -117,9 +117,20 @@
 
 /*iPhoneX horizontal*/
 @media screen and (max-width: 900px) {
-  .Menu .LanguageSelector, .Menu .closeButton {
-    margin: 2rem 0 5rem 0;
+  .Menu .LanguageSelector {
     font-size: 0.9rem;
+  }
+  .Menu .closeButton {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+
+  }
+  .Menu .closeButton i {
+    margin-bottom: 5px;
   }
 }
 
@@ -129,15 +140,12 @@
 
 /*iPhoneX/iPhone6/7/8 vertical*/
 @media screen and (max-width: 480px) {
-  .Menu .LanguageSelector, .Menu .closeButton {
+  .Menu .LanguageSelector {
     margin: 2rem 0;
   }
 
   .Menu .closeButton {
     font-size: 0.7rem;
+    margin: 2rem auto;
   }
-
-  .Menu .closeButton i {
-    margin-right: 5px;
-}
 }
