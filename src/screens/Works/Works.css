@@ -8,13 +8,18 @@
   display: flex;
 }
 
-.work .body a {
-  display: contents;
-}
-.work .body a img {
+.work .body .clickableImage {
   width: 50%;
 }
+.work .body .clickableImage a{
+  display: contents;
+}
+
+.work .body .clickableImage img {
+  width: 100%;
+}
 .work .body .description {
+  width: calc(50% - 6rem);
   padding: 1rem 3rem 0 3rem;
 }
 .work .body .description .project {
@@ -78,7 +83,7 @@
   .work {
     margin-bottom: 6rem;
   }
-  
+
   .work .body {
     flex-direction: column-reverse;
   }
@@ -92,7 +97,7 @@
     font-size: 2.2rem;
   }
   .work .body .description .project::after {
-    display: none;  
+    display: none;
   }
 
   .work .body .description .infos {
@@ -125,7 +130,7 @@
     line-height: 2rem;
     margin-bottom: 2.5rem;
   }
-  
+
 }
 
 /*iPad Vertical iPhone6/7/8 Horizontal*/

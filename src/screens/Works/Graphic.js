@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ImageWithLoader, LoaderInline } from '../../components';
 import image from "./graphic.png";
 import './Graphic.css'
 
 const Graphic = ({ data, className, id }) => (
   <div className={`graphic ${className}`} key={id}>
     <div className="body">
-      <a href={data.image.url} target="_blank" rel="noopener noreferrer">
-        <img src={image} alt={data.image.alt} />
-      </a>
+      <ImageWithLoader cls="clickableImage" alt={data.image.alt} url={data.image.url} image={image} loader={<LoaderInline height="50" width="50" />}/>
       <div className="description">
         <div className="project">{data.project}</div>
         <div className="infos">
