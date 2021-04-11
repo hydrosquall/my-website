@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import "./Header.css";
 import profileImage from './profile.jpg';
-import LoaderInline from '../Loader/LoaderInline';
+import { ImageWithLoader, LoaderInline } from "../";
 
 const propTypes = {
   id: PropTypes.string,
@@ -15,7 +15,6 @@ const propTypes = {
     })
   ),
   mail: PropTypes.string,
-  imageUrl: PropTypes.string,
   resume: PropTypes.shape({
     url: PropTypes.string.isRequired,
     title: PropTypes.string,
@@ -30,12 +29,10 @@ const Header = ({
   id,
   resume,
   name,
-  imageUrl,
   presentationSkills,
   mail,
   social,
 }) => {
-  const [profileLoading, setProfileLoading] = useState(true);
   const getSocial = () => {
     let socialContent = social.map((item, index) => {
       return (
@@ -70,14 +67,7 @@ const Header = ({
     );
   };
 
-  const getImage = () => {
-    return imageUrl ? (
-      <div className="pic">
-        {profileLoading && <LoaderInline height="50" width="50" />}
-        <img src={profileImage} className={!profileLoading ? 'loaded' : ''} alt="profile" onLoad={() => setProfileLoading(false)}/>
-      </div>
-    ) : null;
-  };
+  const getImage = () => (<ImageWithLoader cls="pic" image={profileImage} alt="profile" loader={<LoaderInline height="50" width="50" />}/>)
 
   return (
     <div className="Header" id={id}>
