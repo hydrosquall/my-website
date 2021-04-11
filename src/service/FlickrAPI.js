@@ -5,14 +5,14 @@ const getUrl = (photoSetId, sizes) =>
 
 const photosetsUrl = `https://api.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=${FLICKR.api_key}&user_id=${FLICKR.user_id}&format=json&nojsoncallback=true`;
 
-async function getPhotosets() {
+const getPhotosets = async () => {
   const response = await fetch(photosetsUrl);
   return response && response.ok
     ? (await response.json()).photosets.photoset.map((p) => p.id)
     : { Error: `Error while fetching user's photosets` };
 }
 
-async function getPhotos(photoSetId, sizes) {
+const getPhotos = async (photoSetId, sizes) => {
   const sizesParam = sizes.join(",");
   const response = await fetch(getUrl(photoSetId, sizesParam));
   return response && response.ok
@@ -20,7 +20,9 @@ async function getPhotos(photoSetId, sizes) {
     : { Error: `Error while reading photoset=${photoSetId}` };
 }
 
-export default {
+const FlickrAPI = {
   getPhotos,
   getPhotosets,
-};
+}
+
+export default FlickrAPI;
