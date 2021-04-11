@@ -25,7 +25,7 @@ const DivStyle = styled.div`
 
 const LoaderInline = ({width = DEFAULT_SIZE, height = DEFAULT_SIZE, color, opacity}) => (
   <LoaderStyle className="lds-ellipsis" width={width} height={height}>
-    {[...Array(4)].map(() => <DivStyle background={color} opacity={opacity} height={height} width={width}/>)}
+    {[...Array(4)].map((_,index) => <DivStyle key={index} background={color} opacity={opacity} height={height} width={width}/>)}
   </LoaderStyle>
 )
 

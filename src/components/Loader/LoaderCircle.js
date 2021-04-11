@@ -28,7 +28,7 @@ const DivStyle = styled.div`
 
 const LoaderCircle = ({color, opacity}) => (
   <LoaderStyle className="lds-roller">
-    {[...Array(8)].map(() => <DivStyle background={color} opacity={opacity}/>)}
+    {[...Array(8)].map((_, index) => <DivStyle key={index} background={color} opacity={opacity}/>)}
   </LoaderStyle>
 )
 
