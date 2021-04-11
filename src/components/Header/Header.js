@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Header.css";
+import profileImage from './profile.jpg';
 
 const propTypes = {
   id: PropTypes.string,
@@ -23,8 +24,6 @@ const propTypes = {
 const defaultProps = {
   social: [],
 };
-
-const pathToMedia = require.context("../../assets", true);
 
 const Header = ({
   id,
@@ -73,8 +72,7 @@ const Header = ({
     return imageUrl ? (
       <div
         className="pic"
-        style={{ backgroundImage: "url(" + pathToMedia(imageUrl) + ")" }}
-      />
+      ><img src={profileImage} alt="profile"/></div>
     ) : null;
   };
 

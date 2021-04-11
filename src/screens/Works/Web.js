@@ -1,6 +1,5 @@
 import React from "react";
-
-const image = require("./latestProject.png");
+import image from "./latestProject.png";
 
 const Web = ({ data, className, id }) => (
   <div className={`web ${className}`} key={id}>

@@ -79,11 +79,14 @@
 .Header .infos .pic {
   width: 25rem;
   height: 25rem;
-  border-radius: 12.5rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
 }
+
+.Header .infos .pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 12.5rem;
+}
+
 
 /*MacBook 13"*/
 @media screen and (max-width: 1920px) {
@@ -102,6 +105,9 @@
   .Header .infos .pic {
     width: 20rem;
     height: 20rem;
+  }
+
+  .Header .infos .pic img {
     border-radius: 10rem;
   }
 
@@ -121,8 +127,11 @@
   .Header .infos .pic {
     width: 15rem;
     height: 15rem;
+  }
+  .Header .infos .pic img {
     border-radius: 7.5rem;
   }
+
 }
 /*iPadPro Vertical / iPad HorizontaL*/
 @media screen and (max-width: 1024px) {
@@ -148,6 +157,8 @@
   .Header .infos .pic {
     width: 15rem;
     height: 15rem;
+  }
+  .Header .infos .pic img {
     border-radius: 7.5rem;
   }
 }
@@ -178,7 +189,7 @@
     width: 100%;
   }
 
-  .Header .infos .pic {
+  .Header .infos .pic, .Header .infos .pic img{
     display: none;
   }
 
