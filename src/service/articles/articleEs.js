@@ -46,6 +46,6 @@ El fin de esta guía es dar a conocer y compartir información, y, en nuestra op
 
 [Aquí](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.basque.md) tienes la versión en euskera de la Guía de Buenas Prácticas de Node.js en.
 
-¡Utilizala y disfruta!"`;
+¡Utilízala y disfruta!"`;
 
 export {article}
