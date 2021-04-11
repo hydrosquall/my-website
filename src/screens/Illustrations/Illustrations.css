@@ -10,7 +10,7 @@ body {
 }
 
 .Illustrations .title {
-  background-image: url("../assets/title-white.svg");
+  background-image: url("../../assets/title-white.svg");
   background-repeat: no-repeat;
   background-position: center top;
   height: 13rem;

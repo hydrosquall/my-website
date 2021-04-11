@@ -1,12 +1,12 @@
 import React, { useReducer, useEffect } from "react";
 import Gallery from "react-ikusi";
-import { illustrations } from "../service/data.json";
-import FlickrAPI from "../service/FlickrAPI";
-import { transformResult } from "../service/utils";
-import { SIZES, illustrationsConfigurations } from "../service/constants";
+import { illustrations } from "../../service/data.json";
+import FlickrAPI from "../../service/FlickrAPI";
+import { transformResult } from "../../service/utils";
+import { SIZES, illustrationsConfigurations } from "../../service/constants";
 import "./Illustrations.css";
 
-import { HamburgerMenu } from "../components";
+import { HamburgerMenu } from "../../components";
 
 const { original: def, large1024: big } = SIZES;
 const sizes = [`url${def}`, `url${big}`];

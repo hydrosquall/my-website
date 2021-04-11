@@ -3,5 +3,5 @@ export { default as HamburMoregerMenu } from './More/More';
 export { default as Skills } from './Skills/Skills';
 export { default as Works } from './Works/Works';
 export { default as More } from './More/More';
-export { default as Illustrations } from './Illustrations';
-export { default as Main } from './Main';
+export { default as Illustrations } from './Illustrations/Illustrations';
+export { default as Main } from './Main/Main';

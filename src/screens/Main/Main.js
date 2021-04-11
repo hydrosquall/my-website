@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { Menu, Header, Footer, LastNews, Article} from "../components";
-import { About, Skills, Works, More } from "./index";
-import jsonData from "../service/data.json";
+import { Menu, Header, Footer, LastNews, Article} from "../../components";
+import { About, Skills, Works, More } from "../index";
+import jsonData from "../../service/data.json";
 import "./Main.css";
-import {LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION} from '../service/constants';
-import * as articleData from '../service/articles'
+import {LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION} from '../../service/constants';
+import * as articleData from '../../service/articles'
 
 const getCurrentPath = path => {
   let currentPath = path;
