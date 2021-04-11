@@ -10,7 +10,7 @@ body {
 }
 
 .Illustrations .title {
-  background-image: url("../../assets/title-white.svg");
+  background-image: url("./title-white.svg");
   background-repeat: no-repeat;
   background-position: center top;
   height: 13rem;
@@ -38,10 +38,15 @@ body {
 
 .Illustrations .albums .albumName:hover {
   cursor: pointer;
+  opacity: .7;
 }
 .Illustrations .albums .albumName.active {
   opacity: 1;
   font-weight: 900;
+}
+
+.Illustrations .albums .albumName.active:hover {
+  cursor:initial;
 }
 
 .Illustrations .container {
