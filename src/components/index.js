@@ -7,5 +7,7 @@ export { default as LastNews } from './LastNews/LastNews';
 export { default as Menu } from './Menu/Menu';
 export { default as Section } from './Section/Section';
 export { default as Article } from './Article/Article';
+export { default as Lightbox} from './Lightbox/Lightbox';
 export { default as LoaderCircle } from './Loader/LoaderCircle';
 export { default as LoaderInline } from './Loader/LoaderInline';
+export { default as ImageWithLoader } from './ImageWithLoader/ImageWithLoader';
