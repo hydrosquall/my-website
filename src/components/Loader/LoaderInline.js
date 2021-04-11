@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import * as PropTypes from 'prop-types';
 import './LoaderInline.css';
 
 const DEFAULT_SIZE= "80";
@@ -27,5 +28,12 @@ const LoaderInline = ({width = DEFAULT_SIZE, height = DEFAULT_SIZE, color, opaci
     {[...Array(4)].map(() => <DivStyle background={color} opacity={opacity} height={height} width={width}/>)}
   </LoaderStyle>
 )
+
+LoaderInline.propTypes = {
+  height: PropTypes.string,
+  width: PropTypes.string,
+  color: PropTypes.string,
+  opacity: PropTypes.string,
+}
 
 export default LoaderInline;

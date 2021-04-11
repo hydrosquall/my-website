@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import * as PropTypes from 'prop-types';
 import './LoaderCircle.css';
 
 const LoaderStyle = styled.div`
@@ -25,10 +26,15 @@ const DivStyle = styled.div`
   }
 `;
 
-const Loader = ({color, opacity}) => (
+const LoaderCircle = ({color, opacity}) => (
   <LoaderStyle className="lds-roller">
     {[...Array(8)].map(() => <DivStyle background={color} opacity={opacity}/>)}
   </LoaderStyle>
 )
 
-export default Loader;
+LoaderCircle.propTypes = {
+  color: PropTypes.string,
+  opacity: PropTypes.string,
+}
+
+export default LoaderCircle;

@@ -39,7 +39,6 @@
     "menuClosable": "retour",
     "header": {
       "name": "Ane DIAZ DE TUESTA",
-      "imageUrl": "./profile.jpg",
       "presentationSkills": [
         "Développeuse Web",
         "Facilitatrice Graphique",
@@ -175,7 +174,6 @@
     "menuClosable": "return",
     "header": {
       "name": "Ane DIAZ DE TUESTA",
-      "imageUrl": "./profile.jpg",
       "presentationSkills": ["Web Developer", "Visual Facilitator", "Speaker"],
       "resume": {
         "url": "https://drive.google.com/uc?export=download&id=1HK4DjqSu_Jyb7slNzBcCOer_lI7nT31B",
@@ -303,7 +301,6 @@
     "menuClosable": "volver",
     "header": {
       "name": "Ane DIAZ DE TUESTA",
-      "imageUrl": "./profile.jpg",
       "presentationSkills": [
         "Desarrolladora Web",
         "Facilitadora Gráfica",
@@ -435,7 +432,6 @@
     "menuClosable": "itzuli",
     "header": {
       "name": "Ane DIAZ DE TUESTA",
-      "imageUrl": "./profile.jpg",
       "presentationSkills": [
         "Web Garatzailea",
         "Erraztaile Grafikoa",
