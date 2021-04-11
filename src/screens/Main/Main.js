@@ -59,7 +59,7 @@ const Main = ({isArticle}) => {
   };
 
   const goToArticle = () => {
-    history.push(`/${selectedLanguage}/article`);
+    history.push(`${selectedLanguage !== DEFAULT_LOCALE ? `/${selectedLanguage}` : ''}/article`);
     scrollToTop();
   };
 
