@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import Lightbox from '../Lightbox/Lightbox'
+import { Lightbox, ImageWithLoader, LoaderInline } from '../'
 import './Article.css';
 
 const withLightbox = v => v === 'sketchnote'
+const isNodejs = v => v === 'nodejs'
 
 const ImageComponent = ({src,alt}) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = val => setIsOpen(val);
   return (<>
     {isOpen && <Lightbox onClick={() => handleClick(false)} src={src}/>}
-    <img alt={alt} src={src} onClick={() => withLightbox(alt) ? handleClick(true) : ''} />
+    <ImageWithLoader cls={isNodejs(alt) ? 'nodejs' : ''} alt={alt} image={src} onClick={() => withLightbox(alt) ? handleClick(true) : ''} loader={<LoaderInline height="50" width="50" />}/>
     </>
   );
 };

@@ -36,11 +36,15 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.article img[alt=nodejs] {
-  width: 7em;
+.article .nodejs {
   float: left;
+  width: 7em;
+}
+.article .nodejs img{
+  width: 100%;
   margin-right: 2em;
 }
+
 .article img[alt=sketchnote] {
   width: 100%;
 }
@@ -55,7 +59,7 @@
   .article {
     padding: 4em 6em;
   }
-  .article img[alt=nodejs] {
+  .article .nodejs {
     width: 5.5em;
   }
 }
@@ -97,8 +101,10 @@
     font-size: 24px;
   }
 
-  .article img[alt=nodejs] {
+  .article .nodejs {
     width: 3em;
+  }
+  .article .nodejs img {
     margin-right: 1em;
   }
 }
