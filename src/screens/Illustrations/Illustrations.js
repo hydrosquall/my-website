@@ -1,5 +1,5 @@
 import React, { useReducer, useEffect } from "react";
-import Gallery from "react-ikusi";
+import { Gallery } from "react-ikusi";
 import { illustrations } from "../../service/data.json";
 import FlickrAPI from "../../service/FlickrAPI";
 import { transformResult } from "../../service/utils";
