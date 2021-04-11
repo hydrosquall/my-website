@@ -277,7 +277,7 @@
     ],
     "webSiteInfo": {
       "author": "Ane Diaz de Tuesta",
-      "text": "Website developed by $author",
+      "text": "Web site developed by $author",
       "url": "http://www.anediaz.com"
     }
   },
