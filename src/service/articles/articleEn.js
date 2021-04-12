@@ -1,4 +1,4 @@
-const article = `# The Node.js runtime environment's Best Practices guide in Basque
+const article = `# The Basque translation of the guide Node.js Best Practices
 
 The 21st March of the present year, the guide about the runtime environment Node.js “Node.js Best Practices” has been published in Basque. The translation has been carried out by the web developer Ane Diaz de Tuesta and her father, a Basque language loyalist, Joxe Felix Diaz de Tuesta. It took them a year, it began on 10 March 2020, at the same time as the first pandemic (French) confinement provoked by the virus SARS-CoV-2.
 
@@ -25,7 +25,7 @@ Originally published in English, nowadays it is available in other six languages
 
 ## Basque version’s adventure
 
-"Our adventure began about a year ago, at the same time as the first pandemic (French) confinement provoked by the virus SARS-CoV-2, on the 10 March 2020 precisely.
+“Our adventure began about a year ago, at the same time as the first pandemic (French) confinement provoked by the virus SARS-CoV-2, on the 10 March 2020 precisely.
 
 On Twitter, I saw that many developers from all around the world proposed their help to translate this guide into other languages. To tell the truth, I didn’t know about this guide, and it drew my attention. Apparently, it is one of the most important and reputed existing open-source guides about Node.js, available for everybody.
 
@@ -41,6 +41,6 @@ The aim of this guide is to spread and share the information. We believe we shou
 
 [Here](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.basque.md) is the Node.js Best Practices Basque guide.
 
-Use it and enjoy yourself!"`;
+Use it and enjoy yourself!”`;
 
 export {article}

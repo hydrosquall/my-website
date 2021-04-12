@@ -1,5 +1,5 @@
 .article {
-  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: 'Source Serif Pro', serif, Georgia, Cambria, "Times New Roman", Times, serif;
   padding: 4em 8em;
   text-align: left;
   color: #2a363b;
@@ -14,15 +14,17 @@
 .article h1 {
   line-height: 56px;
   margin-top: 0.6em;
-  font-size: 46px;
+  font-size: 48px;
   letter-spacing: -0.011em;
   margin-bottom: -0.27em;
-  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Source Serif Pro', serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 400;
 }
 
 .article h2 {
   margin-top: 3em;
   margin-bottom: -0.46em;
+  font-weight: 500;
 }
 
 .article p {
