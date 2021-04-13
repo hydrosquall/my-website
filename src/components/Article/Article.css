@@ -38,12 +38,9 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.article .nodejs {
+.article img.nodejs{
   float: left;
   width: 7em;
-}
-.article .nodejs img{
-  width: 100%;
   margin-right: 2em;
 }
 
@@ -61,7 +58,7 @@
   .article {
     padding: 4em 6em;
   }
-  .article .nodejs {
+  .article img.nodejs {
     width: 5.5em;
   }
 }
@@ -103,10 +100,8 @@
     font-size: 24px;
   }
 
-  .article .nodejs {
+  .article img.nodejs {
     width: 3em;
-  }
-  .article .nodejs img {
     margin-right: 1em;
   }
 }

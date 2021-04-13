@@ -3,7 +3,6 @@ import ReactMarkdown from 'react-markdown';
 import { Lightbox, ImageWithLoader, LoaderInline } from '../'
 import './Article.css';
 
-const withLightbox = v => v === 'sketchnote'
 const isNodejs = v => v === 'nodejs'
 
 const ImageComponent = ({src,alt}) => {
@@ -11,7 +10,10 @@ const ImageComponent = ({src,alt}) => {
   const handleClick = val => setIsOpen(val);
   return (<>
     {isOpen && <Lightbox onClick={() => handleClick(false)} src={src}/>}
-    <ImageWithLoader cls={isNodejs(alt) ? 'nodejs' : ''} alt={alt} image={src} onClick={() => withLightbox(alt) ? handleClick(true) : ''} loader={<LoaderInline height="50" width="50" />}/>
+    {
+      isNodejs(alt) ? <img  alt={alt} src={src} className="nodejs"/> :
+      <ImageWithLoader alt={alt} image={src} onClick={() => handleClick(true) } loader={<LoaderInline height="50" width="50" />}/>
+    }
     </>
   );
 };
