@@ -1,6 +1,6 @@
 const article = `# Le guide des *Bonnes Pratiques de Node.js*, en basque
 
-Le 21 mars dernier, le guide des *Bonnes Pratiques de Node.js*, la plateforme logicielle, a été publié en basque. Sa traduction a été réalisée par la web développeuse Ane Diaz de Tuesta et son père, le bascophile Jose Felix Diaz de Tuesta. Elle représente une année de travail.
+Le 21 mars dernier, le guide des *Bonnes Pratiques de Node.js*, a été publié en basque. Sa traduction a été réalisée par la web développeuse Ane Diaz de Tuesta et son père, le bascophile Jose Felix Diaz de Tuesta. Elle représente une année de travail.
 
 Originellement publié en anglais, il a ensuite été traduit dans cinq langues additionnelles. La sixième traduction est celle en  basque, effectuée par père et fille Diaz de Tuesta.
 

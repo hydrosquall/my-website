@@ -1,6 +1,6 @@
 const article = `# The guide *Node.js Best Practices*, in Basque
 
-The 21st March of the present year, the guide about the runtime environment Node.js *Node.js Best Practices* has been published in Basque. The translation has been carried out by the web developer Ane Diaz de Tuesta and her father, a Basque language loyalist, Joxe Felix Diaz de Tuesta. It took them a year.
+The 21st March of the present year, the guide *Node.js Best Practices* has been published in Basque. The translation has been carried out by the web developer Ane Diaz de Tuesta and her father, a Basque language loyalist, Joxe Felix Diaz de Tuesta. It took them a year.
 
 Originally published in English, it has been translated into other five languages. The sixth one is precisely the Basque, made by the father and daughter Diaz de Tuesta.
 

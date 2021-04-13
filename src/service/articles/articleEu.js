@@ -1,6 +1,6 @@
 const article = `# *Node.jsren Praktika Onak* gida euskaraz
 
-Aurtengo martxoaren 21ean, Node.js programazio ingurunearen *Praktika Onak* gida argitaratu zen euskaraz, Ane Diaz de Tuesta web programatzaileak eta haren aita Joxe Felix Diaz de Tuesta euskaltzaleak itzulita. Urtebeteko lana izan da *Praktika Onak* gida euskaratzea.
+Aurtengo martxoaren 21ean,  *Node.jsren Praktika Onak* gida argitaratu zen euskaraz, Ane Diaz de Tuesta web programatzaileak eta haren aita Joxe Felix Diaz de Tuesta euskaltzaleak itzulita. Urtebeteko lana izan da gida.
 
 
 Bertsio originala ingelesez argitaratu zen, baina laster itzuli zen beste bost hizkuntzatara. Seigarren itzulpena, hain zuzen, euskarazko hau izan da, Diaz de Tuesta aita-alabak egindakoa.
