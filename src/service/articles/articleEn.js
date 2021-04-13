@@ -21,7 +21,7 @@ Many developers hold the *Node.js Best Practices* guide in high esteem, as it is
 
 The realization of this guide has been possible thanks to many collaborators, but, especially, the guide’s creators: [Yoni Goldberg](https://github.com/goldbergyoni), [Bruno Scheufler](https://github.com/BrunoScheufler), [Kyle Martin](https://github.com/js-kyle) and [Kevyn Bruyere](https://github.com/kevynb).
 
-[*Node.js Best Practices*](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md) is already available in Basque. Originally published in English, nowadays it is available in other six languages: Brazilian Portugese, Chinese, Russian, Polish, Japanese and BASQUE! Other translations are in progress: French, Hebrew, Korean, Spanish and Turkish.
+The guide *Node.js Best Practices* is already available [in Basque](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md). Originally published in English, nowadays it is available in other six languages: Brazilian Portugese, Chinese, Russian, Polish, Japanese and BASQUE! Other translations are in progress: French, Hebrew, Korean, Spanish and Turkish.
 
 ## Basque version’s adventure
 

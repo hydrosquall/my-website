@@ -21,7 +21,7 @@ Le guide des *Bonnes Pratiques de Node.js* est largement reconnu dans le monde d
 
 Ce guide des Bonnes Pratiques a été possible grâce à la participation de nombreux collaborateurs, mais surtout, de ses créateurs : [Yoni Goldberg](https://github.com/goldbergyoni), [Bruno Scheufler](https://github.com/BrunoScheufler), [Kyle Martin](https://github.com/js-kyle) et [Kevyn Bruyere](https://github.com/kevynb).
 
-Le guide, intitulé *Bonnes Pratiques de Node.js*, est désormais [disponible en basque](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md). Originellement publié en anglais, il est aujourd’hui disponible en six autres langues : le portugais brésilien le chinois, le russe, le polonais, le japonais et LE BASQUE ! D’autres traductions sont en cours : le français, l’hébreu, le coréen, l’espagnol et le turque.
+Le guide des *Bonnes Pratiques de Node.js* est désormais disponible [en basque](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md). Originellement publié en anglais, il est aujourd’hui disponible en six autres langues : le portugais brésilien le chinois, le russe, le polonais, le japonais et LE BASQUE ! D’autres traductions sont en cours : le français, l’hébreu, le coréen, l’espagnol et le turque.
 
 ## L’aventure de la version basque
 

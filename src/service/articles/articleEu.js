@@ -25,7 +25,7 @@ gidarik garrantzitsuenetako bat delako. Eremu horretan dagoen praktika onen bild
 
 Kolaboratzaile ugariren parte hartzeari esker sortu zen *Praktika Onak* gida, batez ere sortzaileei esker: [Yoni Goldberg](https://github.com/goldbergyoni), [Bruno Scheufler](https://github.com/BrunoScheufler), [Kyle Martin](https://github.com/js-kyle) eta [Kevyn Bruyere](https://github.com/kevynb).
 
-Dagoeneko eskuragarri dago euskaraz [*Node.jsren Praktika Onak*](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md). Hasieran ingelesez argitaratu zen, baina gaur egun beste sei hizkuntzatan dago irakurgai: Brasilgo portugesa, txinera, errusiera, poloniera, japoniera eta EUSKARA! Beste hizkuntza batzuetara ere itzultzen hasita daude: frantsesa, hebreera, koreera, gaztelania eta turkiera.
+Dagoeneko eskuragarri dago euskaraz [*Node.jsren Praktika Onak* gida](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md). Hasieran ingelesez argitaratu zen, baina gaur egun beste sei hizkuntzatan dago irakurgai: Brasilgo portugesa, txinera, errusiera, poloniera, japoniera eta EUSKARA! Beste hizkuntza batzuetara ere itzultzen hasita daude: frantsesa, hebreera, koreera, gaztelania eta turkiera.
 
 ## Euskarazko bertsioaren abentura
 
