@@ -119,6 +119,8 @@
 @media screen and (max-width: 900px) {
   .Menu .LanguageSelector {
     font-size: 0.9rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   .Menu .closeButton {
     font-size: 0.9rem;
