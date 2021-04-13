@@ -1,39 +1,37 @@
-const article = `# Node.jsren Praktika Onen gida euskaraz
+const article = `# *Node.jsren Praktika Onak* gida euskaraz
 
-Aurtengo martxoaren 21ean, Node.js programazio ingurunearen Praktika Onen Gida argitaratu zen euskaraz, Ane Diaz de Tuesta web programatzaileak eta haren aita Joxe Felix Diaz de Tuesta euskaltzaleak itzulita. Urtebeteko lana izan da Praktika Onen Gida euskaratzea, proiektua 2020ko martxoaren 10ean hasi baitzen, SARS-CoV-2 birusak eragindako pandemiaren lehen konfinamenduarekin batera.
+Aurtengo martxoaren 21ean, Node.js programazio ingurunearen *Praktika Onak* gida argitaratu zen euskaraz, Ane Diaz de Tuesta web programatzaileak eta haren aita Joxe Felix Diaz de Tuesta euskaltzaleak itzulita. Urtebeteko lana izan da *Praktika Onak* gida euskaratzea.
 
 
-Web garatzaile askok estimu handitan dute Node.jsren Praktika Onen Gida, gai horren inguruan gidarik garrantzitsuenetako bat delako. Bertsio originala ingelesez argitaratu zen, baina laster itzuli zen beste bost hizkuntzatara. Seigarren itzulpena, hain zuzen, euskarazko hau izan da, Diaz de Tuesta aita-alabak egindakoa.
+Bertsio originala ingelesez argitaratu zen, baina laster itzuli zen beste bost hizkuntzatara. Seigarren itzulpena, hain zuzen, euskarazko hau izan da, Diaz de Tuesta aita-alabak egindakoa.
 
 
 ## Hitz batzuk Node.jsren gainean
 
 
-Node.js programazio ingurune bat da, kode irekikoa, diseinatu zena Interneteko aplikazio eskalagarriak sortzeko, zerbitzariak batez ere. Bertako programak JavaScript-ez idatzita daude.
+Node.js programazio ingurune bat da, kode irekikoa, diseinatu zena Interneteko aplikazio eskalagarriak sortzeko, zerbitzariak batez ere. Bertako programak JavaScript-ez idatzita daude. Programazio ingurune hau oso ezaguna da web garatzaileen artean, eta gaur egun milaka webgune daude Node.jsrekin eginda, 175.398 baino gehiago.
 
-Programazio ingurune hau oso ezaguna da web garatzaileen artean, eta gaur egun milaka webgune daude Node.jsrekin eginda, 175.398 baino gehiago.
-
-Hona hemen Node.js erabiltzen duten zenbait enpresa ezagun:
-Linkedin, Netflix, Uber, Trello, PayPal, Nasa, Ebay, Medium, Groupon, Walmart, Mozilla, GoDaddy, Yandex, Citybank eta Yahoo.
+Mundu osoko zenbait enpresa ezagunek erabiltzen dute: Linkedin, Netflix, Uber, Trello, PayPal, Nasa, Ebay, Medium, Groupon, Walmart, Mozilla, GoDaddy, Yandex, Citybank eta Yahoo, besteak beste.
 
 
 ![nodejs](/assets/nodejs.svg) Webgune ofiziala: [https://nodejs.org/](https://nodejs.org/)
 
 Github orrialdea: [https://github.com/nodejs](https://github.com/nodejs)
 
-## Node.jsren Praktika Onen Gida
+## *Node.jsren Praktika Onak* gida
 
-Dagoeneko eskuragarri dago [Interneten](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md) “Node.jsren Praktika Onak” izeneko agiria. Eremu horretan dagoen praktika onen bildumarik handiena da, eta handitzen ari da astetik astera. Une honetan 80tik gora praktika, estilo eskuliburu eta arkitektura aholku biltzen ditu. Praktika bakoitza kode adibideek, blogetako aipu hautatuek eta informazio osagarriek osatzen dute.
+Web garatzaile askok estimu handitan dute *Node.jsren Praktika Onak* gida, gai horren inguruan
+gidarik garrantzitsuenetako bat delako. Eremu horretan dagoen praktika onen bildumarik handiena da, eta handitzen ari da astetik astera. Une honetan 80tik gora praktika, estilo eskuliburu eta arkitektura aholku biltzen ditu. Praktika bakoitza kode adibideek, blogetako aipu hautatuek eta informazio osagarriek osatzen dute.
 
-Kolaboratzaile ugariren parte hartzeari esker sortu zen Praktika Onen Gida, batez ere sortzaileei esker: [Yoni Goldberg](https://github.com/goldbergyoni), [Bruno Scheufler](https://github.com/BrunoScheufler), [Kyle Martin](https://github.com/js-kyle) eta [Kevyn Bruyere](https://github.com/kevynb).
+Kolaboratzaile ugariren parte hartzeari esker sortu zen *Praktika Onak* gida, batez ere sortzaileei esker: [Yoni Goldberg](https://github.com/goldbergyoni), [Bruno Scheufler](https://github.com/BrunoScheufler), [Kyle Martin](https://github.com/js-kyle) eta [Kevyn Bruyere](https://github.com/kevynb).
 
-Hasieran ingelesez argitaratu zen, baina gaur egun beste sei hizkuntzatan dago irakurgai: Brasilgo portugesa, txinera, errusiera, poloniera, japoniera eta EUSKARA! Beste hizkuntza batzuetara ere itzultzen hasita daude: frantsesa, hebreera, koreera, gaztelania eta turkiera.
+Dagoeneko eskuragarri dago euskaraz [*Node.jsren Praktika Onak*](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md). Hasieran ingelesez argitaratu zen, baina gaur egun beste sei hizkuntzatan dago irakurgai: Brasilgo portugesa, txinera, errusiera, poloniera, japoniera eta EUSKARA! Beste hizkuntza batzuetara ere itzultzen hasita daude: frantsesa, hebreera, koreera, gaztelania eta turkiera.
 
 ## Euskarazko bertsioaren abentura
 
-“Gure abentura orain dela urtebete inguru hasi zen, SARS-CoV-2 birusak eragindako pandemiaren lehen konfinamenduarekin batera. 2020ko martxoaren 10ean zehatz-mehatz.
+“Gure abentura orain dela urtebete inguru hasi zen, SARS-CoV-2 birusak eragindako pandemiaren lehen konfinamenduarekin batera.
 
-Twitteren ikusi nuen mundu guztiko hainbat programatzailek laguntza eskaintzen zutela gida hau beste hizkuntza batzuetara itzultzeko. Egia esan, artean ez nuen gidaren berririk, eta atentzioa eman zidan. Antza denez, gai horren inguruan egindako gida garrantzitsu eta estimatuenetako bat da, kode irekian idatzitakoa eta edonorentzat eskuragarri.
+Twitteren ikusi nuen mundu guztiko hainbat programatzailek laguntza eskaintzen zutela gida hau beste hizkuntza batzuetara itzultzeko. Egia esan, artean ez nuen gidaren berririk, eta atentzioa eman zidan. Orduan jakin nuen gai horren inguruan egindako gida garrantzitsu eta estimatuenetako bat dela, kode irekian idatzitakoa eta edonorentzat eskuragarri [sarean](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md).
 
 Nire laguntza eskaini nuen euskarazko itzulpena egiteko, ziur egon gabe gidaren sortzaileek ba ote zekiten euskara bazenik ere. Berehala Yoni Goldbergen erantzuna jaso nuen nire posta elektronikoan: bazekien Euskal Herriaren berri, gure kultura eta parajeek txundituta zuten, eta bazuen noizbait bisitan etortzeko intentzioa ere.
 
@@ -47,7 +45,7 @@ Gustura asko jasoko nituzke zure ekarpenak euskarazko bertsio hau hobetzeko, bai
 
 Gida honen helburua da informazioa ezagutaraztea eta partekatzea. Gure ustez, kulturarekin berdin egin behar da, zabaldu eta partekatu.
 
-[Hementxe](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.basque.md) duzue Node.jsren Praktika Onen Gida euskaraz.
+[Hementxe](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.basque.md) duzue *Node.jsren Praktika Onak* gida euskaraz.
 
 Erabili eta gozatu!“`;
 
