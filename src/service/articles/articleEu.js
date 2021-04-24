@@ -16,7 +16,7 @@ Mundu osoko zenbait enpresa ezagunek erabiltzen dute: Linkedin, Netflix, Uber, T
 
 ![nodejs](/assets/nodejs.svg) Webgune ofiziala: [https://nodejs.org/](https://nodejs.org/)
 
-Github orrialdea: [https://github.com/nodejs](https://github.com/nodejs)
+GitHub orrialdea: [https://github.com/nodejs](https://github.com/nodejs)
 
 ## *Node.jsren Praktika Onak* gida
 
