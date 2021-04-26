@@ -5,6 +5,7 @@ const transformResult = (result, def, big) =>
       width: r[`width${def}`],
       height: r[`height${def}`],
       bigSrc: r[`url${big}`],
+      id: r.id
     };
   });
 
