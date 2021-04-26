@@ -6,7 +6,7 @@ import { transformResult } from "../../service/utils";
 import { SIZES, illustrationsConfigurations } from "../../service/constants";
 import "./Illustrations.css";
 
-import { HamburgerMenu, LoaderCircle } from "../../components";
+import { HamburgerMenu } from "../../components";
 
 const { original: def, large1024: big } = SIZES;
 const sizes = [`url${def}`, `url${big}`];
@@ -115,14 +115,10 @@ const Illustrations = () => {
         ))}
       </div>
       <div className="container">
-        {currentPhotos ? (
-          <Gallery
-            photos={currentPhotos}
+        <Gallery
+            photos={currentPhotos || []}
             configurations={illustrationsConfigurations}
           />
-        ) : (
-          <LoaderCircle />
-        )}
       </div>
     </div>
   );
