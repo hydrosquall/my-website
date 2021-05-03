@@ -12,44 +12,49 @@ import { LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION } from '../../service/constant
 import * as articleData from '../../service/articles';
 import './Main.css';
 
-const Main = ({ page }) => {
+const Main = ({ page, section }) => {
   const [selectedLanguage, setSelectedLanguage] = useState(DEFAULT_LOCALE);
   const [visibleSection, setVisibleSection] = useState(DEFAULT_SECTION);
   const data = jsonData[selectedLanguage];
   const { locale } = useParams();
   const history = useHistory();
 
-  useEffect(() => {
-    setSelectedLanguage(locale && LOCALES.includes(locale) ? locale : DEFAULT_LOCALE);
-  }, [locale]);
-
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-
-  const scrollToSection = (section) => {
-    const selectedSection = document.getElementById(section);
+  const scrollToSection = (sectionToGo) => {
+    const selectedSection = document.getElementById(sectionToGo);
     if (selectedSection) {
       selectedSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  const getPath = (language, queryPage) => {
+  const selectSectionHandler = (sectionToSelect) => {
+    if (sectionToSelect !== visibleSection) {
+      setVisibleSection(sectionToSelect);
+      scrollToSection(sectionToSelect);
+    }
+  };
+
+  useEffect(() => {
+    setSelectedLanguage(locale && LOCALES.includes(locale) ? locale : DEFAULT_LOCALE);
+    selectSectionHandler(section || DEFAULT_SECTION);
+  }, [locale]);
+
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  const getPath = (language, search) => {
     const pathname = language === DEFAULT_LOCALE ? '/' : language;
-    return queryPage ? { pathname, search: `?page=${queryPage}` } : { pathname };
+    return { pathname, search };
   };
 
   const languageClickHandler = (language) => {
-    // eslint-disable-next-line no-debugger
     if (jsonData[language]) {
-      history.push(getPath(language, page));
+      history.push(getPath(language, page ? `?page=${page}` : ''));
     }
     scrollToTop();
   };
 
-  const selectSectionHandler = (section) => {
-    if (section !== visibleSection) {
-      setVisibleSection(section);
-      scrollToSection(section);
-    }
+  const menuItemClickHandler = (item) => {
+    selectSectionHandler(item);
+    history.push(getPath(selectedLanguage, item === DEFAULT_SECTION ? '' : `?section=${item}`));
   };
 
   const onChangeVisibility = (isVisible, id) => {
@@ -58,10 +63,12 @@ const Main = ({ page }) => {
     }
   };
 
-  const goTo = (pageQuery) => {
-    history.push(getPath(selectedLanguage, pageQuery));
+  const goTo = (queryValue) => {
+    history.push(getPath(selectedLanguage, queryValue));
     scrollToTop();
   };
+
+  const renderPage = (pageName) => (pageName === 'article' ? <Article data={articleData[selectedLanguage]} /> : <></>);
 
   return (
     <div className="Main">
@@ -73,19 +80,18 @@ const Main = ({ page }) => {
             languageClickHandler={languageClickHandler}
             languageItems={jsonData.languages}
             selectedItem={page ? '' : visibleSection}
-            selectItemHandler={page ? () => goTo('') : selectSectionHandler}
+            selectItemHandler={page ? () => goTo() : menuItemClickHandler}
             closeData={page && data.menuClosable}
           />
           <div className="page">
-            { page === 'article'
-              ? <Article data={articleData[selectedLanguage]} />
+            { page ? renderPage(page)
               : (
                 <div className="resume">
                   <Header {...data.header} id={DEFAULT_SECTION} />
                   <LastNews
                     content={data.header.lastNews}
                     id={DEFAULT_SECTION}
-                    goToArticle={() => goTo('article')}
+                    goToArticle={() => goTo('?page=article')}
                   />
                   <About
                     data={data.sections[0]}
@@ -116,6 +122,7 @@ const Main = ({ page }) => {
 
 Main.propTypes = {
   page: PropTypes.string,
+  section: PropTypes.string,
 };
 
 export default Main;

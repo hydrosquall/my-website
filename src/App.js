@@ -29,9 +29,9 @@ const QueryScreen = () => {
   const query = useQuery();
   return (
     <Switch>
-      <Route key="root" path="/" exact render={() => <Main page={query.get('page')} />} />
+      <Route key="root" path="/" exact render={() => <Main page={query.get('page')} section={query.get('section')} />} />
       <Route key="illustrations" path="/illustrations" exact render={() => <Illustrations />} />
-      <Route key="root-locale" path="/:locale/" exact render={() => <Main page={query.get('page')} />} />
+      <Route key="root-locale" path="/:locale/" exact render={() => <Main page={query.get('page')} section={query.get('section')} />} />
     </Switch>
   );
 };
