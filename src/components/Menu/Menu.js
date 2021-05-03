@@ -7,35 +7,37 @@ const Menu = ({
   selectedItem,
   language,
   languageItems,
-  languageClickHandler,
+  languageClickHandler = () => {},
   menuItems,
-  selectItemHandler,
+  selectItemHandler = () => {},
   closeData,
 }) => {
   const getClass = (id) => `item ${selectedItem === id ? 'active' : ''}`;
 
-  const buildItemContent = (item) => (item.imgClassName ? (
-    <i className={`fa fa-2x ${item.imgClassName}`} />
+  const buildItemContent = (text, imgClassName) => (imgClassName ? (
+    <i className={`fa fa-2x ${imgClassName}`} />
   ) : (
-    item.text
+    text
   ));
 
-  const buildMenu = () => menuItems.map((item) => (
+  const buildMenu = () => menuItems.map(({
+    id, target, text, imgClassName,
+  }) => (
     <div
-      className={getClass(item.id)}
-      onClick={() => selectItemHandler(item.id)}
-      key={item.id}
+      className={getClass(id)}
+      onClick={() => selectItemHandler(id)}
+      key={id}
       role="menuitem"
       tabIndex={0}
       onKeyDown={() => {}}
     >
-      {item.target ? (
-        <a href={`#${item.id}`} target={item.target}>
-          {buildItemContent(item)}
+      {target ? (
+        <a href={`#${id}`} target={target}>
+          {buildItemContent(text, imgClassName)}
         </a>
       ) : (
         <div>
-          {buildItemContent(item)}
+          {buildItemContent(text, imgClassName)}
         </div>
       )}
     </div>
@@ -63,7 +65,9 @@ Menu.propTypes = {
   menuItems: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
+      target: PropTypes.string,
       text: PropTypes.string.isRequired,
+      imgClassName: PropTypes.string,
     }),
   ).isRequired,
   language: PropTypes.string.isRequired,
