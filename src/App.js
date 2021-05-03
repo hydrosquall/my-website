@@ -1,9 +1,13 @@
 import React, { lazy, Suspense } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import {
+  HashRouter, Route, Switch, useLocation,
+} from 'react-router-dom';
 import { LoaderCircle } from './components';
 
 const Illustrations = lazy(() => import('./screens/Illustrations/Illustrations'));
 const Main = lazy(() => import('./screens/Main/Main'));
+
+const useQuery = () => new URLSearchParams(useLocation().search);
 
 const fallbackStyle = {
   width: '100%',
@@ -21,16 +25,21 @@ const FallBack = () => (
   </div>
 );
 
+const QueryScreen = () => {
+  const query = useQuery();
+  return (
+    <Switch>
+      <Route key="root" path="/" exact render={() => <Main page={query.get('page')} />} />
+      <Route key="illustrations" path="/illustrations" exact render={() => <Illustrations />} />
+      <Route key="root-locale" path="/:locale/" exact render={() => <Main page={query.get('page')} />} />
+    </Switch>
+  );
+};
+
 const App = () => (
   <Suspense fallback={<FallBack />}>
     <HashRouter>
-      <Switch>
-        <Route key="root" path="/" exact render={() => <Main />} />
-        <Route key="article" path="/article" exact render={() => <Main isArticle />} />
-        <Route key="illustrations" path="/illustrations" exact render={() => <Illustrations />} />
-        <Route key="root-locale" path="/:locale/" exact render={() => <Main />} />
-        <Route key="locale-article" path="/:locale/article" exact render={() => <Main isArticle />} />
-      </Switch>
+      <QueryScreen />
     </HashRouter>
   </Suspense>
 );

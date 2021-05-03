@@ -12,15 +12,7 @@ import { LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION } from '../../service/constant
 import * as articleData from '../../service/articles';
 import './Main.css';
 
-const getCurrentPath = (path) => {
-  let currentPath = path;
-  LOCALES.forEach((l) => {
-    currentPath = currentPath.replace(`/${l}`, '');
-  });
-  return currentPath;
-};
-
-const Main = ({ isArticle }) => {
+const Main = ({ page }) => {
   const [selectedLanguage, setSelectedLanguage] = useState(DEFAULT_LOCALE);
   const [visibleSection, setVisibleSection] = useState(DEFAULT_SECTION);
   const data = jsonData[selectedLanguage];
@@ -40,12 +32,15 @@ const Main = ({ isArticle }) => {
     }
   };
 
+  const getPath = (language, queryPage) => {
+    const pathname = language === DEFAULT_LOCALE ? '/' : language;
+    return queryPage ? { pathname, search: `?page=${queryPage}` } : { pathname };
+  };
+
   const languageClickHandler = (language) => {
+    // eslint-disable-next-line no-debugger
     if (jsonData[language]) {
-      const newPath = getCurrentPath(history.location.pathname);
-      history.replace({
-        pathname: `${language === DEFAULT_LOCALE ? newPath : '/'.concat(language.concat(newPath))}`,
-      });
+      history.push(getPath(language, page));
     }
     scrollToTop();
   };
@@ -63,16 +58,8 @@ const Main = ({ isArticle }) => {
     }
   };
 
-  const goToArticle = () => {
-    history.push(`${selectedLanguage !== DEFAULT_LOCALE ? `/${selectedLanguage}` : ''}/article`);
-    scrollToTop();
-  };
-
-  const goBackToSite = () => {
-    const newPath = history.location.pathname.replace('/article', '/');
-    history.push({
-      pathname: newPath,
-    });
+  const goTo = (pageQuery) => {
+    history.push(getPath(selectedLanguage, pageQuery));
     scrollToTop();
   };
 
@@ -81,16 +68,16 @@ const Main = ({ isArticle }) => {
       {data && (
         <>
           <Menu
-            menuItems={isArticle ? [] : data.menu}
+            menuItems={page ? [] : data.menu}
             language={selectedLanguage}
             languageClickHandler={languageClickHandler}
             languageItems={jsonData.languages}
-            selectedItem={isArticle ? '' : visibleSection}
-            selectItemHandler={isArticle ? goBackToSite : selectSectionHandler}
-            closeData={isArticle && data.menuClosable}
+            selectedItem={page ? '' : visibleSection}
+            selectItemHandler={page ? () => goTo('') : selectSectionHandler}
+            closeData={page && data.menuClosable}
           />
           <div className="page">
-            { isArticle
+            { page === 'article'
               ? <Article data={articleData[selectedLanguage]} />
               : (
                 <div className="resume">
@@ -98,7 +85,7 @@ const Main = ({ isArticle }) => {
                   <LastNews
                     content={data.header.lastNews}
                     id={DEFAULT_SECTION}
-                    goToArticle={goToArticle}
+                    goToArticle={() => goTo('article')}
                   />
                   <About
                     data={data.sections[0]}
@@ -128,7 +115,7 @@ const Main = ({ isArticle }) => {
 };
 
 Main.propTypes = {
-  isArticle: PropTypes.bool,
+  page: PropTypes.string,
 };
 
 export default Main;
