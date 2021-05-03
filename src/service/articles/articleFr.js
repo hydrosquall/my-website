@@ -42,4 +42,4 @@ Le but de ce guide est de diffuser et partager la connaissance. Nous aspirons à
 
 Utilisez et profitez-le!”`;
 
-export {article}
+export default article;

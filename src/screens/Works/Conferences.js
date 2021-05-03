@@ -1,9 +1,12 @@
-import React from "react";
-import MediaSection from "./MediaSection";
+import React from 'react';
+import * as PropTypes from 'prop-types';
+import MediaSection from './MediaSection';
 import './Conferences.css';
 
-const Conferences = ({ data, media, className, id }) => (
-  <div className={`conferences ${className}`} key={id}>
+const Conferences = ({
+  data, media, className,
+}) => (
+  <div className={`conferences ${className}`}>
     <div className="body">
       <div className="description">
         <div className="project">{data.project}</div>
@@ -12,8 +15,22 @@ const Conferences = ({ data, media, className, id }) => (
         </div>
       </div>
     </div>
-    <MediaSection media={media}></MediaSection>
+    <MediaSection media={media} />
   </div>
 );
 
+Conferences.propTypes = {
+  data: PropTypes.exact({
+    content: PropTypes.string.isRequired,
+    project: PropTypes.string.isRequired,
+  }),
+  media: PropTypes.arrayOf(
+    PropTypes.exact({
+      title: PropTypes.string.isRequired,
+      youtubeId: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+    }),
+  ),
+  className: PropTypes.string,
+};
 export default Conferences;

@@ -1,31 +1,66 @@
-import React from "react";
-import VisibilitySensor from "react-visibility-sensor";
-import { Section } from "../../components";
-import "./Works.css";
+import React from 'react';
+import * as PropTypes from 'prop-types';
+import VisibilitySensor from 'react-visibility-sensor';
+import { Section } from '../../components';
+import './Works.css';
 
-import Web from "./Web";
-import Graphic from "./Graphic";
-import Conferences from "./Conferences";
+import Web from './Web';
+import Graphic from './Graphic';
+import Conferences from './Conferences';
 
-const Works = ({ data, media, onChangeVisibility }) => {
-  return (
-    <VisibilitySensor
-      scrollCheck={true}
-      partialVisibility={true}
-      onChange={(isVisible) => onChangeVisibility(isVisible, data.id)}
-    >
-      <Section title={data.title} id={data.id} className="Works">
-        <Web data={data.webDevelopment} className="work" id={1} />
-        <Graphic data={data.graphic} className="work" id={2} />
-        <Conferences
-          data={data.conferences}
-          media={media}
-          className="work"
-          id={3}
-        />
-      </Section>
-    </VisibilitySensor>
-  );
+const Works = ({ data, media, onChangeVisibility = () => {} }) => (
+  <VisibilitySensor
+    scrollCheck
+    partialVisibility
+    onChange={(isVisible) => onChangeVisibility(isVisible, data.id)}
+  >
+    <Section title={data.title} id={data.id} className="Works">
+      <Web data={data.webDevelopment} className="work" key={1} />
+      <Graphic data={data.graphic} className="work" key={2} />
+      <Conferences
+        data={data.conferences}
+        media={media}
+        className="work"
+        key={3}
+      />
+    </Section>
+  </VisibilitySensor>
+);
+
+Works.propTypes = {
+  data: PropTypes.exact({
+    title: PropTypes.string.isRequired,
+    id: PropTypes.string,
+    webDevelopment: PropTypes.exact({
+      image: PropTypes.exact({
+        url: PropTypes.string.isRequired,
+        alt: PropTypes.string,
+      }),
+      project: PropTypes.string.isRequired,
+      infos: PropTypes.arrayOf(PropTypes.string),
+    }).isRequired,
+    conferences: PropTypes.exact({
+      content: PropTypes.string.isRequired,
+      project: PropTypes.string.isRequired,
+    }).isRequired,
+    graphic: PropTypes.exact({
+      image: PropTypes.exact({
+        url: PropTypes.string.isRequired,
+        alt: PropTypes.string,
+      }),
+      content: PropTypes.string.isRequired,
+      project: PropTypes.string.isRequired,
+      otherContent: PropTypes.string,
+    }).isRequired,
+  }),
+  media: PropTypes.arrayOf(
+    PropTypes.exact({
+      title: PropTypes.string.isRequired,
+      youtubeId: PropTypes.string.isRequired,
+      date: PropTypes.string,
+    }),
+  ).isRequired,
+  onChangeVisibility: PropTypes.func,
 };
 
 export default Works;

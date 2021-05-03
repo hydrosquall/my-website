@@ -1,9 +1,9 @@
-import React, { lazy, Suspense } from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import React, { lazy, Suspense } from 'react';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import { LoaderCircle } from './components';
 
-const Illustrations = lazy(() => import("./screens/Illustrations/Illustrations"));
-const Main = lazy(() => import("./screens/Main/Main"));
+const Illustrations = lazy(() => import('./screens/Illustrations/Illustrations'));
+const Main = lazy(() => import('./screens/Main/Main'));
 
 const fallbackStyle = {
   width: '100%',
@@ -13,23 +13,23 @@ const fallbackStyle = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: '#fcfcfc'
-}
+  backgroundColor: '#fcfcfc',
+};
 const FallBack = () => (
   <div style={fallbackStyle}>
-    <LoaderCircle/>
+    <LoaderCircle />
   </div>
-)
+);
 
 const App = () => (
   <Suspense fallback={<FallBack />}>
     <HashRouter>
       <Switch>
-        <Route key="root" path='/' exact={true} render={()=> <Main/>}/>
-        <Route key="article" path='/article' exact={true} render={()=> <Main isArticle={true}/>}/>
-        <Route key="illustrations" path='/illustrations' exact={true} render={()=> <Illustrations/>}/>
-        <Route key="root-locale" path='/:locale/' exact={true} render={()=> <Main/>}/>
-        <Route key="locale-article" path='/:locale/article' exact={true} render={()=> <Main isArticle={true}/>}/>
+        <Route key="root" path="/" exact render={() => <Main />} />
+        <Route key="article" path="/article" exact render={() => <Main isArticle />} />
+        <Route key="illustrations" path="/illustrations" exact render={() => <Illustrations />} />
+        <Route key="root-locale" path="/:locale/" exact render={() => <Main />} />
+        <Route key="locale-article" path="/:locale/article" exact render={() => <Main isArticle />} />
       </Switch>
     </HashRouter>
   </Suspense>

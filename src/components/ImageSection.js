@@ -1,19 +1,14 @@
-import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import { Gallery } from "react-ikusi";
-import { transformResult, sufflePhotos } from "../service/utils";
-import FlickrAPI from "../service/FlickrAPI";
+import React, { useState, useEffect } from 'react';
+import { Gallery } from 'react-ikusi';
+import { transformResult, sufflePhotos } from '../service/utils';
+import FlickrAPI from '../service/FlickrAPI';
 import {
   SIZES,
   PHOTOSET_ID,
   imageSectionConfigurations,
-} from "../service/constants";
+} from '../service/constants';
 
 const { original: def, large1024: big } = SIZES;
-
-const propTypes = {
-  images: PropTypes.array,
-};
 
 const ImageSection = () => {
   const [photos, setPhotos] = useState([]);
@@ -42,7 +37,5 @@ const ImageSection = () => {
     </div>
   );
 };
-
-ImageSection.propTypes = propTypes;
 
 export default ImageSection;

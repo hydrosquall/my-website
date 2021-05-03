@@ -43,4 +43,4 @@ The aim of this guide is to spread and share knowledge. We aspire to do the same
 
 Use it and enjoy yourself!”`;
 
-export {article}
+export default article;

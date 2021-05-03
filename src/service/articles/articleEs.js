@@ -42,4 +42,4 @@ El fin de esta guía es dar a conocer y compartir conocimientos, y, en nuestra o
 
 ¡Utilízala y disfruta!“`;
 
-export {article}
+export default article;

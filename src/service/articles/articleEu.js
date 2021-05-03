@@ -49,4 +49,4 @@ Gida honen helburua da informazioa ezagutaraztea eta partekatzea. Gure ustez, ku
 
 Erabili eta gozatu!“`;
 
-export {article}
+export default article;
