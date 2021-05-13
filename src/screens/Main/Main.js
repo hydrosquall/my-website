@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import * as PropTypes from 'prop-types';
 import {
-  Menu, Header, Footer, LastNews, Article,
+  Menu, Header, Footer, LastNews,
 } from '../../components';
 import {
-  About, Skills, Works, More,
+  About, Skills, Works, More, Article,
 } from '../index';
 import {
   jsonData, constants, articleData,

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import * as PropTypes from 'prop-types';
-import Lightbox from '../Lightbox/Lightbox';
-import ImageWithLoader from '../ImageWithLoader/ImageWithLoader';
-import LoaderInline from '../Loader/LoaderInline';
+import { Lightbox, ImageWithLoader, LoaderInline } from '../../components';
 import './Article.css';
 
 const isNodejs = (v) => v === 'nodejs';
