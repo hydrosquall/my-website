@@ -1,11 +1,10 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
-import VisibilitySensor from 'react-visibility-sensor';
 import * as PropTypes from 'prop-types';
-import { Section } from '../../components';
+import { SectionWithSensor } from '../../components';
 import './Skills.css';
 
-const Skills = ({ data, onChangeVisibility = () => {} }) => {
+const Skills = ({ data, onChangeVisibility = () => {}, isVisible }) => {
   const getFormattedContent = ({ content, highlight }) => {
     const [phrase1, phrase2] = content.split(highlight);
     return [phrase1, highlight, phrase2].map((text, index) => (
@@ -15,19 +14,13 @@ const Skills = ({ data, onChangeVisibility = () => {} }) => {
     ));
   };
   return (
-    <VisibilitySensor
-      scrollCheck
-      partialVisibility
-      onChange={(isVisible) => onChangeVisibility(isVisible, data.id)}
-    >
-      <Section title={data.title} id={data.id} className="Skills">
-        {data.sectionItems.map((skill, index) => (
-          <div className="skill" key={index}>
-            {getFormattedContent(skill)}
-          </div>
-        ))}
-      </Section>
-    </VisibilitySensor>
+    <SectionWithSensor onChangeVisibility={onChangeVisibility} id={data.id} title={data.title} className="Skills" isVisible={isVisible}>
+      {data.sectionItems.map((skill, index) => (
+        <div className="skill" key={index}>
+          {getFormattedContent(skill)}
+        </div>
+      ))}
+    </SectionWithSensor>
   );
 };
 
@@ -43,6 +36,7 @@ Skills.propTypes = {
     ),
   }),
   onChangeVisibility: PropTypes.func,
+  isVisible: PropTypes.bool,
 };
 
 export default Skills;

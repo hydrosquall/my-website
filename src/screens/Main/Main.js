@@ -7,10 +7,18 @@ import {
 import {
   About, Skills, Works, More,
 } from '../index';
-import jsonData from '../../service/data.json';
-import { LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION } from '../../service/constants';
-import * as articleData from '../../service/articles';
+import {
+  jsonData, constants, articleData,
+} from '../../service';
 import './Main.css';
+
+const PAGES = {
+  article: {
+    component: Article, data: articleData,
+  },
+};
+
+const { LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION } = constants;
 
 const Main = ({ page, section }) => {
   const [selectedLanguage, setSelectedLanguage] = useState(DEFAULT_LOCALE);
@@ -68,7 +76,14 @@ const Main = ({ page, section }) => {
     scrollToTop();
   };
 
-  const renderPage = (pageName) => (pageName === 'article' ? <Article data={articleData[selectedLanguage]} /> : <></>);
+  const renderPage = (pageName) => {
+    const pageObject = PAGES[pageName];
+    if (pageObject) {
+      const { component: PageComponent, data: pageData } = pageObject;
+      return <PageComponent data={pageData[selectedLanguage]} />;
+    }
+    return <></>;
+  };
 
   return (
     <div className="Main">
@@ -87,7 +102,11 @@ const Main = ({ page, section }) => {
             { page ? renderPage(page)
               : (
                 <div className="resume">
-                  <Header {...data.header} id={DEFAULT_SECTION} />
+                  <Header
+                    {...data.header}
+                    id={DEFAULT_SECTION}
+                    isVisible={DEFAULT_SECTION === visibleSection}
+                  />
                   <LastNews
                     content={data.header.lastNews}
                     id={DEFAULT_SECTION}
@@ -96,19 +115,23 @@ const Main = ({ page, section }) => {
                   <About
                     data={data.sections[0]}
                     onChangeVisibility={onChangeVisibility}
+                    isVisible={data.sections[0].id === visibleSection}
                   />
                   <Skills
                     data={data.sections[1]}
                     onChangeVisibility={onChangeVisibility}
+                    isVisible={data.sections[1].id === visibleSection}
                   />
                   <Works
                     data={data.sections[2]}
                     media={jsonData.talks}
                     onChangeVisibility={onChangeVisibility}
+                    isVisible={data.sections[2].id === visibleSection}
                   />
                   <More
                     data={data.sections[3]}
                     onChangeVisibility={onChangeVisibility}
+                    isVisible={data.sections[3].id === visibleSection}
                   />
                 </div>
               )}

@@ -1,36 +1,29 @@
 import React from 'react';
-import VisibilitySensor from 'react-visibility-sensor';
 import * as PropTypes from 'prop-types';
-import { Section, ImageSection } from '../../components';
+import { SectionWithSensor, ImageSection } from '../../components';
 
 import './More.css';
 
-const More = ({ data, onChangeVisibility = () => {} }) => (
-  <VisibilitySensor
-    scrollCheck
-    partialVisibility
-    onChange={(isVisible) => onChangeVisibility(isVisible, data.id)}
-  >
-    <Section title={data.title} id={data.id} className="More">
-      {data.sectionItems.map(
-        ({ title, content, contentItems }) => (
-          <div className="more" key={title}>
-            <div className="more-title">{title}</div>
-            {content && <div className="more-content">{content}</div>}
-            {contentItems && (
-              <div className="more-content-items">
-                {contentItems.map((item, index) => (
-                  // eslint-disable-next-line react/no-array-index-key
-                  <div key={index} className="more-content-item">{item}</div>
-                ))}
-              </div>
-            )}
+const More = ({ data, onChangeVisibility = () => {}, isVisible }) => (
+  <SectionWithSensor onChangeVisibility={onChangeVisibility} id={data.id} className="More" title={data.title} isVisible={isVisible}>
+    {data.sectionItems.map(
+      ({ title, content, contentItems }) => (
+        <div className="more" key={title}>
+          <div className="more-title">{title}</div>
+          {content && <div className="more-content">{content}</div>}
+          {contentItems && (
+          <div className="more-content-items">
+            {contentItems.map((item, index) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <div key={index} className="more-content-item">{item}</div>
+            ))}
           </div>
-        ),
-      )}
-      <ImageSection />
-    </Section>
-  </VisibilitySensor>
+          )}
+        </div>
+      ),
+    )}
+    <ImageSection />
+  </SectionWithSensor>
 );
 
 More.propTypes = {
@@ -48,6 +41,7 @@ More.propTypes = {
     ),
   }),
   onChangeVisibility: PropTypes.func,
+  isVisible: PropTypes.bool,
 };
 
 export default More;
