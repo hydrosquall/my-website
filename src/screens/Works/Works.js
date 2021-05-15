@@ -8,11 +8,11 @@ import Graphic from './Graphic';
 import Conferences from './Conferences';
 
 const Works = ({
-  data, media, onChangeVisibility = () => {}, isVisible,
+  data, media, onChangeVisibility = () => {}, isVisible, goToMicrosoft,
 }) => (
   <SectionWithSensor onChangeVisibility={onChangeVisibility} id={data.id} title={data.title} className="Works" isVisible={isVisible}>
     <Web data={data.webDevelopment} className="work" key={1} />
-    <Graphic data={data.graphic} className="work" key={2} />
+    <Graphic data={data.graphic} className="work" key={2} goToMicrosoft={goToMicrosoft} />
     <Conferences
       data={data.conferences}
       media={media}
@@ -57,6 +57,7 @@ Works.propTypes = {
   ).isRequired,
   onChangeVisibility: PropTypes.func,
   isVisible: PropTypes.bool,
+  goToMicrosoft: PropTypes.func,
 };
 
 export default Works;

@@ -3,10 +3,15 @@ import './ImageWithLoader.css';
 import * as PropTypes from 'prop-types';
 
 const ImageWithLoader = ({
-  cls, image, alt, loader, url, onClick = () => {},
+  cls, image, alt, loader, url, onClick = () => {}, onLoad = () => {},
 }) => {
   const [loading, setLoading] = useState(true);
-  const img = <img src={image} className={!loading ? 'loaded' : ''} role="presentation" alt={alt} onLoad={() => setLoading(false)} onClick={onClick} />;
+
+  const handleOnLoad = () => {
+    setLoading(false);
+    onLoad();
+  };
+  const img = <img src={image} className={!loading ? 'loaded' : ''} role="presentation" alt={alt} title={alt} onLoad={handleOnLoad} onClick={onClick} />;
   return (
     <div className={`ImageWithLoader ${cls || ''}`}>
       {loading && loader}
@@ -24,6 +29,7 @@ ImageWithLoader.propTypes = {
   url: PropTypes.string,
   loader: PropTypes.node.isRequired,
   onClick: PropTypes.func,
+  onLoad: PropTypes.func,
 };
 
 export default ImageWithLoader;

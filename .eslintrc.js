@@ -22,5 +22,6 @@ module.exports = {
     'react/require-default-props': 0,
     'react/jsx-filename-extension': 0,
     'react/jsx-props-no-spreading': 0,
+    'max-len': 0,
   },
 };

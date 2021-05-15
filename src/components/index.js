@@ -11,3 +11,5 @@ export { default as Lightbox } from './Lightbox/Lightbox';
 export { default as LoaderCircle } from './Loader/LoaderCircle';
 export { default as LoaderInline } from './Loader/LoaderInline';
 export { default as ImageWithLoader } from './ImageWithLoader/ImageWithLoader';
+export { default as MediaSection } from './MediaSection/MediaSection';
+export { default as MediaItem } from './MediaItem/MediaItem';

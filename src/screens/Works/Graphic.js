@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as PropTypes from 'prop-types';
 import { ImageWithLoader, LoaderInline } from '../../components';
-import image from './graphic.png';
+import image from './ms.png';
 import './Graphic.css';
 
-const Graphic = ({ data, className }) => (
+const Graphic = ({ data, className, goToMicrosoft }) => (
   <div className={`graphic ${className}`}>
     <div className="body">
-      <ImageWithLoader cls="clickableImage" alt={data.image.alt} url={data.image.url} image={image} loader={<LoaderInline height="50" width="50" />} />
+      <ImageWithLoader cls="clickableImage" alt={data.image.alt} image={image} loader={<LoaderInline height="50" width="50" />} onClick={goToMicrosoft} />
       <div className="description">
         <div className="project">{data.project}</div>
         <div className="infos">
@@ -17,7 +17,6 @@ const Graphic = ({ data, className }) => (
       </div>
     </div>
     <div className="illustrations">
-      <div className="empty" />
       <Link to="/illustrations" target="_blank">
         <i className="fa fa-eye">&nbsp;</i>
         {data.otherContent}
@@ -37,6 +36,7 @@ Graphic.propTypes = {
     otherContent: PropTypes.string,
   }),
   className: PropTypes.string,
+  goToMicrosoft: PropTypes.func,
 };
 
 export default Graphic;

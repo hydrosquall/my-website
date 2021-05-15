@@ -18,6 +18,10 @@
 .work .body .clickableImage img {
   width: 100%;
 }
+
+.work .body .clickableImage:hover{
+  cursor: pointer;
+}
 .work .body .description {
   width: calc(50% - 6rem);
   padding: 1rem 3rem 0 3rem;

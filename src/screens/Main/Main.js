@@ -5,10 +5,10 @@ import {
   Menu, Header, Footer, LastNews,
 } from '../../components';
 import {
-  About, Skills, Works, More, Article,
+  About, Skills, Works, More, Article, Microsoft,
 } from '../index';
 import {
-  jsonData, constants, articleData,
+  jsonData, constants, articleData, microsoftData,
 } from '../../service';
 import './Main.css';
 
@@ -16,6 +16,7 @@ const PAGES = {
   article: {
     component: Article, data: articleData,
   },
+  microsoft: { component: Microsoft, data: microsoftData },
 };
 
 const { LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION } = constants;
@@ -72,8 +73,8 @@ const Main = ({ page, section }) => {
   };
 
   const goTo = (queryValue) => {
-    history.push(getPath(selectedLanguage, queryValue));
     scrollToTop();
+    history.push(getPath(selectedLanguage, queryValue));
   };
 
   const renderPage = (pageName) => {
@@ -127,6 +128,7 @@ const Main = ({ page, section }) => {
                     media={jsonData.talks}
                     onChangeVisibility={onChangeVisibility}
                     isVisible={data.sections[2].id === visibleSection}
+                    goToMicrosoft={() => goTo('?page=microsoft')}
                   />
                   <More
                     data={data.sections[3]}

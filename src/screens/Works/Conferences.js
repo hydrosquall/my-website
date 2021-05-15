@@ -1,6 +1,6 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
-import MediaSection from './MediaSection';
+import { MediaSection } from '../../components';
 import './Conferences.css';
 
 const Conferences = ({

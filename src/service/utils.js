@@ -1,3 +1,5 @@
+import React from 'react';
+
 /* eslint-disable no-param-reassign */
 const transformResult = (result, def, big) => result.map((r) => ({
   src: r[`url${def}`],
@@ -17,4 +19,14 @@ const sufflePhotos = (array) => {
   return array;
 };
 
-export { transformResult, sufflePhotos };
+const formatContent = (content, highlight, cls) => {
+  const [phrase1, phrase2] = content.split(highlight);
+  return [phrase1, highlight, phrase2].map((text, index) => (
+    // eslint-disable-next-line react/no-array-index-key
+    <span key={index} className={index === 1 ? cls : ''}>
+      {text}
+    </span>
+  ));
+};
+
+export { transformResult, sufflePhotos, formatContent };

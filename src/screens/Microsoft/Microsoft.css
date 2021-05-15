@@ -1,0 +1,150 @@
+.Microsoft {
+  min-height: 100vh;
+}
+.Microsoft .Header {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.Microsoft img.msLogo{
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.Microsoft .Section .description .highlight-marker {
+  white-space: nowrap;
+  position: relative;
+}
+
+.Microsoft .Section .description .highlight-marker::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: rgb(153, 153, 153);
+  opacity: 0.3;
+}
+
+.Microsoft .Section {
+  margin-top: 1rem;
+  padding: 0 12rem 0 9rem;
+}
+
+.Microsoft .msDevRoadShow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Microsoft a.msDevRoadShow{
+  text-decoration: none;
+  font-size: 1rem;
+  color: #555;
+  padding-top: 0;
+}
+
+.Microsoft .Section .content .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Microsoft .Section .content .text span {
+  margin-bottom: 1rem;
+}
+
+
+.Microsoft .MediaSection {
+  margin-bottom: 0;
+}
+
+.Microsoft .MediaSectionItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Microsoft .MediaSectionItem.media {
+  padding: 1rem 0;
+  height: 20rem;
+}
+
+.Microsoft .MediaSectionItem.media:not(:last-child) {
+  border-bottom: 1px solid #bbb;
+}
+
+
+.Microsoft .MediaSectionItem .ImageWithLoader{
+  height: 95%;
+}
+
+.Microsoft .MediaSectionItem .ImageWithLoader img{
+  height: 100%;
+}
+
+.Microsoft .MediaSectionItem .media-item{
+  width: 35%;
+}
+.Microsoft .Section .content .cover-image-wrapper a{
+  padding-left: 0;
+
+}
+
+.Microsoft .ImageWithLoader.cover-image{
+  margin: 2rem 0 0 0;
+}
+
+.Microsoft .ImageWithLoader.cover-image img{
+  width: 70%;
+}
+
+.Microsoft .ImageWithLoader img:hover{
+  cursor: pointer;
+}
+
+/*MacBook 13"*/
+@media screen and (max-width: 1920px) {
+  .Microsoft .Header {
+    margin-top: 8rem;
+  }
+}
+/*iPadPro Horizontal*/
+@media screen and (max-width: 1382px) {
+  .Microsoft .Header {
+    margin-top: 6rem;
+  }
+
+}
+/*iPadPro Vertical / iPad HorizontaL*/
+@media screen and (max-width: 1024px) {
+  .Microsoft .Header {
+    margin-top: 6rem;
+  }
+}
+
+/*iPhoneX horizontal*/
+@media screen and (max-width: 900px) {
+  .Microsoft .Header {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+}
+
+/*iPad Vertical iPhone6/7/8 Horizontal*/
+@media screen and (max-width: 768px) {
+  .Microsoft .Header {
+    margin-top: 4rem;
+  }
+}
+
+/*iPhoneX/iPhone6/7/8 vertical*/
+@media screen and (max-width: 480px) {
+  .Microsoft .Header {
+    margin-top: 4rem;
+  }
+}

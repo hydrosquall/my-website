@@ -3,24 +3,15 @@ import {
   HashRouter, Route, Switch, useLocation,
 } from 'react-router-dom';
 import { LoaderCircle } from './components';
+import './App.css';
 
 const Illustrations = lazy(() => import('./screens/Illustrations/Illustrations'));
 const Main = lazy(() => import('./screens/Main/Main'));
 
 const useQuery = () => new URLSearchParams(useLocation().search);
 
-const fallbackStyle = {
-  width: '100%',
-  height: '100%',
-  minWidth: '100vw',
-  minHeight: '100vh',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  backgroundColor: '#fcfcfc',
-};
 const FallBack = () => (
-  <div style={fallbackStyle}>
+  <div className="fallback-style">
     <LoaderCircle />
   </div>
 );
