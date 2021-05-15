@@ -49,11 +49,11 @@ const Microsoft = ({ data }) => {
     <div className="MediaSection">
       <div className="MediaSectionItem content">
         <div className="text">
-          <span>A visual representation of each technical talk:</span>
+          <span>{data.mediaIllustration}</span>
           <i className="fa fa-hand-o-down" aria-hidden="true" />
         </div>
         <div className="text">
-          <span>Followed by the conference&apos;s video</span>
+          <span>{data.mediaVideo}</span>
           <i className="fa fa-hand-o-down" aria-hidden="true" />
         </div>
       </div>
@@ -85,7 +85,7 @@ const Microsoft = ({ data }) => {
           <div>
             {renderImg('cover', "The book's cover", 'cover-image')}
             <a href="https://www.microsoft.com/france/MSDev/Roadshow/default.aspx" target="_blank" rel="noreferrer" className="content msDevRoadShow">
-              What is MS Dev Road Show?
+              {data.whatIs}
             </a>
           </div>
           {renderMediaSection()}
@@ -109,6 +109,9 @@ Microsoft.propTypes = {
     highlightDescription: PropTypes.string,
     description2: PropTypes.string,
     highlightDescription2: PropTypes.string,
+    whatIs: PropTypes.string,
+    mediaIllustration: PropTypes.string,
+    mediaVideo: PropTypes.string,
     media: PropTypes.arrayOf(
       PropTypes.exact({
         title: PropTypes.string,
