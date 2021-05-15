@@ -60,7 +60,7 @@ const Microsoft = ({ data }) => {
       {data.media.map(({
         title, youtubeId, tag, alt,
       }) => (
-        <div className="MediaSectionItem media">
+        <div className="MediaSectionItem media" key={title}>
           {renderImg(tag, alt)}
           <MediaItem title={title} youtubeId={youtubeId} />
         </div>

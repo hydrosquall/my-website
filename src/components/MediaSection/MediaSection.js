@@ -6,7 +6,7 @@ import MediaItem from '../MediaItem/MediaItem';
 const MediaSection = ({ media }) => (
   <div className="MediaSection">
     {media.map(({ title, youtubeId }) => (
-      <MediaItem title={title} youtubeId={youtubeId} withLogo />
+      <MediaItem key={title} title={title} youtubeId={youtubeId} withLogo />
     ))}
   </div>
 );
