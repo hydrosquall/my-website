@@ -1,7 +1,10 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import './LastNews.css';
+
+const GUIDE_URL = 'https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md';
 
 const transformLink = (text, index) => {
   const wordToFind = 'Node.js';
@@ -20,46 +23,38 @@ const transformLink = (text, index) => {
     )));
 };
 
-const transformContent = ([first, second, last], onReadClick) => {
-  const url = 'https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md';
-  return (
-    <>
-      {[first, second].map(({ text, link }, index) => (link ? (
-        <div key={index}>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            {transformLink(text, index)}
-          </a>
-        </div>
-      )
-        : (
-          <div key={index}>
-            {text}
-          </div>
-        )))}
-      <div className="read-article" onClick={onReadClick} role="presentation">
-        {last.text}
-        <i className="fa fa-heart" aria-hidden="true" />
+const LastNews = ({ goToArticle = () => {} }) => {
+  const [t] = useTranslation();
+
+  const transformItem = (text, key) => (text === '$toAddLink' ? (
+    <div key={key}>
+      <a href={GUIDE_URL} target="_blank" rel="noopener noreferrer">
+        {transformLink(t('lastNews.link'), key)}
+      </a>
+    </div>
+  )
+    : (
+      <div key={key}>
+        {text}
       </div>
-    </>
+    ));
+
+  return (
+    <div className="last-news">
+      <div className="empty" />
+      <div className="content">
+        {transformItem(t('lastNews.text1'), 'text1')}
+        {transformItem(t('lastNews.text2'), 'text2')}
+        <div className="read-article" onClick={goToArticle} role="presentation">
+          {t('lastNews.last')}
+          <i className="fa fa-heart" aria-hidden="true" />
+        </div>
+      </div>
+    </div>
   );
 };
 
-const LastNews = ({ content, goToArticle = () => {} }) => (
-  <div className="last-news">
-    <div className="empty" />
-    <div className="content">
-      {transformContent(content, goToArticle)}
-    </div>
-  </div>
-);
-
 LastNews.propTypes = {
-  content: PropTypes.arrayOf(
-    PropTypes.shape({
-      text: PropTypes.string.isRequired,
-      link: PropTypes.bool,
-    }),
-  ),
   goToArticle: PropTypes.func,
 };
 export default LastNews;

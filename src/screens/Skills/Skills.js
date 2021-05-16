@@ -12,7 +12,7 @@ import './Skills.css';
 const Skills = ({ id, onChangeVisibility = () => {}, isVisible }) => {
   const [t] = useTranslation();
   return (
-    <SectionWithSensor onChangeVisibility={onChangeVisibility} id={id} title={t('skills.title')} className="Skills" isVisible={isVisible}>
+    <SectionWithSensor onChangeVisibility={onChangeVisibility} id={id} title={t(`${id}.title`)} className="Skills" isVisible={isVisible}>
       {jsonData.skills.map((skill, index) => (
         <div className="skill" key={index}>
           {formatContent(t(`skills.content.${skill}`), t(`skills.content.${skill}.highlight`), 'highlight-marker')}

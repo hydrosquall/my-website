@@ -13,9 +13,10 @@
     "header.social.twitter": "Follow me on Twitter",
     "header.social.github": "My GitHub",
     "header.social.npm": "My npm",
-    "lastNews": [
-        {"text": "Realization of Basque translation of"},{"text": "Node.js Best Practices", "link": true},{"text": "Read the post"}
-      ],
+    "lastNews.text1": "Realization of Basque translation of",
+    "lastNews.text2": "$toAddLink",
+    "lastNews.last": "Read the post",
+    "lastNews.link": "Node.js Best Practices",
 
     "about.content": "I am a dynamic, curious and sociable person. I work as a developer since 2012. I am passionated by my work, which makes me happy.",
 

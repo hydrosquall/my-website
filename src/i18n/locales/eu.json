@@ -13,9 +13,10 @@
   "header.social.twitter": "Jarrai nazazu Twitter-en",
   "header.social.github": "Nire GitHub-a",
   "header.social.npm": "Nire npm",
-  "lastNews": [
-    {"text": "Node.js Best Practices gidaren", "link": true},{"text": "euskarazko itzulpenaren burutzea"}, {"text": "Artikulua irakurri"}
-  ],
+  "lastNews.text1": "$toAddLink",
+  "lastNews.text2": "euskarazko itzulpenaren burutzea",
+  "lastNews.last": "Artikulua irakurri",
+  "lastNews.link": "Node.js Best Practices gidaren",
 
   "about.content": "Pertsona dinamikoa, jakinguratsua eta lagunartekoa naiz. Programatzaile lanbidea daukat 2012tik. Nire lanaren zale naiz eta honek zoriontsu egiten nau.",
 

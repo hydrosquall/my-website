@@ -14,10 +14,10 @@
   "header.social.twitter": "Suivez moi sur Twitter",
   "header.social.github": "Mon GiHhub",
   "header.social.npm": "Mon npm",
-  "lastNews": [
-    {"text": "Réalisation de la traduction basque de"},{"text": "Node.js Best Practices", "link": true},
-    {"text": "Lire l'article"}
-  ],
+  "lastNews.text1": "Réalisation de la traduction basque de",
+  "lastNews.text2": "$toAddLink",
+  "lastNews.last": "Lire l'article",
+  "lastNews.link": "Node.js Best Practices",
 
   "about.content": "Je suis une personne dynamique, curieuse et sociable. Je travaille en tant que développeuse depuis 2012. Je suis passionnée par mon travail qui me rend heureuse.",
 

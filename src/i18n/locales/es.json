@@ -13,10 +13,10 @@
     "header.social.twitter": "Sígueme en Twitter",
     "header.social.github": "Mi GitHub",
     "header.social.npm": "Mi npm",
-    "lastNews": [
-        {"text": "Realización de la traducción vasca de"},{"text": "Node.js Best Practices", "link": true}, {"text": "Leer el artículo"}
-    ],
-
+    "lastNews.text1": "Realización de la traducción vasca de",
+    "lastNews.text2": "$toAddLink",
+    "lastNews.last": "Leer el artículo",
+    "lastNews.link": "Node.js Best Practices",
     "about.content": "Soy una persona dinámica, curiosa y sociable. Trabajo como programadora desde 2012. Mi trabajo mi pasiona y me hace feliz.",
 
     "skills.title": "Competencias",

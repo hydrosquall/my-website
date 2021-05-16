@@ -3,7 +3,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import * as PropTypes from 'prop-types';
 import {
-  Menu, Header, Footer, /* LastNews, */
+  Menu, Header, Footer, LastNews,
 } from '../../components';
 import {
   About, Skills, Works, More, Article, Microsoft,
@@ -103,11 +103,10 @@ const Main = ({ page, section }) => {
                   id={DEFAULT_SECTION}
                   language={i18n.language}
                 />
-                {/* <LastNews
-                    content={data.header.lastNews}
-                    id={DEFAULT_SECTION}
-                    goToArticle={() => goTo('?page=article')}
-                  /> */}
+                <LastNews
+                  id={DEFAULT_SECTION}
+                  goToArticle={() => goTo('?page=article')}
+                />
                 <About
                   id="about"
                   onChangeVisibility={onChangeVisibility}
