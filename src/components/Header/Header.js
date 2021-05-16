@@ -12,7 +12,7 @@ import LoaderInline from '../Loader/LoaderInline';
 const Header = ({
   id,
 }) => {
-  const [t] = useTranslation();
+  const { t, i18n } = useTranslation();
   const { header, skills } = jsonData;
   const getSocial = () => {
     const socialContent = header.social.map(({ id: socialId, url, className }) => (
@@ -37,7 +37,7 @@ const Header = ({
           </i>
           <div className="social-icons">
             {socialContent}
-            <a href={header.url}>
+            <a href={header.url[i18n.language]}>
               <i className="fa fa-file-text-o" title={t('header.resumeTitle') || null} />
             </a>
           </div>
