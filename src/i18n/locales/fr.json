@@ -1,0 +1,24 @@
+{
+  "menu.about": "àpropos",
+  "menu.skills": "compétences",
+  "menu.works": "travaux",
+  "menu.more": "plus",
+  "menu.closable": "retour",
+
+
+  "header.resumeTitle": "Téléchargez mon CV",
+  "header.skill.developer": "Développeuse Web",
+  "header.skill.graphic":"Facilitatrice Graphique",
+  "header.skill.speaker":"Oratrice",
+  "header.social.linkedin": "Linkedin",
+  "header.social.twitter": "Suivez moi sur Twitter",
+  "header.social.github": "Mon GiHhub",
+  "header.social.npm": "Mon npm",
+  "lastNews": [
+    {"text": "Réalisation de la traduction basque de"},{"text": "Node.js Best Practices", "link": true},
+    {"text": "Lire l'article"}
+  ],
+
+  "about.content": "Je suis une personne dynamique, curieuse et sociable. Je travaille en tant que développeuse depuis 2012. Je suis passionnée par mon travail qui me rend heureuse."
+
+}

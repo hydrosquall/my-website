@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import {
   HashRouter, Route, Switch, useLocation,
 } from 'react-router-dom';
+import './i18n/i18n';
 import { LoaderCircle } from './components';
 import './App.css';
 

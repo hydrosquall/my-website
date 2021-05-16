@@ -17,70 +17,21 @@
       "title": "euskera"
     }
   ],
+  "menuItems": [ "about", "skills","works","more"],
+  "header": {
+    "name": "Ane DIAZ DE TUESTA",
+    "mail": "anediaz@gmail.com",
+    "url": "https://drive.google.com/uc?export=download&id=1goCylGDS95EIvlcBi1Xh9NwlT1llXcgV",
+    "skills": ["developer", "graphic", "speaker"],
+    "social": [
+      {"id": "linkedin", "url": "https://www.linkedin.com/in/ane-diaz-de-tuesta-37785252", "className": "fa-linkedin"},
+      {"id": "twitter", "url": "https://twitter.com/ane_naiz", "className": "fa-twitter"},
+      {"id": "github", "url": "https://github.com/anediaz", "className": "fa-github"},
+      {"id": "npm", "url": "https://www.npmjs.com/~anediaz", "className": "fab fa-npm"}
+    ]
+  },
   "fr": {
-    "menu": [
-      {
-        "id": "about",
-        "text": "àpropos"
-      },
-      {
-        "id": "skills",
-        "text": "compétences"
-      },
-      {
-        "id": "works",
-        "text": "travaux"
-      },
-      {
-        "id": "more",
-        "text": "plus"
-      }
-    ],
-    "menuClosable": "retour",
-    "header": {
-      "name": "Ane DIAZ DE TUESTA",
-      "presentationSkills": [
-        "Développeuse Web",
-        "Facilitatrice Graphique",
-        "Oratrice"
-      ],
-      "resume": {
-        "url": "https://drive.google.com/uc?export=download&id=1goCylGDS95EIvlcBi1Xh9NwlT1llXcgV",
-        "title": "Téléchargez mon CV"
-      },
-      "mail": "anediaz@gmail.com",
-      "social": [
-        {
-          "url": "https://www.linkedin.com/in/ane-diaz-de-tuesta-37785252",
-          "className": "fa-linkedin",
-          "title": "Linkedin"
-        },
-        {
-          "url": "https://twitter.com/ane_naiz",
-          "className": "fa-twitter",
-          "title": "Suivez moi sur Twitter"
-        },
-        {
-          "url": "https://github.com/anediaz",
-          "className": "fa-github",
-          "title": "Mon Github"
-        },
-        {
-          "url": "https://www.npmjs.com/~anediaz",
-          "className": "fab fa-npm",
-          "title": "Mon npm"
-        }
-      ],
-      "lastNews": [
-        {"text": "Réalisation de la traduction basque de"},{"text": "Node.js Best Practices", "link": true},
-        {"text": "Lire l'article"}
-      ]
-    },
     "sections": [
-      {
-        "id": "about",
-        "content": "Je suis une personne dynamique, curieuse et sociable. Je travaille en tant que développeuse depuis 2012. Je suis passionnée par mon travail qui me rend heureuse."
-      },
       {
         "id": "skills",
         "title": "Compétences",
@@ -153,64 +104,7 @@
     }
   },
   "en": {
-    "menu": [
-      {
-        "id": "about",
-        "text": "about"
-      },
-      {
-        "id": "skills",
-        "text": "skills"
-      },
-      {
-        "id": "works",
-        "text": "works"
-      },
-      {
-        "id": "more",
-        "text": "more"
-      }
-    ],
-    "menuClosable": "return",
-    "header": {
-      "name": "Ane DIAZ DE TUESTA",
-      "presentationSkills": ["Web Developer", "Visual Facilitator", "Speaker"],
-      "resume": {
-        "url": "https://drive.google.com/uc?export=download&id=1OIc8cV3zLFKC9gyhcbw8AtIL4jqCd1FF",
-        "title": "Download my Resume"
-      },
-      "mail": "anediaz@gmail.com",
-      "social": [
-        {
-          "url": "https://www.linkedin.com/in/ane-diaz-de-tuesta-37785252",
-          "className": "fa-linkedin",
-          "title": "Linkedin"
-        },
-        {
-          "url": "https://twitter.com/ane_naiz",
-          "className": "fa-twitter",
-          "title": "Follow me on Twitter"
-        },
-        {
-          "url": "https://github.com/anediaz",
-          "className": "fa-github",
-          "title": "My Github"
-        },
-        {
-          "url": "https://www.npmjs.com/~anediaz",
-          "className": "fab fa-npm",
-          "title": "My npm"
-        }
-      ],
-      "lastNews": [
-        {"text": "Realization of Basque translation of"},{"text": "Node.js Best Practices", "link": true},{"text": "Read the post"}
-      ]
-    },
     "sections": [
-      {
-        "id": "about",
-        "content": "I am a dynamic, curious and sociable person. I work as a developer since 2012. I am passionated by my work, which makes me happy."
-      },
       {
         "id": "skills",
         "title": "Skills",
@@ -280,68 +174,7 @@
     }
   },
   "es": {
-    "menu": [
-      {
-        "id": "about",
-        "text": "sobre mí"
-      },
-      {
-        "id": "skills",
-        "text": "competencias"
-      },
-      {
-        "id": "works",
-        "text": "trabajos"
-      },
-      {
-        "id": "more",
-        "text": "más"
-      }
-    ],
-    "menuClosable": "volver",
-    "header": {
-      "name": "Ane DIAZ DE TUESTA",
-      "presentationSkills": [
-        "Desarrolladora Web",
-        "Facilitadora Gráfica",
-        "Oradora"
-      ],
-      "resume": {
-        "url": "https://drive.google.com/uc?export=download&id=1KkHbqRjZV16lueYyOnVEFataBdtp52Zu",
-        "title": "Descargar mi currículo"
-      },
-      "mail": "anediaz@gmail.com",
-      "social": [
-        {
-          "url": "https://www.linkedin.com/in/ane-diaz-de-tuesta-37785252",
-          "className": "fa-linkedin",
-          "title": "Linkedin"
-        },
-        {
-          "url": "https://twitter.com/ane_naiz",
-          "className": "fa-twitter",
-          "title": "Sígueme en Twitter"
-        },
-        {
-          "url": "https://github.com/anediaz",
-          "className": "fa-github",
-          "title": "Mi Github"
-        },
-        {
-          "url": "https://www.npmjs.com/~anediaz",
-          "className": "fab fa-npm",
-          "title": "Mi npm"
-        }
-      ],
-      "lastNews": [
-        {"text": "Realización de la traducción vasca de"},{"text": "Node.js Best Practices", "link": true}, {"text": "Leer el artículo"}
-      ]
-    },
     "sections": [
-      {
-        "id": "about",
-        "content": "Soy una persona dinámica, curiosa y sociable. Trabajo como programadora desde 2012. Mi trabajo mi pasiona y me hace feliz."
-      },
       {
         "id": "skills",
         "title": "Competencias",
@@ -411,68 +244,7 @@
     }
   },
   "eu": {
-    "menu": [
-      {
-        "id": "about",
-        "text": "niri buruz"
-      },
-      {
-        "id": "skills",
-        "text": "Ezagutzak"
-      },
-      {
-        "id": "works",
-        "text": "lanak"
-      },
-      {
-        "id": "more",
-        "text": "gehiago"
-      }
-    ],
-    "menuClosable": "itzuli",
-    "header": {
-      "name": "Ane DIAZ DE TUESTA",
-      "presentationSkills": [
-        "Web Garatzailea",
-        "Erraztaile Grafikoa",
-        "Hizlaria"
-      ],
-      "resume": {
-        "url": "https://drive.google.com/uc?export=download&id=1XBew-56GZ_SL95MB0TyA-YrCbpI2lkI2",
-        "title": "Deskargatu nire curriculuma"
-      },
-      "mail": "anediaz@gmail.com",
-      "social": [
-        {
-          "url": "https://www.linkedin.com/in/ane-diaz-de-tuesta-37785252",
-          "className": "fa-linkedin",
-          "title": "Linkedin"
-        },
-        {
-          "url": "https://twitter.com/ane_naiz",
-          "className": "fa-twitter",
-          "title": "Jarrai nazazu Twitter-en"
-        },
-        {
-          "url": "https://github.com/anediaz",
-          "className": "fa-github",
-          "title": "Nire Github-a"
-        },
-        {
-          "url": "https://www.npmjs.com/~anediaz",
-          "className": "fab fa-npm",
-          "title": "Nire npm"
-        }
-      ],
-      "lastNews": [
-        {"text": "Node.js Best Practices gidaren", "link": true},{"text": "euskarazko itzulpenaren burutzea"}, {"text": "Artikulua irakurri"}
-      ]
-    },
     "sections": [
-      {
-        "id": "about",
-        "content": "Pertsona dinamikoa, jakinguratsua eta lagunartekoa naiz. Programatzaile lanbidea daukat 2012tik. Nire lanaren zale naiz eta honek zoriontsu egiten nau."
-      },
       {
         "id": "skills",
         "title": "Ezagutzak",

@@ -1,0 +1,21 @@
+{
+  "menu.about": "niri buruz",
+  "menu.skills": "ezagutzak",
+  "menu.works": "lanak",
+  "menu.more": "gehiago",
+  "menu.closable": "itzuli",
+
+  "header.resumeTitle": "Deskargatu nire curriculuma",
+  "header.skill.developer": "Web Garatzailea",
+  "header.skill.graphic":"Erraztaile Grafikoa",
+  "header.skill.speaker":"Hizlaria",
+  "header.social.linkedin": "Linkedin",
+  "header.social.twitter": "Jarrai nazazu Twitter-en",
+  "header.social.github": "Nire GitHub-a",
+  "header.social.npm": "Nire npm",
+  "lastNews": [
+    {"text": "Node.js Best Practices gidaren", "link": true},{"text": "euskarazko itzulpenaren burutzea"}, {"text": "Artikulua irakurri"}
+  ],
+
+  "about.content": "Pertsona dinamikoa, jakinguratsua eta lagunartekoa naiz. Programatzaile lanbidea daukat 2012tik. Nire lanaren zale naiz eta honek zoriontsu egiten nau."
+}

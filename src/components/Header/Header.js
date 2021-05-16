@@ -1,26 +1,27 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import './Header.css';
 import profileImage from './profile.jpg';
+import {
+  jsonData,
+} from '../../service';
 import ImageWithLoader from '../ImageWithLoader/ImageWithLoader';
 import LoaderInline from '../Loader/LoaderInline';
 
 const Header = ({
   id,
-  resume,
-  name,
-  presentationSkills,
-  mail,
-  social = [],
 }) => {
+  const [t] = useTranslation();
+  const { header } = jsonData;
   const getSocial = () => {
-    const socialContent = social.map(({ url, title, className }) => (
+    const socialContent = header.social.map(({ id: socialId, url, className }) => (
       <a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        key={title}
-        title={title || null}
+        key={t(`header.social.${socialId}`)}
+        title={t(`header.social.${socialId}`) || null}
       >
         <i className={`fa ${className}`} />
       </a>
@@ -30,14 +31,14 @@ const Header = ({
       <>
         <div className="social">
           <i className="fa fa-envelope mail">
-            <a href={`mailto:${mail}?`} target="_top">
-              {` ${mail}`}
+            <a href={`mailto:${header.mail}?`} target="_top">
+              {` ${header.mail}`}
             </a>
           </i>
           <div className="social-icons">
             {socialContent}
-            <a href={resume.url}>
-              <i className="fa fa-file-text-o" title={resume.title || null} />
+            <a href={header.url}>
+              <i className="fa fa-file-text-o" title={t('header.resumeTitle') || null} />
             </a>
           </div>
         </div>
@@ -50,10 +51,10 @@ const Header = ({
   return (
     <div className="Header" id={id}>
       <div className="name">
-        <h2>{name}</h2>
+        <h2>{header.name}</h2>
         <div className="presentation">
-          {presentationSkills.map((skill) => (
-            <div key={skill}>{skill}</div>
+          {header.skills.map((skill) => (
+            <div key={skill}>{t(`header.skill.${skill}`)}</div>
           ))}
         </div>
       </div>
@@ -67,22 +68,6 @@ const Header = ({
 
 Header.propTypes = {
   id: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  social: PropTypes.arrayOf(
-    PropTypes.shape({
-      url: PropTypes.string.isRequired,
-      className: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-    }),
-  ),
-  mail: PropTypes.string.isRequired,
-  resume: PropTypes.shape({
-    url: PropTypes.string.isRequired,
-    title: PropTypes.string,
-  }).isRequired,
-  presentationSkills: PropTypes.arrayOf(
-    PropTypes.string.isRequired,
-  ),
 };
 
 export default Header;

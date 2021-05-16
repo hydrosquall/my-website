@@ -1,0 +1,21 @@
+{
+    "menu.about": "sobre mí",
+    "menu.skills": "competencias",
+    "menu.works": "trabajos",
+    "menu.more": "más",
+    "menu.closable": "volver",
+
+    "header.resumeTitle": "Descargar mi currículo",
+    "header.skill.developer": "Desarrolladora Web",
+    "header.skill.graphic":"Facilitadora Gráfica",
+    "header.skill.speaker":"Oradora",
+    "header.social.linkedin": "Linkedin",
+    "header.social.twitter": "Sígueme en Twitter",
+    "header.social.github": "Mi GitHub",
+    "header.social.npm": "Mi npm",
+    "lastNews": [
+        {"text": "Realización de la traducción vasca de"},{"text": "Node.js Best Practices", "link": true}, {"text": "Leer el artículo"}
+    ],
+
+    "about.content": "Soy una persona dinámica, curiosa y sociable. Trabajo como programadora desde 2012. Mi trabajo mi pasiona y me hace feliz."
+}

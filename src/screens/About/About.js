@@ -1,22 +1,24 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import { SectionWithSensor } from '../../components';
 
 import './About.css';
 
-const About = ({ data, onChangeVisibility = () => {}, isVisible }) => (
-  <SectionWithSensor onChangeVisibility={onChangeVisibility} id={data.id} className="About" isVisible={isVisible}>
-    <div className="item">
-      <p>{data.content}</p>
-    </div>
-  </SectionWithSensor>
-);
+const About = ({ id, onChangeVisibility = () => {}, isVisible }) => {
+  const [t] = useTranslation();
+
+  return (
+    <SectionWithSensor onChangeVisibility={onChangeVisibility} id={id} className="About" isVisible={isVisible}>
+      <div className="item">
+        <p>{t('about.content')}</p>
+      </div>
+    </SectionWithSensor>
+  );
+};
 
 About.propTypes = {
-  data: PropTypes.exact({
-    id: PropTypes.string,
-    content: PropTypes.string.isRequired,
-  }),
+  id: PropTypes.string,
   onChangeVisibility: PropTypes.func,
   isVisible: PropTypes.bool,
 };

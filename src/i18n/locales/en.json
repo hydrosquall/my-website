@@ -1,0 +1,21 @@
+{
+    "menu.about": "about",
+    "menu.skills": "skills",
+    "menu.works": "works",
+    "menu.more": "more",
+    "menu.closable": "return",
+
+    "header.resumeTitle": "Download my Resume",
+    "header.skill.developer": "Web Developer",
+    "header.skill.graphic":"Visual Facilitator",
+    "header.skill.speaker":"Speaker",
+    "header.social.linkedin": "Linkedin",
+    "header.social.twitter": "Follow me on Twitter",
+    "header.social.github": "My GitHub",
+    "header.social.npm": "My npm",
+    "lastNews": [
+        {"text": "Realization of Basque translation of"},{"text": "Node.js Best Practices", "link": true},{"text": "Read the post"}
+      ],
+
+    "about.content": "I am a dynamic, curious and sociable person. I work as a developer since 2012. I am passionated by my work, which makes me happy."
+}

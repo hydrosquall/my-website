@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import './Menu.css';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
@@ -10,36 +11,23 @@ const Menu = ({
   languageClickHandler = () => {},
   menuItems,
   selectItemHandler = () => {},
-  closeData,
+  closable,
 }) => {
+  const [t] = useTranslation();
   const getClass = (id) => `item ${selectedItem === id ? 'active' : ''}`;
 
-  const buildItemContent = (text, imgClassName) => (imgClassName ? (
-    <i className={`fa fa-2x ${imgClassName}`} />
-  ) : (
-    text
-  ));
-
-  const buildMenu = () => menuItems.map(({
-    id, target, text, imgClassName,
-  }) => (
+  const buildMenu = () => menuItems.map((item) => (
     <div
-      className={getClass(id)}
-      onClick={() => selectItemHandler(id)}
-      key={id}
+      className={getClass(item)}
+      onClick={() => selectItemHandler(item)}
+      key={item}
       role="menuitem"
       tabIndex={0}
       onKeyDown={() => {}}
     >
-      {target ? (
-        <a href={`#${id}`} target={target}>
-          {buildItemContent(text, imgClassName)}
-        </a>
-      ) : (
-        <div>
-          {buildItemContent(text, imgClassName)}
-        </div>
-      )}
+      <div>
+        {t(`menu.${item}`)}
+      </div>
     </div>
   ));
 
@@ -51,10 +39,10 @@ const Menu = ({
         languageItems={languageItems}
       />
       {menuItems && buildMenu()}
-      {closeData && (
+      {closable && (
       <button className="closeButton" type="button" onClick={selectItemHandler}>
         <i className="fa fa-hand-o-left" />
-        {closeData}
+        {t('menu.closable')}
       </button>
       )}
     </div>
@@ -80,7 +68,7 @@ Menu.propTypes = {
   ).isRequired,
   selectedItem: PropTypes.string.isRequired,
   selectItemHandler: PropTypes.func.isRequired,
-  closeData: PropTypes.string,
+  closable: PropTypes.bool,
 };
 
 export default Menu;

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import * as PropTypes from 'prop-types';
 import {
-  Menu, Header, Footer, LastNews,
+  Menu, Header, Footer, /* LastNews, */
 } from '../../components';
 import {
   About, Skills, Works, More, Article, Microsoft,
@@ -22,6 +23,7 @@ const PAGES = {
 const { LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION } = constants;
 
 const Main = ({ page, section }) => {
+  const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState(DEFAULT_LOCALE);
   const [visibleSection, setVisibleSection] = useState(DEFAULT_SECTION);
   const data = jsonData[selectedLanguage];
@@ -43,7 +45,9 @@ const Main = ({ page, section }) => {
   };
 
   useEffect(() => {
-    setSelectedLanguage(locale && LOCALES.includes(locale) ? locale : DEFAULT_LOCALE);
+    const l = locale && LOCALES.includes(locale) ? locale : DEFAULT_LOCALE;
+    i18n.changeLanguage(l);
+    setSelectedLanguage(l);
     selectSectionHandler(section || DEFAULT_SECTION);
   }, [locale]);
 
@@ -91,49 +95,47 @@ const Main = ({ page, section }) => {
       {data && (
         <>
           <Menu
-            menuItems={page ? [] : data.menu}
+            menuItems={page ? [] : jsonData.menuItems}
             language={selectedLanguage}
             languageClickHandler={languageClickHandler}
             languageItems={jsonData.languages}
             selectedItem={page ? '' : visibleSection}
             selectItemHandler={page ? () => goTo() : menuItemClickHandler}
-            closeData={page && data.menuClosable}
+            closable={Boolean(page)}
           />
           <div className="page">
             { page ? renderPage(page)
               : (
                 <div className="resume">
                   <Header
-                    {...data.header}
                     id={DEFAULT_SECTION}
-                    isVisible={DEFAULT_SECTION === visibleSection}
                   />
-                  <LastNews
+                  {/* <LastNews
                     content={data.header.lastNews}
                     id={DEFAULT_SECTION}
                     goToArticle={() => goTo('?page=article')}
-                  />
+                  /> */}
                   <About
+                    id="about"
+                    onChangeVisibility={onChangeVisibility}
+                    isVisible={visibleSection === 'about'}
+                  />
+                  <Skills
                     data={data.sections[0]}
                     onChangeVisibility={onChangeVisibility}
                     isVisible={data.sections[0].id === visibleSection}
                   />
-                  <Skills
-                    data={data.sections[1]}
-                    onChangeVisibility={onChangeVisibility}
-                    isVisible={data.sections[1].id === visibleSection}
-                  />
                   <Works
-                    data={data.sections[2]}
+                    data={data.sections[1]}
                     media={jsonData.talks}
                     onChangeVisibility={onChangeVisibility}
-                    isVisible={data.sections[2].id === visibleSection}
+                    isVisible={data.sections[1].id === visibleSection}
                     goToMicrosoft={() => goTo('?page=microsoft')}
                   />
                   <More
-                    data={data.sections[3]}
+                    data={data.sections[2]}
                     onChangeVisibility={onChangeVisibility}
-                    isVisible={data.sections[3].id === visibleSection}
+                    isVisible={data.sections[2].id === visibleSection}
                   />
                 </div>
               )}
