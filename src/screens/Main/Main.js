@@ -24,7 +24,6 @@ const { LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION } = constants;
 
 const Main = ({ page, section }) => {
   const { i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState(DEFAULT_LOCALE);
   const [visibleSection, setVisibleSection] = useState(DEFAULT_SECTION);
   const { locale } = useParams();
   const history = useHistory();
@@ -44,9 +43,7 @@ const Main = ({ page, section }) => {
   };
 
   useEffect(() => {
-    const l = locale && LOCALES.includes(locale) ? locale : DEFAULT_LOCALE;
-    i18n.changeLanguage(l);
-    setSelectedLanguage(l);
+    i18n.changeLanguage(locale && LOCALES.includes(locale) ? locale : DEFAULT_LOCALE);
     selectSectionHandler(section || DEFAULT_SECTION);
   }, [locale]);
 
@@ -66,7 +63,7 @@ const Main = ({ page, section }) => {
 
   const menuItemClickHandler = (item) => {
     selectSectionHandler(item);
-    history.push(getPath(selectedLanguage, item === DEFAULT_SECTION ? '' : `?section=${item}`));
+    history.push(getPath(i18n.language, item === DEFAULT_SECTION ? '' : `?section=${item}`));
   };
 
   const onChangeVisibility = (isVisible, id) => {
@@ -77,14 +74,14 @@ const Main = ({ page, section }) => {
 
   const goTo = (queryValue) => {
     scrollToTop();
-    history.push(getPath(selectedLanguage, queryValue));
+    history.push(getPath(i18n.language, queryValue));
   };
 
   const renderPage = (pageName) => {
     const pageObject = PAGES[pageName];
     if (pageObject) {
       const { component: PageComponent, data: pageData } = pageObject;
-      return <PageComponent data={pageData[selectedLanguage]} />;
+      return <PageComponent data={pageData[i18n.language]} />;
     }
     return <></>;
   };
@@ -94,7 +91,7 @@ const Main = ({ page, section }) => {
       <>
         <Menu
           menuItems={page ? [] : jsonData.menuItems}
-          language={selectedLanguage}
+          language={i18n.language}
           languageClickHandler={languageClickHandler}
           languageItems={jsonData.languages}
           selectedItem={page ? '' : visibleSection}

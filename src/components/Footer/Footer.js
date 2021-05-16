@@ -15,8 +15,6 @@ const Footer = () => {
     </a>
   );
   const footerText = t('webSiteInfo').split('$author');
-  // eslint-disable-next-line no-debugger
-  debugger;
   return (
     <div className="Footer">
       {footerText[0] && <div key={1}>{footerText[0]}</div>}

@@ -51,12 +51,7 @@ const Menu = ({
 
 Menu.propTypes = {
   menuItems: PropTypes.arrayOf(
-    PropTypes.exact({
-      id: PropTypes.string.isRequired,
-      target: PropTypes.string,
-      text: PropTypes.string.isRequired,
-      imgClassName: PropTypes.string,
-    }),
+    PropTypes.string,
   ).isRequired,
   language: PropTypes.string.isRequired,
   languageClickHandler: PropTypes.func.isRequired,
