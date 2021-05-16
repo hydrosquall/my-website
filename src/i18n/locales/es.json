@@ -17,5 +17,15 @@
         {"text": "Realización de la traducción vasca de"},{"text": "Node.js Best Practices", "link": true}, {"text": "Leer el artículo"}
     ],
 
-    "about.content": "Soy una persona dinámica, curiosa y sociable. Trabajo como programadora desde 2012. Mi trabajo mi pasiona y me hace feliz."
+    "about.content": "Soy una persona dinámica, curiosa y sociable. Trabajo como programadora desde 2012. Mi trabajo mi pasiona y me hace feliz.",
+
+    "skills.title": "Competencias",
+    "skills.content.developer": "Con más de 10 años de esperiencia en el Desarrollo Web. Doy importancia a crear aplicaciones cualitativas e intuitivas que respondan a las necesidades de los usuarios, con las tecnologías más recientes",
+    "skills.content.developer.highlight": "Desarrollo Web",
+
+    "skills.content.graphic": "Estoy convencida de los beneficios de la Facilitación Gráfica. Desde que la descubrí hace algunos años, no dejo de aprender y de mejorar. Lo utilizo en mi vida personal y profesional siempre que tengo la oportunidad.",
+    "skills.content.graphic.highlight": "Facilitación Gráfica",
+
+    "skills.content.speaker": "Soy adepta a las conferencias, sobre todo las que tratan sobre informática y el desarrollo. Las interacciones, la transmisión de conocimientos, el ambiente... me parecen fabulosos. Es por todo esto que, cuando tengo la posibilidad, participo como Oradora.",
+    "skills.content.speaker.highlight": "Oradora"
 }

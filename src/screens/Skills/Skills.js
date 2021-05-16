@@ -1,31 +1,29 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import * as PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import { SectionWithSensor } from '../../components';
 import { formatContent } from '../../service/utils';
+import {
+  jsonData,
+} from '../../service';
 import './Skills.css';
 
-const Skills = ({ data, onChangeVisibility = () => {}, isVisible }) => (
-  <SectionWithSensor onChangeVisibility={onChangeVisibility} id={data.id} title={data.title} className="Skills" isVisible={isVisible}>
-    {data.sectionItems.map(({ content, highlight }, index) => (
-      <div className="skill" key={index}>
-        {formatContent(content, highlight, 'highlight-marker')}
-      </div>
-    ))}
-  </SectionWithSensor>
-);
+const Skills = ({ id, onChangeVisibility = () => {}, isVisible }) => {
+  const [t] = useTranslation();
+  return (
+    <SectionWithSensor onChangeVisibility={onChangeVisibility} id={id} title={t('skills.title')} className="Skills" isVisible={isVisible}>
+      {jsonData.skills.map((skill, index) => (
+        <div className="skill" key={index}>
+          {formatContent(t(`skills.content.${skill}`), t(`skills.content.${skill}.highlight`), 'highlight-marker')}
+        </div>
+      ))}
+    </SectionWithSensor>
+  );
+};
 
 Skills.propTypes = {
-  data: PropTypes.exact({
-    title: PropTypes.string.isRequired,
-    id: PropTypes.string,
-    sectionItems: PropTypes.arrayOf(
-      PropTypes.exact({
-        content: PropTypes.string.isRequired,
-        highlight: PropTypes.string.isRequired,
-      }),
-    ),
-  }),
+  id: PropTypes.string,
   onChangeVisibility: PropTypes.func,
   isVisible: PropTypes.bool,
 };

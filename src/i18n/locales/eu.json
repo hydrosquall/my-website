@@ -17,5 +17,16 @@
     {"text": "Node.js Best Practices gidaren", "link": true},{"text": "euskarazko itzulpenaren burutzea"}, {"text": "Artikulua irakurri"}
   ],
 
-  "about.content": "Pertsona dinamikoa, jakinguratsua eta lagunartekoa naiz. Programatzaile lanbidea daukat 2012tik. Nire lanaren zale naiz eta honek zoriontsu egiten nau."
+  "about.content": "Pertsona dinamikoa, jakinguratsua eta lagunartekoa naiz. Programatzaile lanbidea daukat 2012tik. Nire lanaren zale naiz eta honek zoriontsu egiten nau.",
+
+  "skills.title": "Ezagutzak",
+  "skills.content.developer": "Web Garapenean 10 urte baino gehiagoko esperientzia dut. Garrantzi handia ematen diot erabiltzaileen beharrei erantzuten dieten aplikazio kualitatibo eta intuitiboak sortzeari, teknologia berrienak erabiliaz.",
+  "skills.content.developer.highlight": "Web Garapen",
+
+  "skills.content.graphic": "Errazte Grafikoak dituen onurez konbentzituta nago. Orain dela urte batzuk teknika hau ezagutu nuenetik, ez diot ikasteari eta hobetzeari uzten. Aukera dudan oro, nire bizitza pertsonalean eta profesionalean erabiltzen dut.",
+  "skills.content.graphic.highlight": "Errazte Grafikoak",
+
+  "skills.content.speaker": "Konferentziak gustuko ditut, batez ere informatika eta garapenari buruzkoak. Interakzioak, ezagutzen zabalpena, giroa... sekulakoak dirudizkit. Guzti honegatik, aukera dudan bakoitzean, konferentzietan Hizlari gisa parte hartzen dut.",
+  "skills.content.speaker.highlight": "Hizlari"
+
 }

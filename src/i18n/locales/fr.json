@@ -19,6 +19,16 @@
     {"text": "Lire l'article"}
   ],
 
-  "about.content": "Je suis une personne dynamique, curieuse et sociable. Je travaille en tant que développeuse depuis 2012. Je suis passionnée par mon travail qui me rend heureuse."
+  "about.content": "Je suis une personne dynamique, curieuse et sociable. Je travaille en tant que développeuse depuis 2012. Je suis passionnée par mon travail qui me rend heureuse.",
+
+  "skills.title": "Compétences",
+  "skills.content.developer": "Avec plus de 10 ans d'expérience professionnelle dans le Développement Web. Je tiens à créer des applications qualitatives et intuitives qui répondent aux besoins des utilisateurs en utilisant des technologies les plus récentes.",
+  "skills.content.developer.highlight": "Développement Web",
+
+  "skills.content.graphic": "Je suis convaincue des bénéfices de la Facilitation Graphique. Depuis que je l'ai découverte il y quelques années, je n'arrête pas d'en apprendre et de l'améliorer. Je la mets en place dans ma vie personnelle et professionnelle dès que j'ai l'occasion.",
+  "skills.content.graphic.highlight": "Facilitation Graphique",
+
+  "skills.content.speaker": "Je suis adepte aux conférences, notamment celles liées à l'informatique et au développement. Les échanges, la transmission des connaissances, l'atmosphère... me paraissent fabuleux. C'est pour tout cela que, quand j'ai la possibilité, j'y participe en tant qu'Oratrice.",
+  "skills.content.speaker.highlight": "Oratrice"
 
 }

@@ -17,5 +17,15 @@
         {"text": "Realization of Basque translation of"},{"text": "Node.js Best Practices", "link": true},{"text": "Read the post"}
       ],
 
-    "about.content": "I am a dynamic, curious and sociable person. I work as a developer since 2012. I am passionated by my work, which makes me happy."
+    "about.content": "I am a dynamic, curious and sociable person. I work as a developer since 2012. I am passionated by my work, which makes me happy.",
+
+    "skills.title": "Skills",
+    "skills.content.developer": "With more than 10 years of professional experience in Web Development. My aim is to create qualitative and intuitif applications which respond to users' needs by using the most recent technologies.",
+    "skills.content.developer.highlight": "Web Development",
+
+    "skills.content.graphic": "I'm convinced of Graphic Facilitation's benefits. Since I discovered it some years ago,  I keep learning and improving it. I use it in my personal and professional life each time I have the opportunity to.",
+    "skills.content.graphic.highlight": "Graphic Facilitation",
+
+    "skills.content.speaker": "I'm a conference enthusiast, specially conferences related with computing and development. I find the interactions, the knowledge transmissions, the atmosphere ... absolutely fabulus. This is why I participate as Speaker when I have the possibility.",
+    "skills.content.speaker.highlight": "Speaker"
 }

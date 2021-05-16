@@ -13,7 +13,7 @@ const Header = ({
   id,
 }) => {
   const [t] = useTranslation();
-  const { header } = jsonData;
+  const { header, skills } = jsonData;
   const getSocial = () => {
     const socialContent = header.social.map(({ id: socialId, url, className }) => (
       <a
@@ -53,7 +53,7 @@ const Header = ({
       <div className="name">
         <h2>{header.name}</h2>
         <div className="presentation">
-          {header.skills.map((skill) => (
+          {skills.map((skill) => (
             <div key={skill}>{t(`header.skill.${skill}`)}</div>
           ))}
         </div>

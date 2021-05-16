@@ -121,21 +121,21 @@ const Main = ({ page, section }) => {
                     isVisible={visibleSection === 'about'}
                   />
                   <Skills
-                    data={data.sections[0]}
+                    id="skills"
                     onChangeVisibility={onChangeVisibility}
-                    isVisible={data.sections[0].id === visibleSection}
+                    isVisible={visibleSection === 'skills'}
                   />
                   <Works
-                    data={data.sections[1]}
+                    data={data.sections[0]}
                     media={jsonData.talks}
                     onChangeVisibility={onChangeVisibility}
-                    isVisible={data.sections[1].id === visibleSection}
+                    isVisible={data.sections[0].id === visibleSection}
                     goToMicrosoft={() => goTo('?page=microsoft')}
                   />
                   <More
-                    data={data.sections[2]}
+                    data={data.sections[1]}
                     onChangeVisibility={onChangeVisibility}
-                    isVisible={data.sections[2].id === visibleSection}
+                    isVisible={data.sections[1].id === visibleSection}
                   />
                 </div>
               )}
