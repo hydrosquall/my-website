@@ -126,16 +126,15 @@ const Main = ({ page, section }) => {
                     isVisible={visibleSection === 'skills'}
                   />
                   <Works
-                    data={data.sections[0]}
-                    media={jsonData.talks}
+                    id="works"
                     onChangeVisibility={onChangeVisibility}
-                    isVisible={data.sections[0].id === visibleSection}
+                    isVisible={visibleSection === 'works'}
                     goToMicrosoft={() => goTo('?page=microsoft')}
                   />
                   <More
-                    data={data.sections[1]}
+                    data={data.sections[0]}
                     onChangeVisibility={onChangeVisibility}
-                    isVisible={data.sections[1].id === visibleSection}
+                    isVisible={data.sections[0].id === visibleSection}
                   />
                 </div>
               )}

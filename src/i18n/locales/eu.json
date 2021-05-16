@@ -27,6 +27,19 @@
   "skills.content.graphic.highlight": "Errazte Grafikoak",
 
   "skills.content.speaker": "Konferentziak gustuko ditut, batez ere informatika eta garapenari buruzkoak. Interakzioak, ezagutzen zabalpena, giroa... sekulakoak dirudizkit. Guzti honegatik, aukera dudan bakoitzean, konferentzietan Hizlari gisa parte hartzen dut.",
-  "skills.content.speaker.highlight": "Hizlari"
+  "skills.content.speaker.highlight": "Hizlari",
+
+  "works.title": "Lanak",
+  "works.developer.title": "Azken web proiektua",
+  "works.developer.info": "Argazki webgunea",
+  "works.developer.role": "Rola: Web garapena eta diseinua",
+
+  "works.graphic.title":  "Azken lan bisuala",
+  "works.graphic.content": "Duela gutxi Erraztaile Grafiko gisa Microsoft-entzat lan egiteko plazerra eduki dut",
+  "works.graphic.other": "Beste burutze grafikoak",
+
+  "works.speaker.title": "Konferentziak",
+  "works.speaker.content": "Hizlari gisa parte hartutako konferentziak"
+
 
 }

@@ -30,215 +30,13 @@
       {"id": "npm", "url": "https://www.npmjs.com/~anediaz", "className": "fab fa-npm"}
     ]
   },
-  "fr": {
-    "sections": [
-      {
-        "id": "works",
-        "title": "Travaux",
-        "webDevelopment": {
-          "project": "Dernier projet web",
-          "image": {
-            "alt": "Araotz",
-            "url": "https://anediaz.github.io/araotz/#/"
-          },
-          "infos": [
-            "Site web photographique",
-            "Role: Développement Web et design"
-          ]
-        },
-        "graphic": {
-          "project": "Dernier travail visuel",
-          "content": "Récemment, j'ai eu le plaisir de travailler en tant que Facilitatrice Graphique pour ",
-          "image": {
-            "alt": "Graphic",
-            "url": ""
-          },
-          "otherContent": "Autres réalisations graphiques"
-        },
-        "conferences": {
-          "project": "Conférences",
-          "content": "Conférences dans lasquelles j'ai participé en tant qu'oratrice"
-        }
-      },
-      {
-        "id": "more",
-        "title": "Plus",
-        "sectionItems": [
-          {
-            "title": "Pratique sportive",
-            "content": "Course à pied principalement, du vélo et de la randonnée"
-          },
-          {
-            "title": "Dessiner",
-            "content": "Dessins au crayon, feutres, de la peinture à l'huile et du sketchnoting"
-          },
-          {
-            "title": "Langues",
-            "contentItems": ["Basque","Français", "Anglais", "Espagnol"]
-          }
-        ]
-      }
-    ],
-    "webSiteInfo": {
-      "author": "Ane Diaz de Tuesta",
-      "text": "Site web développé par $author",
-      "url": "http://www.anediaz.com"
-    }
-  },
-  "en": {
-    "sections": [
-      {
-        "id": "works",
-        "title": "Works",
-        "webDevelopment": {
-          "project": "Latest web project",
-          "image": {
-            "alt": "Araotz",
-            "url": "https://anediaz.github.io/araotz/#/"
-          },
-          "infos": ["A photography website", "Role: Web development and design"]
-        },
-        "graphic": {
-          "project": "Latest visual work",
-          "content": "Recently I've had the pleasure of working as Graphic Faciliator for Microsoft",
-          "image": {
-            "alt": "Graphic",
-            "url": ""
-          },
-          "otherContent": "Other graphic realizations"
-        },
-        "conferences": {
-          "project": "Conferences",
-          "content": "The conferences where I've participated as Speaker"
-        }
-      },
-      {
-        "id": "more",
-        "title": "More",
-        "sectionItems": [
-          {
-            "title": "Languages",
-            "contentItems": ["Basque", "French", "English","Spanish"]
-          },
-          {
-            "title": "Sports practice",
-            "content": "Mainly running, cycling and hiking"
-          },
-          {
-            "title" : "Drawing",
-            "content": "Drawing with pencils, pens, oil painting and sketchnoting"
-          }
-        ]
-      }
-    ],
-    "webSiteInfo": {
-      "author": "Ane Diaz de Tuesta",
-      "text": "Web site developed by $author",
-      "url": "http://www.anediaz.com"
-    }
-  },
-  "es": {
-    "sections": [
-      {
-        "id": "works",
-        "title": "Trabajos",
-        "webDevelopment": {
-          "project": "Último proyecto web",
-          "image": {
-            "alt": "Araotz",
-            "url": "https://anediaz.github.io/araotz/#/"
-          },
-          "infos": ["Página web fotográfica", "Rol: Desarrollo web y diseño"]
-        },
-        "graphic": {
-          "project": "Último trabajo visual",
-          "content": "Recientemente he tenido el placer de trabajar como Facilitadora Gráfica para",
-          "image": {
-            "alt": "Graphic",
-            "url": ""
-          },
-          "otherContent": "Otras realizaciones gráficas"
-        },
-        "conferences": {
-          "project": "Conferencias",
-          "content": "Conferencias en las que he participado como Oradora"
-        }
-      },
-      {
-        "id": "more",
-        "title": "Más",
-        "sectionItems": [
-           {
-            "title": "Idiomas",
-            "contentItems": ["Vasco", "Franés", "Inglés", "Español"]
-          },
-          {
-            "title": "Deportes",
-            "content": "Principalmente correr, ciclismo y senderismo"
-          },
-          {
-            "title": "Dibujar",
-            "content": "Dibujos con lápices, rotuladores, pintura al óleo y sketchnoting"
-          }
-        ]
-      }
-    ],
-    "webSiteInfo": {
-      "author": "Ane Diaz de Tuesta",
-      "text": "Página web desarrollada por $author",
-      "url": "http://www.anediaz.com"
-    }
-  },
-  "eu": {
-    "sections": [
-      {
-        "id": "works",
-        "title": "Lanak",
-        "webDevelopment": {
-          "project": "Azken web proiektua",
-          "image": {
-            "alt": "Araotz",
-            "url": "https://anediaz.github.io/araotz/#/"
-          },
-          "infos": ["Argazki webgunea", "Rola: Web garapena eta diseinua"]
-        },
-        "graphic": {
-          "project": "Azken lan bisuala",
-          "content": "Duela gutxi Erraztaile Grafiko gisa xxxx-entzat lan egiteko plazerra eduki dut",
-          "image": {
-            "alt": "Graphic",
-            "url": ""
-          },
-          "otherContent": "Beste burutze grafikoak"
-        },
-        "conferences": {
-          "project": "Konferentziak",
-          "content": "Hizlari gisa parte hartutako konferentziak"
-        }
-      },
-      {
-        "id": "more",
-        "title": "Gehiago",
-        "sectionItems": [
-          {
-            "title": "Hizkuntzak",
-            "contentItems": ["Euskara", "Frantsesa", "Ingelesa", "Gaztelera"]
-          },
-          {
-            "title": "Kirolak",
-            "content": "Nagusiki korrika egitea, bizikletan ibiltzea eta mendi irteerak egitea"
-          },
-          {
-            "title": "Marraztea",
-            "content": "Arkatzez eta errotulatzailez egindako marrazkiak, olio pinturak eta sketchnoting-a"
-          }
-        ]
-      }
-    ],
-    "webSiteInfo": {
-      "author": "Ane Diaz de Tuesta",
-      "text": "$authork egindako webgunea",
-      "url": "http://www.anediaz.com"
+  "works":{
+    "developer": {
+      "url": "https://anediaz.github.io/araotz/#/",
+      "alt": "Araotz"
+    },
+    "graphic": {
+      "alt": "Graphic"
     }
   },
   "talks":
@@ -274,6 +72,116 @@
         "date": "2017/09/15"
       }
     ],
+
+  "fr": {
+    "sections": [
+      {
+        "id": "more",
+        "title": "Plus",
+        "sectionItems": [
+          {
+            "title": "Pratique sportive",
+            "content": "Course à pied principalement, du vélo et de la randonnée"
+          },
+          {
+            "title": "Dessiner",
+            "content": "Dessins au crayon, feutres, de la peinture à l'huile et du sketchnoting"
+          },
+          {
+            "title": "Langues",
+            "contentItems": ["Basque","Français", "Anglais", "Espagnol"]
+          }
+        ]
+      }
+    ],
+    "webSiteInfo": {
+      "author": "Ane Diaz de Tuesta",
+      "text": "Site web développé par $author",
+      "url": "http://www.anediaz.com"
+    }
+  },
+  "en": {
+    "sections": [
+      {
+        "id": "more",
+        "title": "More",
+        "sectionItems": [
+          {
+            "title": "Languages",
+            "contentItems": ["Basque", "French", "English","Spanish"]
+          },
+          {
+            "title": "Sports practice",
+            "content": "Mainly running, cycling and hiking"
+          },
+          {
+            "title" : "Drawing",
+            "content": "Drawing with pencils, pens, oil painting and sketchnoting"
+          }
+        ]
+      }
+    ],
+    "webSiteInfo": {
+      "author": "Ane Diaz de Tuesta",
+      "text": "Web site developed by $author",
+      "url": "http://www.anediaz.com"
+    }
+  },
+  "es": {
+    "sections": [
+      {
+        "id": "more",
+        "title": "Más",
+        "sectionItems": [
+           {
+            "title": "Idiomas",
+            "contentItems": ["Vasco", "Franés", "Inglés", "Español"]
+          },
+          {
+            "title": "Deportes",
+            "content": "Principalmente correr, ciclismo y senderismo"
+          },
+          {
+            "title": "Dibujar",
+            "content": "Dibujos con lápices, rotuladores, pintura al óleo y sketchnoting"
+          }
+        ]
+      }
+    ],
+    "webSiteInfo": {
+      "author": "Ane Diaz de Tuesta",
+      "text": "Página web desarrollada por $author",
+      "url": "http://www.anediaz.com"
+    }
+  },
+  "eu": {
+    "sections": [
+      {
+        "id": "more",
+        "title": "Gehiago",
+        "sectionItems": [
+          {
+            "title": "Hizkuntzak",
+            "contentItems": ["Euskara", "Frantsesa", "Ingelesa", "Gaztelera"]
+          },
+          {
+            "title": "Kirolak",
+            "content": "Nagusiki korrika egitea, bizikletan ibiltzea eta mendi irteerak egitea"
+          },
+          {
+            "title": "Marraztea",
+            "content": "Arkatzez eta errotulatzailez egindako marrazkiak, olio pinturak eta sketchnoting-a"
+          }
+        ]
+      }
+    ],
+    "webSiteInfo": {
+      "author": "Ane Diaz de Tuesta",
+      "text": "$authork egindako webgunea",
+      "url": "http://www.anediaz.com"
+    }
+  },
+
   "illustrations": {
     "albums": [
       { "name": "Test JS Summit", "id": "72157718113845317" },

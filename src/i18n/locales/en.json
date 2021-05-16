@@ -27,5 +27,18 @@
     "skills.content.graphic.highlight": "Graphic Facilitation",
 
     "skills.content.speaker": "I'm a conference enthusiast, specially conferences related with computing and development. I find the interactions, the knowledge transmissions, the atmosphere ... absolutely fabulus. This is why I participate as Speaker when I have the possibility.",
-    "skills.content.speaker.highlight": "Speaker"
+    "skills.content.speaker.highlight": "Speaker",
+
+    "works.title": "Works",
+    "works.developer.title": "Latest web project",
+    "works.developer.info": "A photography website",
+    "works.developer.role": "Role: Web development and design",
+
+    "works.graphic.title":  "Latest visual work",
+    "works.graphic.content": "Recently I've had the pleasure of working as Graphic Faciliator for Microsoft",
+    "works.graphic.other": "Other graphic realizations",
+
+    "works.speaker.title": "Conferences",
+    "works.speaker.content": "The conferences where I've participated as Speaker"
+
 }

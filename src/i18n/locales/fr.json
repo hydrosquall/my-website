@@ -29,6 +29,19 @@
   "skills.content.graphic.highlight": "Facilitation Graphique",
 
   "skills.content.speaker": "Je suis adepte aux conférences, notamment celles liées à l'informatique et au développement. Les échanges, la transmission des connaissances, l'atmosphère... me paraissent fabuleux. C'est pour tout cela que, quand j'ai la possibilité, j'y participe en tant qu'Oratrice.",
-  "skills.content.speaker.highlight": "Oratrice"
+  "skills.content.speaker.highlight": "Oratrice",
+
+  "works.title": "Travaux",
+  "works.developer.title": "Dernier projet web",
+  "works.developer.info": "Site web photographique",
+  "works.developer.role": "Role: Développement Web et design",
+
+  "works.graphic.title":  "Dernier travail visuel",
+  "works.graphic.content": "Récemment, j'ai eu le plaisir de travailler en tant que Facilitatrice Graphique pour Microsoft",
+  "works.graphic.other": "Autres réalisations graphiques",
+
+  "works.speaker.title": "Conférences",
+  "works.speaker.content": "Conférences dans lasquelles j'ai participé en tant qu'oratrice"
+
 
 }

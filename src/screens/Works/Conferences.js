@@ -1,29 +1,30 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import { MediaSection } from '../../components';
 import './Conferences.css';
 
 const Conferences = ({
-  data, media, className,
-}) => (
-  <div className={`conferences ${className}`}>
-    <div className="body">
-      <div className="description">
-        <div className="project">{data.project}</div>
-        <div className="infos">
-          <div>{data.content}</div>
+  media, className,
+}) => {
+  const [t] = useTranslation();
+
+  return (
+    <div className={`conferences ${className}`}>
+      <div className="body">
+        <div className="description">
+          <div className="project">{t('works.speaker.title')}</div>
+          <div className="infos">
+            <div>{t('works.speaker.content')}</div>
+          </div>
         </div>
       </div>
+      <MediaSection media={media} />
     </div>
-    <MediaSection media={media} />
-  </div>
-);
+  );
+};
 
 Conferences.propTypes = {
-  data: PropTypes.exact({
-    content: PropTypes.string.isRequired,
-    project: PropTypes.string.isRequired,
-  }),
   media: PropTypes.arrayOf(
     PropTypes.exact({
       title: PropTypes.string.isRequired,
