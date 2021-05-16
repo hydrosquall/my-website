@@ -9,15 +9,13 @@ import {
   About, Skills, Works, More, Article, Microsoft,
 } from '../index';
 import {
-  jsonData, constants, articleData, microsoftData,
+  jsonData, constants,
 } from '../../service';
 import './Main.css';
 
 const PAGES = {
-  article: {
-    component: Article, data: articleData,
-  },
-  microsoft: { component: Microsoft, data: microsoftData },
+  article: Article,
+  microsoft: Microsoft,
 };
 
 const { LOCALES, DEFAULT_LOCALE, DEFAULT_SECTION } = constants;
@@ -78,10 +76,9 @@ const Main = ({ page, section }) => {
   };
 
   const renderPage = (pageName) => {
-    const pageObject = PAGES[pageName];
-    if (pageObject) {
-      const { component: PageComponent, data: pageData } = pageObject;
-      return <PageComponent data={pageData[i18n.language]} />;
+    const PageComponent = PAGES[pageName];
+    if (PageComponent) {
+      return <PageComponent language={i18n.language} />;
     }
     return <></>;
   };
@@ -104,6 +101,7 @@ const Main = ({ page, section }) => {
               <div className="resume">
                 <Header
                   id={DEFAULT_SECTION}
+                  language={i18n.language}
                 />
                 {/* <LastNews
                     content={data.header.lastNews}

@@ -10,9 +10,9 @@ import ImageWithLoader from '../ImageWithLoader/ImageWithLoader';
 import LoaderInline from '../Loader/LoaderInline';
 
 const Header = ({
-  id,
+  id, language,
 }) => {
-  const { t, i18n } = useTranslation();
+  const [t] = useTranslation();
   const { header, skills } = jsonData;
   const getSocial = () => {
     const socialContent = header.social.map(({ id: socialId, url, className }) => (
@@ -37,7 +37,7 @@ const Header = ({
           </i>
           <div className="social-icons">
             {socialContent}
-            <a href={header.url[i18n.language]}>
+            <a href={header.url[language]}>
               <i className="fa fa-file-text-o" title={t('header.resumeTitle') || null} />
             </a>
           </div>
@@ -68,6 +68,7 @@ const Header = ({
 
 Header.propTypes = {
   id: PropTypes.string,
+  language: PropTypes.string.isRequired,
 };
 
 export default Header;

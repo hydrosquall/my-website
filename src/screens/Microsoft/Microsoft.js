@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import * as PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import './Microsoft.css';
 import msLogo from './logo-ms.png';
 import {
@@ -9,6 +9,7 @@ import FlickrAPI from '../../service/FlickrAPI';
 import {
   SIZES, MS_PHOTOSET_ID,
 } from '../../service/constants';
+import { microsoftMedia } from '../../service';
 import { formatContent } from '../../service/utils';
 
 const { original: def, large1024: big } = SIZES;
@@ -20,7 +21,8 @@ const transformResult = (r) => ({
   id: r.id,
 });
 
-const Microsoft = ({ data }) => {
+const Microsoft = () => {
+  const [t] = useTranslation();
   const [photos, setPhotos] = useState([]);
   const [lightboxImg, setLightboxImg] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -49,15 +51,15 @@ const Microsoft = ({ data }) => {
     <div className="MediaSection">
       <div className="MediaSectionItem content">
         <div className="text">
-          <span>{data.mediaIllustration}</span>
+          <span>{t('microsoft.mediaIllustration')}</span>
           <i className="fa fa-hand-o-down" aria-hidden="true" />
         </div>
         <div className="text">
-          <span>{data.mediaVideo}</span>
+          <span>{t('microsoft.mediaVideo')}</span>
           <i className="fa fa-hand-o-down" aria-hidden="true" />
         </div>
       </div>
-      {data.media.map(({
+      {microsoftMedia.map(({
         title, youtubeId, tag, alt,
       }) => (
         <div className="MediaSectionItem media" key={title}>
@@ -75,17 +77,17 @@ const Microsoft = ({ data }) => {
           <a href="https://www.microsoft.com/" target="_blank" rel="noreferrer">
             <img src={msLogo} alt="Microsoft logo" className="msLogo" />
           </a>
-          <span>{data.title}</span>
+          <span>{t('microsoft.title')}</span>
         </div>
         <div className="Section">
           <div className="content">
-            <div className="description">{formatContent(data.description, data.highlightDescription, 'highlight-marker')}</div>
-            <div className="description">{formatContent(data.description2, data.highlightDescription2, 'highlight-marker')}</div>
+            <div className="description">{formatContent(t('microsoft.description'), t('microsoft.highlightDescription'), 'highlight-marker')}</div>
+            <div className="description">{formatContent(t('microsoft.description2'), t('microsoft.highlightDescription2'), 'highlight-marker')}</div>
           </div>
           <div>
             {renderImg('cover', "The book's cover", 'cover-image')}
             <a href="https://www.microsoft.com/france/MSDev/Roadshow/default.aspx" target="_blank" rel="noreferrer" className="content msDevRoadShow">
-              {data.whatIs}
+              {t('microsoft.whatIs')}
             </a>
           </div>
           {renderMediaSection()}
@@ -100,28 +102,6 @@ const Microsoft = ({ data }) => {
 
     </div>
   );
-};
-
-Microsoft.propTypes = {
-  data: PropTypes.exact({
-    title: PropTypes.string,
-    description: PropTypes.string,
-    highlightDescription: PropTypes.string,
-    description2: PropTypes.string,
-    highlightDescription2: PropTypes.string,
-    whatIs: PropTypes.string,
-    mediaIllustration: PropTypes.string,
-    mediaVideo: PropTypes.string,
-    media: PropTypes.arrayOf(
-      PropTypes.exact({
-        title: PropTypes.string,
-        youtubeId: PropTypes.string,
-        alt: PropTypes.string,
-        tag: PropTypes.string,
-      }),
-
-    ),
-  }),
 };
 
 export default Microsoft;

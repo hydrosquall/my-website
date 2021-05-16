@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import * as PropTypes from 'prop-types';
+import { articleData } from '../../service';
 import { Lightbox, ImageWithLoader, LoaderInline } from '../../components';
 import './Article.css';
 
@@ -24,7 +25,7 @@ ImageComponent.propTypes = {
   alt: PropTypes.string,
 };
 
-const Article = ({ data }) => {
+const Article = ({ language }) => {
   const renderers = {
     link: ({ href, children }) => <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>,
     image: ImageComponent,
@@ -37,13 +38,13 @@ const Article = ({ data }) => {
 
   return (
     <div className="article">
-      <ReactMarkdown renderers={renderers}>{data}</ReactMarkdown>
+      <ReactMarkdown renderers={renderers}>{articleData[language]}</ReactMarkdown>
     </div>
   );
 };
 
 Article.propTypes = {
-  data: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
 };
 
 export default Article;

@@ -54,6 +54,15 @@
   "more.draw": "Marraztea",
   "more.draw.content": "Arkatzez eta errotulatzailez egindako marrazkiak, olio pinturak eta sketchnoting-a",
 
-  "webSiteInfo": "$authork egindako webgunea"
+  "webSiteInfo": "$authork egindako webgunea",
+
+  "microsoft.title": "Microsoft-entzat lan grafikoa",
+  "microsoft.description": "MS Dev RoadShow-ko konferentzia ezberdinen 14 sketchnote-ren burutzea.",
+  "microsoft.highlightDescription": "14 sketchnote",
+  "microsoft.description2": "Gainera, sketchnote hauek bilduko dituen liburuaren azaleko marrazkia.",
+  "microsoft.highlightDescription2": "liburuaren azaleko marrazkia",
+  "microsoft.whatIs": "Zer da MS Dev Road Show?",
+  "microsoft.mediaIllustration": "Aurkezpen tekniko bakoitzaren adierazpen bisuala",
+  "microsoft.mediaVideo": "Aurkezpenaren bideoaz jarraitua"
 
 }

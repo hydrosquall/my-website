@@ -54,6 +54,15 @@
     "more.draw": "Drawing",
     "more.draw.content": "Drawing with pencils, pens, oil painting and sketchnoting",
 
-    "webSiteInfo": "Web site developed by $author"
+    "webSiteInfo": "Web site developed by $author",
+
+    "microsoft.title": "Graphic work for Microsoft",
+    "microsoft.description": "Realization of 14 sketchnotes of MS Dev RoadShow conferences.",
+    "microsoft.highlightDescription": "14 sketchnotes",
+    "microsoft.description2": "Also the cover illustration of the book, to which these sketchnotes will belong.",
+    "microsoft.highlightDescription2": "cover illustration",
+    "microsoft.whatIs": "What is MS Dev Road Show?",
+    "microsoft.mediaIllustration": "A visual representation of each technical talk",
+    "microsoft.mediaVideo": "Followed by the conference's video"
 
 }
