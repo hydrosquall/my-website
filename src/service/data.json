@@ -72,28 +72,8 @@
         "date": "2017/09/15"
       }
     ],
-
+  "more": [{"item":"languages", "contentItems": true}, {"item": "sports", "content": true}, {"item": "draw", "content": true}],
   "fr": {
-    "sections": [
-      {
-        "id": "more",
-        "title": "Plus",
-        "sectionItems": [
-          {
-            "title": "Pratique sportive",
-            "content": "Course à pied principalement, du vélo et de la randonnée"
-          },
-          {
-            "title": "Dessiner",
-            "content": "Dessins au crayon, feutres, de la peinture à l'huile et du sketchnoting"
-          },
-          {
-            "title": "Langues",
-            "contentItems": ["Basque","Français", "Anglais", "Espagnol"]
-          }
-        ]
-      }
-    ],
     "webSiteInfo": {
       "author": "Ane Diaz de Tuesta",
       "text": "Site web développé par $author",
@@ -101,26 +81,6 @@
     }
   },
   "en": {
-    "sections": [
-      {
-        "id": "more",
-        "title": "More",
-        "sectionItems": [
-          {
-            "title": "Languages",
-            "contentItems": ["Basque", "French", "English","Spanish"]
-          },
-          {
-            "title": "Sports practice",
-            "content": "Mainly running, cycling and hiking"
-          },
-          {
-            "title" : "Drawing",
-            "content": "Drawing with pencils, pens, oil painting and sketchnoting"
-          }
-        ]
-      }
-    ],
     "webSiteInfo": {
       "author": "Ane Diaz de Tuesta",
       "text": "Web site developed by $author",
@@ -128,26 +88,6 @@
     }
   },
   "es": {
-    "sections": [
-      {
-        "id": "more",
-        "title": "Más",
-        "sectionItems": [
-           {
-            "title": "Idiomas",
-            "contentItems": ["Vasco", "Franés", "Inglés", "Español"]
-          },
-          {
-            "title": "Deportes",
-            "content": "Principalmente correr, ciclismo y senderismo"
-          },
-          {
-            "title": "Dibujar",
-            "content": "Dibujos con lápices, rotuladores, pintura al óleo y sketchnoting"
-          }
-        ]
-      }
-    ],
     "webSiteInfo": {
       "author": "Ane Diaz de Tuesta",
       "text": "Página web desarrollada por $author",
@@ -155,26 +95,6 @@
     }
   },
   "eu": {
-    "sections": [
-      {
-        "id": "more",
-        "title": "Gehiago",
-        "sectionItems": [
-          {
-            "title": "Hizkuntzak",
-            "contentItems": ["Euskara", "Frantsesa", "Ingelesa", "Gaztelera"]
-          },
-          {
-            "title": "Kirolak",
-            "content": "Nagusiki korrika egitea, bizikletan ibiltzea eta mendi irteerak egitea"
-          },
-          {
-            "title": "Marraztea",
-            "content": "Arkatzez eta errotulatzailez egindako marrazkiak, olio pinturak eta sketchnoting-a"
-          }
-        ]
-      }
-    ],
     "webSiteInfo": {
       "author": "Ane Diaz de Tuesta",
       "text": "$authork egindako webgunea",

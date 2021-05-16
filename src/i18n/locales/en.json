@@ -39,6 +39,19 @@
     "works.graphic.other": "Other graphic realizations",
 
     "works.speaker.title": "Conferences",
-    "works.speaker.content": "The conferences where I've participated as Speaker"
+    "works.speaker.content": "The conferences where I've participated as Speaker",
+
+    "more.title": "More",
+    "more.languages": "Languages",
+    "more.languages.eu": "Basque",
+    "more.languages.fr": "French",
+    "more.languages.en": "English",
+    "more.languages.es": "Spanish",
+
+    "more.sports": "Sports practice",
+    "more.sports.content": "Mainly running, cycling and hiking",
+
+    "more.draw": "Drawing",
+    "more.draw.content": "Drawing with pencils, pens, oil painting and sketchnoting"
 
 }

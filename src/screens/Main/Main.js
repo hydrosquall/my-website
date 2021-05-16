@@ -132,9 +132,9 @@ const Main = ({ page, section }) => {
                     goToMicrosoft={() => goTo('?page=microsoft')}
                   />
                   <More
-                    data={data.sections[0]}
+                    id="more"
                     onChangeVisibility={onChangeVisibility}
-                    isVisible={data.sections[0].id === visibleSection}
+                    isVisible={visibleSection === 'more'}
                   />
                 </div>
               )}

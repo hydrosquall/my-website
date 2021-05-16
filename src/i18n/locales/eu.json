@@ -39,7 +39,21 @@
   "works.graphic.other": "Beste burutze grafikoak",
 
   "works.speaker.title": "Konferentziak",
-  "works.speaker.content": "Hizlari gisa parte hartutako konferentziak"
+  "works.speaker.content": "Hizlari gisa parte hartutako konferentziak",
+
+  "more.title": "Gehiago",
+  "more.languages": "Hizkuntzak",
+  "more.languages.eu": "Euskara",
+  "more.languages.fr": "Frantsesa",
+  "more.languages.en": "Ingelesa",
+  "more.languages.es": "Gaztelera",
+
+  "more.sports": "Kirolak",
+  "more.sports.content": "Nagusiki korrika egitea, bizikletan ibiltzea eta mendi irteerak egitea",
+
+  "more.draw": "Marraztea",
+  "more.draw.content": "Arkatzez eta errotulatzailez egindako marrazkiak, olio pinturak eta sketchnoting-a"
+
 
 
 }

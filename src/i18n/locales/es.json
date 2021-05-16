@@ -39,5 +39,21 @@
     "works.graphic.other": "Otras realizaciones gráficas",
 
     "works.speaker.title": "Conferencias",
-    "works.speaker.content": "Conferencias en las que he participado como Oradora"
+    "works.speaker.content": "Conferencias en las que he participado como Oradora",
+
+    "more.title": "Más",
+    "more.languages": "Idiomas",
+    "more.languages.eu": "Vasco",
+    "more.languages.fr": "Francés",
+    "more.languages.en": "Inglés",
+    "more.languages.es": "Español",
+
+    "more.sports": "Deportes",
+    "more.sports.content": "Principalmente correr, ciclismo y senderismo",
+
+    "more.draw": "Dibujar",
+    "more.draw.content": "Dibujos con lápices, rotuladores, pintura al óleo y sketchnoting"
+
+
+
 }
