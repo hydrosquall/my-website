@@ -72,7 +72,7 @@
         "date": "2017/09/15"
       }
     ],
-  "more": [{"item":"languages", "contentItems": true}, {"item": "sports", "content": true}, {"item": "draw", "content": true}],
+  "more": [{"item":"languages", "contentItems": ["eu","fr","en","es"]}, {"item": "sports", "content": true}, {"item": "draw", "content": true}],
   "fr": {
     "webSiteInfo": {
       "author": "Ane Diaz de Tuesta",
