@@ -54,6 +54,9 @@
   "more.sports.content": "Course à pied principalement, du vélo et de la randonnée",
 
   "more.draw": "Dessiner",
-  "more.draw.content": "Dessins au crayon, feutres, de la peinture à l'huile et du sketchnoting"
+  "more.draw.content": "Dessins au crayon, feutres, de la peinture à l'huile et du sketchnoting",
+
+  "webSiteInfo": "Site web développé par $author"
+
 
 }

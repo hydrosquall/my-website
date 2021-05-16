@@ -1,14 +1,22 @@
 import React from 'react';
-import * as PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
+import {
+  jsonData,
+} from '../../service';
 import './Footer.css';
 
-const Footer = ({ data }) => {
+const Footer = () => {
+  const [t] = useTranslation();
+  const { webSiteInfo } = jsonData;
+
   const clickableText = (
-    <a href={data.url} target="_blank" rel="noopener noreferrer" key={2}>
-      {data.author}
+    <a href={webSiteInfo.url} target="_blank" rel="noopener noreferrer" key={2}>
+      {webSiteInfo.author}
     </a>
   );
-  const footerText = data.text.split('$author');
+  const footerText = t('webSiteInfo').split('$author');
+  // eslint-disable-next-line no-debugger
+  debugger;
   return (
     <div className="Footer">
       {footerText[0] && <div key={1}>{footerText[0]}</div>}
@@ -18,11 +26,4 @@ const Footer = ({ data }) => {
   );
 };
 
-Footer.propTypes = {
-  data: PropTypes.exact({
-    text: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-  }),
-};
 export default Footer;

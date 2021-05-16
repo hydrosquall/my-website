@@ -26,7 +26,6 @@ const Main = ({ page, section }) => {
   const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState(DEFAULT_LOCALE);
   const [visibleSection, setVisibleSection] = useState(DEFAULT_SECTION);
-  const data = jsonData[selectedLanguage];
   const { locale } = useParams();
   const history = useHistory();
 
@@ -59,7 +58,7 @@ const Main = ({ page, section }) => {
   };
 
   const languageClickHandler = (language) => {
-    if (jsonData[language]) {
+    if (LOCALES.includes(language)) {
       history.push(getPath(language, page ? `?page=${page}` : ''));
     }
     scrollToTop();
@@ -92,56 +91,55 @@ const Main = ({ page, section }) => {
 
   return (
     <div className="Main">
-      {data && (
-        <>
-          <Menu
-            menuItems={page ? [] : jsonData.menuItems}
-            language={selectedLanguage}
-            languageClickHandler={languageClickHandler}
-            languageItems={jsonData.languages}
-            selectedItem={page ? '' : visibleSection}
-            selectItemHandler={page ? () => goTo() : menuItemClickHandler}
-            closable={Boolean(page)}
-          />
-          <div className="page">
-            { page ? renderPage(page)
-              : (
-                <div className="resume">
-                  <Header
-                    id={DEFAULT_SECTION}
-                  />
-                  {/* <LastNews
+      <>
+        <Menu
+          menuItems={page ? [] : jsonData.menuItems}
+          language={selectedLanguage}
+          languageClickHandler={languageClickHandler}
+          languageItems={jsonData.languages}
+          selectedItem={page ? '' : visibleSection}
+          selectItemHandler={page ? () => goTo() : menuItemClickHandler}
+          closable={Boolean(page)}
+        />
+        <div className="page">
+          { page ? renderPage(page)
+            : (
+              <div className="resume">
+                <Header
+                  id={DEFAULT_SECTION}
+                />
+                {/* <LastNews
                     content={data.header.lastNews}
                     id={DEFAULT_SECTION}
                     goToArticle={() => goTo('?page=article')}
                   /> */}
-                  <About
-                    id="about"
-                    onChangeVisibility={onChangeVisibility}
-                    isVisible={visibleSection === 'about'}
-                  />
-                  <Skills
-                    id="skills"
-                    onChangeVisibility={onChangeVisibility}
-                    isVisible={visibleSection === 'skills'}
-                  />
-                  <Works
-                    id="works"
-                    onChangeVisibility={onChangeVisibility}
-                    isVisible={visibleSection === 'works'}
-                    goToMicrosoft={() => goTo('?page=microsoft')}
-                  />
-                  <More
-                    id="more"
-                    onChangeVisibility={onChangeVisibility}
-                    isVisible={visibleSection === 'more'}
-                  />
-                </div>
-              )}
-          </div>
-          <Footer data={data.webSiteInfo} />
-        </>
-      )}
+                <About
+                  id="about"
+                  onChangeVisibility={onChangeVisibility}
+                  isVisible={visibleSection === 'about'}
+                />
+                <Skills
+                  id="skills"
+                  onChangeVisibility={onChangeVisibility}
+                  isVisible={visibleSection === 'skills'}
+                />
+                <Works
+                  id="works"
+                  onChangeVisibility={onChangeVisibility}
+                  isVisible={visibleSection === 'works'}
+                  goToMicrosoft={() => goTo('?page=microsoft')}
+                />
+                <More
+                  id="more"
+                  onChangeVisibility={onChangeVisibility}
+                  isVisible={visibleSection === 'more'}
+                />
+              </div>
+            )}
+        </div>
+        <Footer />
+      </>
+      )
     </div>
   );
 };

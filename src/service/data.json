@@ -73,35 +73,10 @@
       }
     ],
   "more": [{"item":"languages", "contentItems": ["eu","fr","en","es"]}, {"item": "sports", "content": true}, {"item": "draw", "content": true}],
-  "fr": {
-    "webSiteInfo": {
-      "author": "Ane Diaz de Tuesta",
-      "text": "Site web développé par $author",
-      "url": "http://www.anediaz.com"
-    }
+  "webSiteInfo": {
+    "author": "Ane Diaz de Tuesta",
+    "url": "http://www.anediaz.com"
   },
-  "en": {
-    "webSiteInfo": {
-      "author": "Ane Diaz de Tuesta",
-      "text": "Web site developed by $author",
-      "url": "http://www.anediaz.com"
-    }
-  },
-  "es": {
-    "webSiteInfo": {
-      "author": "Ane Diaz de Tuesta",
-      "text": "Página web desarrollada por $author",
-      "url": "http://www.anediaz.com"
-    }
-  },
-  "eu": {
-    "webSiteInfo": {
-      "author": "Ane Diaz de Tuesta",
-      "text": "$authork egindako webgunea",
-      "url": "http://www.anediaz.com"
-    }
-  },
-
   "illustrations": {
     "albums": [
       { "name": "Test JS Summit", "id": "72157718113845317" },

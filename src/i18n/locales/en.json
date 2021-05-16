@@ -52,6 +52,8 @@
     "more.sports.content": "Mainly running, cycling and hiking",
 
     "more.draw": "Drawing",
-    "more.draw.content": "Drawing with pencils, pens, oil painting and sketchnoting"
+    "more.draw.content": "Drawing with pencils, pens, oil painting and sketchnoting",
+
+    "webSiteInfo": "Web site developed by $author"
 
 }
