@@ -133,7 +133,6 @@ const Main = ({ page, section }) => {
         </div>
         <Footer />
       </>
-      )
     </div>
   );
 };

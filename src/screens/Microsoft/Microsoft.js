@@ -70,30 +70,30 @@ const Microsoft = () => {
     </div>
   ) : <></>);
 
-  const renderContent = () => (lightboxImg ? <Lightbox onClick={() => setLightboxImg(null)} src={lightboxImg} />
-    : (
-      <>
-        <div className="Header">
-          <a href="https://www.microsoft.com/" target="_blank" rel="noreferrer">
-            <img src={msLogo} alt="Microsoft logo" className="msLogo" />
+  const renderContent = () => (
+    <>
+      {lightboxImg && <Lightbox onClick={() => setLightboxImg(null)} src={lightboxImg} />}
+      <div className="Header">
+        <a href="https://www.microsoft.com/" target="_blank" rel="noreferrer">
+          <img src={msLogo} alt="Microsoft logo" className="msLogo" />
+        </a>
+        <h2>{t('microsoft.title')}</h2>
+      </div>
+      <div className="Section">
+        <div className="content">
+          <div className="description">{formatContent(t('microsoft.description'), t('microsoft.highlightDescription'), 'highlight-marker')}</div>
+          <div className="description">{formatContent(t('microsoft.description2'), t('microsoft.highlightDescription2'), 'highlight-marker')}</div>
+        </div>
+        <div className="coverImage Section">
+          {renderImg('cover', "The book's cover", 'cover-image')}
+          <a href="https://www.microsoft.com/france/MSDev/Roadshow/default.aspx" target="_blank" rel="noreferrer" className="content msDevRoadShow">
+            {t('microsoft.whatIs')}
           </a>
-          <span>{t('microsoft.title')}</span>
         </div>
-        <div className="Section">
-          <div className="content">
-            <div className="description">{formatContent(t('microsoft.description'), t('microsoft.highlightDescription'), 'highlight-marker')}</div>
-            <div className="description">{formatContent(t('microsoft.description2'), t('microsoft.highlightDescription2'), 'highlight-marker')}</div>
-          </div>
-          <div>
-            {renderImg('cover', "The book's cover", 'cover-image')}
-            <a href="https://www.microsoft.com/france/MSDev/Roadshow/default.aspx" target="_blank" rel="noreferrer" className="content msDevRoadShow">
-              {t('microsoft.whatIs')}
-            </a>
-          </div>
-          {renderMediaSection()}
-        </div>
-      </>
-    ));
+        {renderMediaSection()}
+      </div>
+    </>
+  );
 
   return (
     <div className="Microsoft">

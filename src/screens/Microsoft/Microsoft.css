@@ -2,15 +2,24 @@
   min-height: 100vh;
 }
 .Microsoft .Header {
-  margin-top: 8rem;
+  margin: 14rem 0 0 8rem;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
 }
+.Microsoft .Header h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+}
 
 .Microsoft img.msLogo{
-  height: 2rem;
-  margin-right: 1rem;
+  height: 4.5rem;
+  margin-right: 1.5rem;
+}
+
+.Microsoft .Section .description {
+  margin-bottom: .5rem;
 }
 
 .Microsoft .Section .description .highlight-marker {
@@ -30,8 +39,18 @@
 }
 
 .Microsoft .Section {
-  margin-top: 1rem;
+  margin-top: 4rem;
   padding: 0 12rem 0 9rem;
+}
+
+.Microsoft .Section.coverImage{
+  margin-bottom: 15rem;
+}
+
+.Microsoft .Section .content {
+  font-size: 2.7rem;
+  line-height: 3.7rem;
+  margin: 0 0 2rem 0;
 }
 
 .Microsoft .msDevRoadShow{
@@ -54,9 +73,8 @@
 }
 
 .Microsoft .Section .content .text span {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
-
 
 .Microsoft .MediaSection {
   margin-bottom: 0;
@@ -71,7 +89,6 @@
 
 .Microsoft .MediaSectionItem.media {
   padding: 1rem 0;
-  height: 20rem;
 }
 
 .Microsoft .MediaSectionItem.media:not(:last-child) {
@@ -80,16 +97,21 @@
 
 
 .Microsoft .MediaSectionItem .ImageWithLoader{
-  height: 95%;
+  width: 45%;
 }
 
 .Microsoft .MediaSectionItem .ImageWithLoader img{
-  height: 100%;
+  width: 100%;
 }
 
 .Microsoft .MediaSectionItem .media-item{
-  width: 35%;
+  width: 40%;
 }
+
+.Microsoft .MediaSectionItem .media-item .ImageWithLoader{
+  width: 100%;
+}
+
 .Microsoft .Section .content .cover-image-wrapper a{
   padding-left: 0;
 
@@ -100,11 +122,16 @@
 }
 
 .Microsoft .ImageWithLoader.cover-image img{
-  width: 70%;
+  width: 60%;
 }
 
 .Microsoft .ImageWithLoader img:hover{
   cursor: pointer;
+}
+
+.Microsoft .MediaSection .media-item .media-info {
+  font-size: 3rem;
+  padding-top: 1.5rem;
 }
 
 /*MacBook 13"*/
@@ -112,19 +139,96 @@
   .Microsoft .Header {
     margin-top: 8rem;
   }
+
+  .Microsoft .Header h2 {
+    font-size: 3rem;
+  }
+
+  .Microsoft img.msLogo{
+    height: 2.5rem;
+    margin-right: 1rem;
+  }
+
+  .Microsoft .Section {
+    margin-top: 1rem;
+    padding: 0 12rem 0 9rem;
+  }
+
+  .Microsoft .Section .content {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding-top: 3rem;
+    margin: 0;
+  }
+
+  .Microsoft .Section .description {
+    margin-bottom: 0rem;
+  }
+  .Microsoft .Section.coverImage {
+    margin-bottom: 0rem;
+  }
+
+  .Microsoft .ImageWithLoader.cover-image img{
+    width: 100%;
+  }
+
+  .Microsoft .Section .content .text span {
+    margin-bottom: 1rem;
+  }
+
+  .Microsoft .Section .content.msDevRoadShow{
+    padding-top: .8rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+  }
+
+  .Microsoft .MediaSection .media-item .media-info {
+    font-size: 1rem;
+    padding-top: .8rem;
+  }
+
+  .Microsoft .MediaSectionItem .media-item{
+    width: 35%;
+  }
+
+  .Microsoft .MediaSectionItem .ImageWithLoader {
+    width: 55%;
+  }
+  .Microsoft .MediaSectionItem.media {
+    padding: 1.5rem 0;
+  }
 }
 /*iPadPro Horizontal*/
 @media screen and (max-width: 1382px) {
+
+  .Microsoft .Section {
+    padding: 0 8rem 0 8rem;
+  }
   .Microsoft .Header {
     margin-top: 6rem;
   }
 
+  .Microsoft .Section .content .text{
+    font-size: 1.1rem;
+  }
 }
 /*iPadPro Vertical / iPad HorizontaL*/
 @media screen and (max-width: 1024px) {
   .Microsoft .Header {
-    margin-top: 6rem;
+    margin: 6rem 6rem 0 6rem;
   }
+
+  .Microsoft .Header h2 {
+    text-align: left;
+  }
+  .Microsoft .Section {
+    padding: 0 6rem 0 6rem;
+  }
+
+  .Microsoft .Section .content .text {
+    text-align: center;
+  }
+
 }
 
 /*iPhoneX horizontal*/
