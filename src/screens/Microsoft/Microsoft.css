@@ -91,6 +91,10 @@
   padding: 1rem 0;
 }
 
+.Microsoft .MediaSectionItem.media .text {
+  display: none;
+}
+
 .Microsoft .MediaSectionItem.media:not(:last-child) {
   border-bottom: 1px solid #bbb;
 }
@@ -215,14 +219,20 @@
 /*iPadPro Vertical / iPad HorizontaL*/
 @media screen and (max-width: 1024px) {
   .Microsoft .Header {
-    margin: 6rem 6rem 0 6rem;
+    margin: 6rem 4rem 0 4rem;
+    flex-direction: row;
   }
 
   .Microsoft .Header h2 {
     text-align: left;
   }
+
+  .Microsoft img.msLogo {
+    margin-right: .5rem;
+  }
+
   .Microsoft .Section {
-    padding: 0 6rem 0 6rem;
+    padding: 0 3rem 0 3rem;
   }
 
   .Microsoft .Section .content .text {
@@ -234,8 +244,29 @@
 /*iPhoneX horizontal*/
 @media screen and (max-width: 900px) {
   .Microsoft .Header {
-    margin-top: 4rem;
+    margin: 6rem 3rem 0 2.5rem;
+  }
+
+  .Microsoft .Header h2 {
     font-size: 2rem;
+  }
+  .Microsoft .Section {
+    padding: 0;
+    margin: 0 2.5rem 0 2.5rem;
+  }
+  .Microsoft .Section .content.msDevRoadShow {
+    padding-top: .5rem;
+  }
+
+  .Microsoft .MediaSectionItem .text {
+    line-height: 1.5rem;
+  }
+
+  .Microsoft .MediaSectionItem .text:first-child{
+    width: 50%;
+  }
+  .Microsoft .MediaSectionItem .text:nth-child(2){
+    width: 35%;
   }
 }
 
@@ -244,11 +275,73 @@
   .Microsoft .Header {
     margin-top: 4rem;
   }
+
+  .Microsoft .Section {
+    margin: 0 2rem 0 2rem;
+  }
 }
 
 /*iPhoneX/iPhone6/7/8 vertical*/
 @media screen and (max-width: 480px) {
   .Microsoft .Header {
-    margin-top: 4rem;
+    align-items: flex-start;
+    margin: 3rem 1.8rem 0 1.8rem;
+  }
+  .Microsoft .Section {
+    margin: 0 1.8rem 0 1.8rem;
+  }
+
+  .Microsoft .Section .content {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .Microsoft .Section .content .description:first-child{
+    margin-bottom: 1rem;
+  }
+  .Microsoft .Section .content.msDevRoadShow {
+    font-size: .9rem;
+  }
+  .Microsoft .MediaSection {
+    margin-top: 2rem;
+  }
+  .Microsoft .MediaSection .MediaSectionItem.content{
+    display: none;
+  }
+  .Microsoft .MediaSection .MediaSectionItem.media{
+    flex-direction: column;
+  }
+
+  .Microsoft .MediaSection .MediaSectionItem.media .ImageWithLoader, 
+  .Microsoft .MediaSection .MediaSectionItem.media .media-item{
+    width: 80%;
+  }
+  .Microsoft .MediaSection .MediaSectionItem.media .media-item .ImageWithLoader{
+    width: 100%;
+  }
+
+  .Microsoft .MediaSectionItem.media .text {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    color: #555;
+    width: 100%;
+  }
+  .Microsoft .MediaSectionItem.media .text:nth-child(3) {
+    margin-top: 2rem;
+  }
+
+  .Microsoft .MediaSectionItem.media .text span{
+    margin: 0 .3rem .3rem 0;
+
+  }
+
+  .Microsoft .MediaSection .media-item {
+    margin-top: 0;
+  }
+
+  .Microsoft .MediaSection .media-item .media-info {
+    display: none;
   }
 }

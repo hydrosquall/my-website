@@ -64,6 +64,9 @@
   "microsoft.highlightDescription2": "liburuaren azaleko marrazkia",
   "microsoft.whatIs": "Zer da MS Dev Road Show?",
   "microsoft.mediaIllustration": "Aurkezpen tekniko bakoitzaren adierazpen bisuala",
-  "microsoft.mediaVideo": "Aurkezpenaren bideoaz jarraitua"
+  "microsoft.mediaIllustration.smartphone": "Nire sketchnote-a",
+  "microsoft.mediaVideo": "Aurkezpenaren bideoaz jarraitua",
+  "microsoft.mediaVideo.smartphone": "Aurkezpenaren bideoa"
+
 
 }

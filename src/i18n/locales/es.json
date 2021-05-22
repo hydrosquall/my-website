@@ -63,5 +63,7 @@
     "microsoft.highlightDescription2": "ilustración de la portada",
     "microsoft.whatIs": "¿Qué es MS Dev Road Show?",
     "microsoft.mediaIllustration": "Representación visual de cada conferencia técnica",
-    "microsoft.mediaVideo": "Seguida del video original"
+    "microsoft.mediaIllustration.smartphone": "Mi sketchnote",
+    "microsoft.mediaVideo": "Seguida del vídeo original",
+    "microsoft.mediaVideo.smartphone": "Vídeo de la conferencia"
 }

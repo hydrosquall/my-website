@@ -63,7 +63,15 @@ const Microsoft = () => {
         title, youtubeId, tag, alt,
       }) => (
         <div className="MediaSectionItem media" key={title}>
+          <div className="text">
+            <span>{t('microsoft.mediaIllustration.smartphone')}</span>
+            <i className="fa fa-hand-o-down" aria-hidden="true" />
+          </div>
           {renderImg(tag, alt)}
+          <div className="text">
+            <span>{t('microsoft.mediaVideo.smartphone')}</span>
+            <i className="fa fa-hand-o-down" aria-hidden="true" />
+          </div>
           <MediaItem title={title} youtubeId={youtubeId} />
         </div>
       ))}
