@@ -89,11 +89,11 @@
   },
   "illustrations": {
     "albums": [
-      { "name": "Test JS Summit", "id": "72157718113845317" },
-      { "name": "Inktober 2020", "id": "72157716697491682" },
       { "name": "Technical conferences", "id": "72157713855312227" },
-      { "name": "Drawings", "id": "72157711469901462" },
-      { "name": "Personal sketchnoting", "id": "72157711643998961" }
+      { "name": "Personal sketchnoting", "id": "72157711643998961" },
+      { "name": "Basque", "id": "72177720298004102" },
+      { "name": "Test JS Summit", "id": "72157718113845317" },
+      { "name": "Inktober 2020", "id": "72157716697491682" }
     ]
   }
 }
