@@ -47,6 +47,11 @@
   "talks":
      [
       {
+        "title": "Ladies of Code Paris 2022",
+        "youtubeId": "7ZLb6SQ9tTs",
+        "date": "2022/03/08"
+      },
+      {
         "title": "BDX/IO 2019",
         "youtubeId": "Ig5_nm5fpEY",
         "date": "2019/11/15"
